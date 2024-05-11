@@ -123,7 +123,72 @@
   border: 1px solid #03bcff;
   background: #03bcff;
   transition: 0.6s;
-  
+
 }
 
  
+/*---- Homepage - Useful Links ----*/
+.links {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 10px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+  font-family: "Playfair Display SC", serif;
+}
+
+.links p {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.links-row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links-col {
+  flex-basis: 31%;
+  background: rgba(99, 239, 255, 0.2);
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.links-col a:link {
+  text-decoration: none;
+}
+
+.links-col a:hover {
+  color: #03bcff;
+}
+
+.links-col h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+.links-col p {
+  font-size: 15px;
+}
+
+.links-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 700px) {
+  .links-row {
+    flex-direction: column;
+  }
+}
+/*---- Homepage - Useful Links ----*/
