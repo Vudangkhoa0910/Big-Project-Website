@@ -192,3 +192,40 @@ h1 {
   }
 }
 /*---- Homepage - Useful Links ----*/
+
+/*New*/
+/* Hover Effect for Navigation Links */
+.navigation-links ul li a:hover {
+  color: #ff7f50; /* Change color on hover */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+/* Scroll-to-Top Button Animation */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease;
+}
+
+.scroll-to-top.active {
+  opacity: 1; /* Visible when active */
+}
+
+/* Fade-in Animation for Footer Social Links */
+.footer-list-social li {
+  opacity: 0; /* Initially hidden */
+  animation: fadeIn 0.5s forwards; /* Fade-in animation */
+  animation-delay: 0.2s; /* Delay for staggered effect */
+}
+
+/* Keyframes for Fade-in Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
