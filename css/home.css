@@ -193,11 +193,71 @@ h1 {
 }
 /*---- Homepage - Useful Links ----*/
 
+
+/*---- Footer ----*/
+.footer {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  padding: 40px 0;
+}
+
+.footer .copyright {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #61656b;
+}
+
+.footer a:link {
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #03bcff;
+}
+
+.footer hr {
+  width: 75%;
+  margin: auto;
+}
+
+.footer h4 {
+  text-align: center;
+}
+
+.scroll-up {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  font-size: 22px;
+}
+
+@media only screen and (max-width: 700px) {
+  .scroll-up {
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    font-size: 22px;
+  }
+}
+/*---- Footer ----*/
+
+
+
 /*New*/
-/* Hover Effect for Navigation Links */
 .navigation-links ul li a:hover {
-  color: #ff7f50; /* Change color on hover */
-  transition: color 0.3s ease; /* Smooth transition */
+  color: #ff7f50;
+  transition: color 0.3s ease; 
 }
 
 /* Scroll-to-Top Button Animation */
@@ -205,22 +265,20 @@ h1 {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  opacity: 0; /* Initially hidden */
+  opacity: 0;
   transition: opacity 0.3s ease;
 }
 
 .scroll-to-top.active {
-  opacity: 1; /* Visible when active */
+  opacity: 1; 
 }
 
-/* Fade-in Animation for Footer Social Links */
 .footer-list-social li {
-  opacity: 0; /* Initially hidden */
-  animation: fadeIn 0.5s forwards; /* Fade-in animation */
-  animation-delay: 0.2s; /* Delay for staggered effect */
+  opacity: 0;
+  animation: fadeIn 0.5s forwards; 
+  animation-delay: 0.2s; 
 }
 
-/* Keyframes for Fade-in Animation */
 @keyframes fadeIn {
   from {
       opacity: 0;
