@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /*-------------- Homepage --------------*/
+  .header {
+    min-height: 110vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.8)),
+      url(../images/Home/mainBG.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  
+  #logo {
+    width: 120px;
+    height: 150px;
+  }
+  
+  /* Update header */
+  nav {
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #0056b3;
+  }
+  
+  .navigation-links {
+    flex-grow: 1;
+    text-align: right;
+  }
+  /*Update header*/
+
+  .asia-header {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url(../images/ChauA/vinhhalong1.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #000000;
+    border-radius: 0% 0% 2.5% 2.5%;
+  }
+  
+  .asia-header h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 120px;
+    margin-top: 150px;
+  }
+
+  .asia {
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+  
+  .asia-col {
+    flex-basis: 48%;
+    padding: 30px 2px;
+  }
+  
+  .asia-col img {
+    width: 100%;
+    border-radius: 50px;
+  }
+  
+  .asia-col h1 {
+    padding-top: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .asia-col figcaption {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  .asia-col p {
+    padding: 15px 0 25px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .asia-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 12px 34px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .asia-btn:hover {
+    border: 1px solid #42f548;
+    background: #42f548;
+    transition: 0.6s;
+  }
+  
+  .asia hr {
+    width: 50%;
+    margin: auto;
+    border: 2px solid #000000;
+    border-radius: 5px;
+  }
+  
+  .asia iframe {
+    border: 2px solid #000000;
+    margin: 0 auto;
+    display: block;
+  }
+
+
+  /*---- Footer ----*/
+.footer {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    padding: 40px 0;
+  }
+  
+  .footer .copyright {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 13px;
+    color: #61656b;
+  }
+  
+  .footer a:link {
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    color: #03bcff;
+  }
+  
+  .footer hr {
+    width: 75%;
+    margin: auto;
+  }
+  
+  .footer h4 {
+    text-align: center;
+  }
+  
+  .scroll-up {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    font-size: 22px;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .scroll-up {
+      width: 50px;
+      height: 50px;
+      bottom: 40px;
+      right: 50px;
+      text-decoration: none;
+      text-align: center;
+      line-height: 50px;
+      font-size: 22px;
+    }
+  }
+  
+  /*---- Footer ----*/
+  
+  
+  
+  /*New*/
+  .navigation-links ul li a:hover {
+    color: #ff7f50;
+    transition: color 0.3s ease;
+  }
+  
+  /* Scroll-to-Top Button Animation */
+  .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .scroll-to-top.active {
+    opacity: 1;
+  }
