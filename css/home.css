@@ -27,57 +27,44 @@ html {
   height: 150px;
 }
 
+/* Update header */
 nav {
   background: #ffffff;
-  /* White background for clarity */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  /* Soft shadow for depth */
   padding: 10px 20px;
-  /* Padding for spacing */
 }
 
 nav ul {
   list-style-type: none;
-  /* Removes default list styling */
   padding: 0;
   margin: 0;
   display: flex;
-  /* Aligns the items horizontally */
   align-items: center;
-  /* Centers items vertically */
   justify-content: space-between;
-  /* Even spacing between links */
 }
 
 nav a {
   text-decoration: none;
-  /* No underline for links */
   color: #333;
-  /* Dark grey color for text */
   font-weight: bold;
-  /* Makes text bold */
   padding: 10px 20px;
-  /* Padding for clickable area */
   transition: color 0.3s;
-  /* Smooth transition for hover effect */
 }
 
 nav a:hover {
   color: #0056b3;
-  /* Changes color on hover */
 }
 
 #logo img {
   height: 50px;
-  /* Adjusts logo size */
 }
 
 .navigation-links {
   flex-grow: 1;
-  /* Allows navigation links to fill the space */
   text-align: right;
-  /* Aligns links to the right */
 }
+/*Update header*/
+
 
 /*---- Navigation Bar ----*/
 
@@ -125,7 +112,6 @@ nav a:hover {
   transition: 0.6s;
 
 }
-
 
 /*---- Homepage - Useful Links ----*/
 .links {
