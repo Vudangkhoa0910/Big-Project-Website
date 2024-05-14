@@ -89,8 +89,7 @@ html {
 .navbar-brand span {
   display: inline-block;
   animation: fadeIn 0.5s ease forwards;
-  background-image: linear-gradient(to bottom, rgb(242, 131, 52), rgb(32, 32, 220));
-  /* Phối màu từ orange đến blue */
+  background-image: white;
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
