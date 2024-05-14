@@ -36,17 +36,18 @@
         <img src="../images/Home/logomain.png" alt="Logo" class="logo">
         <h1 class="navbar-brand" id="animated-text"><a href="index.html">PHENIKAA TRAVEL</a></h1>
         <div class="auth-section">
-            <div class="login-section">
-                <a href="login.html" class="login-link">Login</a> 
-            </div>
-            <div class="register-section">
-                <a href="register.html" class="login-link">Register</a> 
-            </div> 
-            </div>
+          <div class="login-section">
+            <a href="#" class="login-link"
+              onclick="document.getElementById('loginModal').style.display='block'">Login</a>
+          </div>
+          <div class="register-section">
+            <a href="#" class="register-link"
+              onclick="document.getElementById('registerModal').style.display='block'">Register</a>
+          </div>
         </div>
+      </div>
     </nav>
     <nav>
-
       <div class="navigation-links" id="navLinks">
         <ul>
           <li><a href="index.html">HOME</a></li>
@@ -60,20 +61,20 @@
       </div>
     </nav>
     <div class="background">
-        <div class="overlay"></div> 
-        <img src="/images/Home/mainBG.jpg" alt="background">
-      </div>
-  </section>
-    <div class="homepage-text">
-      <h1>Hello, Bông Dua, Hola tất cả mọi người</h1>
-      <p>
-        Chào mừng các bạn đã đến với thiên đường du lịch, trải nghiệm
-        của Tiểu Vương Quốc gạch đá Phenikaa <br /> By KhoabuIT
-      </p>
-      <br />
-      <br />
-      <a href="" class="homepage-btn" target="_blank">Về chúng tôi</a>
+      <div class="overlay"></div>
+      <img src="/images/Home/mainBG.jpg" alt="background">
     </div>
+  </section>
+  <div class="homepage-text">
+    <h1>Hello, Bông Dua, Hola tất cả mọi người</h1>
+    <p>
+      Chào mừng các bạn đã đến với thiên đường du lịch, trải nghiệm
+      của Tiểu Vương Quốc gạch đá Phenikaa <br /> By KhoabuIT
+    </p>
+    <br />
+    <br />
+    <a href="" class="homepage-btn" target="_blank">Về chúng tôi</a>
+  </div>
   </section>
   <!-- Header  -->
 
@@ -127,14 +128,12 @@
   </section>
   <!-- Useful Links  -->
 
-
   <!-- Footer  -->
   <section class="footer">
     <hr />
     <br />
     <h4>PHENIKAA TRAVEL&reg;</h4>
     <br />
-
     <p class="copyright">&copy; 2024 PHENIKAA TRAVEL. All Rights Reserved.</p>
   </section>
   <!-- Footer  -->
@@ -145,9 +144,44 @@
       <img src="/images/Icons/double-arrow.png" alt="back to top" />
     </a>
   </div>
+
+  <!-- Modals -->
+  <!-- Login Modal -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="loginClose">&times;</span>
+      <form id="loginForm" onsubmit="return handleLogin(event)">
+        <h2>Login</h2>
+        <label for="loginUsername">Username</label>
+        <input type="text" id="loginUsername" name="username" required>
+        <label for="loginPassword">Password</label>
+        <input type="password" id="loginPassword" name="password" required>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Register Modal -->
+  <div id="registerModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="registerClose">&times;</span>
+      <form id="registerForm" onsubmit="return handleRegister(event)">
+        <h2>Register</h2>
+        <label for="registerUsername">Username</label>
+        <input type="text" id="registerUsername" name="username" required>
+        <label for="registerEmail">Email</label>
+        <input type="email" id="registerEmail" name="email" required>
+        <label for="registerPassword">Password</label>
+        <input type="password" id="registerPassword" name="password" required>
+        <button type="submit">Register</button>
+      </form>
+    </div>
+  </div>
+
   <script src="/js/header.js"></script>
   <script src="/js/main.js"></script>
   <script src="/js/animations.js"></script>
+  <script src="/js/modals.js"></script>
 </body>
 
 </html>
