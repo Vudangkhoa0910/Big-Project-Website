@@ -90,7 +90,6 @@ html {
   display: inline-block;
   animation: fadeIn 0.5s ease forwards;
   background-image: white;
-  color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
 }
