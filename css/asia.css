@@ -156,31 +156,55 @@ nav a:hover {
   padding-bottom: 50px;
 }
 
-.asia-col {
-  flex-basis: 48%;
-  padding: 30px 2px;
+.asia-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.asia-col img {
+.image-row {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
   width: 100%;
-  border-radius: 50px;
 }
 
-.asia-col h1 {
-  padding-top: 0;
-  font-family: "Poppins", sans-serif;
+.image-container {
+  position: relative;
+  width: 370px;  
+  height: 350px; 
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 70px; 
 }
 
-.asia-col figcaption {
-  font-family: "Poppins", sans-serif;
-  font-size: 15px;
-  text-align: center;
+.image-container img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  margin: 5px;;
 }
 
-.asia-col p {
-  padding: 15px 0 25px;
-  font-family: "Poppins", sans-serif;
+.image-container figcaption {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 1em;
 }
+
+.image-container.staggered {
+  margin-top: 40px; 
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 
 .asia-btn {
   display: inline-block;
