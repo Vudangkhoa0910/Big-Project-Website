@@ -102,25 +102,7 @@ html {
 /* animation */
 
 
-.login-section {
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
 
-.login-link {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 5px 10px;
-  border: 2px solid white;
-  border-radius: 5px;
-}
-
-.login-link:hover {
-  background-color: white;
-  color: #00A3E0;
-  transition: all 0.3s ease;
-}
 
 .register-section {
   margin-right: 50px;
