@@ -29,12 +29,10 @@ html {
 /* Update header */
 .phenikaatravel-header {
   background-color: #00A3E0;
-  /* Your chosen blue color */
   color: white;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
-  /* Adjust to space-between for spacing */
   align-items: center;
   width: 100%;
 }
@@ -49,7 +47,6 @@ html {
 .navbar-brand {
   text-align: center;
   flex-grow: 1;
-  /* Allows the brand name to grow and push login to the right */
 }
 
 .navbar-brand a {
@@ -60,7 +57,6 @@ html {
 
 .login-section {
   margin-right: 20px;
-  /* Adjust spacing as needed */
 }
 
 .login-link {
@@ -69,22 +65,18 @@ html {
   font-weight: bold;
   padding: 5px 10px;
   border: 2px solid white;
-  /* Optional: style as needed */
   border-radius: 5px;
-  /* Optional: style as needed */
 }
 
 .login-link:hover {
   background-color: white;
   color: #00A3E0;
-  /* Color switch on hover */
   transition: all 0.3s ease;
 }
 
 
 .logo {
   height: 60px;
-  /* Adjust based on your logo */
 }
 
 
