@@ -8,7 +8,7 @@
   }
   
   /*-------------- Homepage --------------*/
-  .asia-header {
+  .europe-header {
     height: 100vh;
     width: 100%;
     background: linear-gradient(rgba(255, 255, 255, 0.8),
@@ -116,7 +116,7 @@
   
   /*Update header*/
   
-  .asia-header {
+  .europe-header {
     height: 100vh;
     width: 100%;
     background: linear-gradient(rgba(255, 255, 255, 0.8),
@@ -129,26 +129,26 @@
     border-radius: 0% 0% 2.5% 2.5%;
   }
   
-  .asia-header h1 {
+  .europe-header h1 {
     font-size: 36px;
     font-weight: 600;
     font-family: "Playfair Display SC", serif;
   }
   
-  .asia-header h2 {
+  .europe-header h2 {
     font-family: "Dancing Script", cursive;
     font-size: 120px;
     margin-top: 150px;
   }
   
-  .asia {
+  .europe {
     width: 80%;
     margin: auto;
     padding-top: 80px;
     padding-bottom: 50px;
   }
   
-  .asia-row {
+  .europe-row {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -198,7 +198,7 @@
   }
   
   
-  .asia-btn {
+  .europe-btn {
     display: inline-block;
     text-decoration: none;
     color: rgb(0, 0, 0);
@@ -212,20 +212,20 @@
     cursor: pointer;
   }
   
-  .asia-btn:hover {
+  .europe-btn:hover {
     border: 1px solid #42f548;
     background: #42f548;
     transition: 0.6s;
   }
   
-  .asia hr {
+  .europe hr {
     width: 50%;
     margin: auto;
     border: 2px solid #000000;
     border-radius: 5px;
   }
   
-  .asia iframe {
+  .europe iframe {
     border: 2px solid #000000;
     margin: 0 auto;
     display: block;

@@ -137,7 +137,6 @@ html {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
   padding-top: 60px;
 }
@@ -145,10 +144,13 @@ html {
 .modal-content {
   background-color: #fefefe;
   margin: 5% auto;
-  padding: 20px;
   border: 1px solid #888;
   width: 80%;
-  max-width: 400px;
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   animation-name: animatetop;
   animation-duration: 0.4s;
@@ -167,41 +169,51 @@ html {
 }
 
 .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
   color: #aaa;
-  float: right;
   font-size: 28px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .close:hover,
 .close:focus {
   color: black;
   text-decoration: none;
-  cursor: pointer;
 }
 
-.modal form {
+.modal-content form {
   display: flex;
   flex-direction: column;
+  width: 50%;
+  padding: 20px;
 }
 
-.modal form h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.modal form label {
-  margin-bottom: 5px;
-}
-
-.modal form input {
+.modal-content .form-section {
   margin-bottom: 15px;
+}
+
+.modal-content .form-section label {
+  margin-bottom: 5px;
+  display: block;
+}
+
+.modal-content .form-section input,
+.modal-content .form-section textarea {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  width: 100%;
 }
 
-.modal form button {
+.modal-content .form-section input[type="radio"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+.modal-content .register-btn {
   padding: 10px;
   border: none;
   border-radius: 4px;
@@ -211,9 +223,19 @@ html {
   cursor: pointer;
 }
 
-.modal form button:hover {
+.modal-content .register-btn:hover {
   background-color: #45a049;
 }
+
+.modal-content .image-section {
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 10px 10px 0;
+  height: 100%;
+}
+
+
 
 
 
