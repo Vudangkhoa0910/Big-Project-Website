@@ -36,10 +36,7 @@
         <img src="../images/Home/logomain.png" alt="Logo" class="logo">
         <h1 class="navbar-brand" id="animated-text"><a href="index.html">PHENIKAA TRAVEL</a></h1>
         <div class="auth-section">
-          <div class="login-section">
-            <a href="#" class="login-link"
-              onclick="document.getElementById('loginModal').style.display='block'">Login</a>
-          </div>
+
           <div class="register-section">
             <a href="#" class="register-link"
               onclick="document.getElementById('registerModal').style.display='block'">Register</a>
@@ -142,20 +139,7 @@
   </div>
 
   <!-- Modals -->
-  <!-- Login Modal -->
-  <div id="loginModal" class="modal">
-    <div class="modal-content">
-      <span class="close" id="loginClose">&times;</span>
-      <form id="loginForm" onsubmit="return handleLogin(event)">
-        <h2>Login</h2>
-        <label for="loginUsername">Username</label>
-        <input type="text" id="loginUsername" name="username" required>
-        <label for="loginPassword">Password</label>
-        <input type="password" id="loginPassword" name="password" required>
-        <button type="submit">Login</button>
-      </form>
-    </div>
-  </div>
+
 
   <!-- Register Modal -->
   <div id="registerModal" class="modal">
