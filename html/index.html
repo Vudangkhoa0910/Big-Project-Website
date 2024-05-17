@@ -52,7 +52,9 @@
           <li><a href="europe.html">EUROPE</a></li>
           <li><a href="africa.html">AFRICA</a></li>
           <li><a href="americas.html">AMERICAS</a></li>
-          <li><a href="contactus.html">CONTACT</a></li>
+          <li><a href="#" class="info-link"
+              onclick="document.getElementById('infoModal').style.display='block'">CONTACT</a></li>
+
           <li><a href="booking.html">BOOKING</a></li>
         </ul>
       </div>
@@ -140,16 +142,18 @@
 
   <!DOCTYPE html>
   <html lang="en">
+
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modal Example</title>
     <link rel="stylesheet" href="styles.css">
   </head>
+
   <body>
     <!-- Register Link -->
     <a href="#" class="register-link">Đăng Ký</a>
-  
+
     <!-- Modals -->
     <!-- Register Modal -->
     <div id="registerModal" class="modal">
@@ -177,8 +181,10 @@
           </div>
           <div class="form-section">
             <label for="gender">Giới Tính</label>
+
             <label for="male">Nam</label>
             <input type="radio" id="male" name="gender" value="male" required>
+
             <label for="female">Nữ</label>
             <input type="radio" id="female" name="gender" value="female" required>
           </div>
@@ -203,7 +209,34 @@
         <div class="image-section" style="background-image: url('/images/Home/anhtuvan.jpg');"></div>
       </div>
     </div>
-  
+    <!-- Info Modal -->
+    <div id="infoModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="infoClose">&times;</span>
+        <h2>Group Members</h2>
+        <div class="member-info" id="olivia-info">
+          <img src="/images/Home/Khoa.jpg" alt="Olivia">
+          <h3>Olivia</h3>
+          <p><strong>Date of Birth:</strong> January 1, 1990</p>
+          <p><strong>Role:</strong> Project Manager</p>
+          <p><strong>Motto:</strong> "Strive for excellence."</p>
+        </div>
+        <div class="member-info" id="aaron-info">
+          <img src="/images/Home/Luong.jpg" alt="Aaron">
+          <h3>Aaron</h3>
+          <p><strong>Date of Birth:</strong> February 2, 1992</p>
+          <p><strong>Role:</strong> Developer</p>
+          <p><strong>Motto:</strong> "Keep it simple."</p>
+        </div>
+        <div class="member-info" id="casey-info">
+          <img src="/images/Home/Dong.jpg" alt="Casey">
+          <h3>Casey</h3>
+          <p><strong>Date of Birth:</strong> March 3, 1994</p>
+          <p><strong>Role:</strong> Designer</p>
+          <p><strong>Motto:</strong> "Design is thinking made visual."</p>
+        </div>
+      </div>
+    </div>
     <!-- Success Modal -->
     <div id="successModal" class="modal">
       <div class="modal-content">
@@ -212,11 +245,12 @@
         <p>Cảm ơn bạn đã đăng ký. Chúng tôi sẽ liên hệ với bạn sớm nhất có thể.</p>
       </div>
     </div>
-   
-  <script src="/js/header.js"></script>
-  <script src="/js/main.js"></script>
-  <script src="/js/animations.js"></script>
-  <script src="/js/modal.js"></script>
-</body>
 
-</div>
+
+    <script src="/js/header.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/animations.js"></script>
+    <script src="/js/modal.js"></script>
+  </body>
+
+  </div>
