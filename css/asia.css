@@ -494,10 +494,12 @@ nav a:hover {
 }
 
 .asia hr {
-  width: 50%;
+  width: 80%;
   margin: auto;
   border: 2px solid #000000;
   border-radius: 5px;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 .asia iframe {
@@ -520,19 +522,6 @@ nav a:hover {
   margin-top: 15px;
   font-size: 13px;
   color: #61656b;
-}
-
-.footer a:link {
-  text-decoration: none;
-}
-
-.footer a:hover {
-  color: #03bcff;
-}
-
-.footer hr {
-  width: 75%;
-  margin: auto;
 }
 
 .footer h4 {
