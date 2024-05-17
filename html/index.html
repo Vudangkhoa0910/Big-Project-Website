@@ -138,70 +138,81 @@
     </a>
   </div>
 
-  <!-- Modals -->
-  <!-- Register Modal -->
-  <div id="registerModal" class="modal">
-    <div class="modal-content">
-      <span class="close" id="registerClose">&times;</span>
-      <form id="registerForm" onsubmit="return handleRegister(event)">
-        <h2>Đăng Ký Nhận Tư Vấn Du Lịch</h2>
-        <div class="form-section">
-          <label for="fullName">Họ và Tên</label>
-          <input type="text" id="fullName" name="fullName" required>
-        </div>
-        <div class="form-section">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-          <label for="phone">Số Điện Thoại</label>
-          <input type="text" id="phone" name="phone" required>
-        </div>
-        <div class="form-section">
-          <label for="address">Địa Chỉ</label>
-          <input type="text" id="address" name="address" required>
-        </div>
-        <div class="form-section">
-          <label for="dob">Ngày Sinh</label>
-          <input type="date" id="dob" name="dob" required>
-        </div>
-        <div class="form-section">
-          <label for="gender">Giới Tính</label>
-
-          <label for="male">Nam</label>
-          <input type="radio" id="male" name="gender" value="male" required>
-
-          <label for="female">Nữ</label>
-          <input type="radio" id="female" name="gender" value="female" required>
-        </div>
-        <div class="form-section">
-          <label for="hospital">Chọn Nơi Khởi Hành</label>
-          <input type="text" id="hospital" name="hospital" required>
-        </div>
-        <div class="form-section">
-          <label for="department">Chọn Điểm Đến</label>
-          <input type="text" id="department" name="department" required>
-        </div>
-        <div class="form-section">
-          <label for="additionalInfo">Thêm Thông Tin Khác</label>
-          <textarea id="additionalInfo" name="additionalInfo"></textarea>
-        </div>
-        <div class="form-section">
-          <label for="preferredDate">Ngày và Giờ Chuyến Đi</label>
-          <input type="datetime-local" id="preferredDate" name="preferredDate" required>
-        </div>
-        <button type="submit" class="register-btn">Đăng Ký</button>
-      </form>
-      <div class="image-section" style="background-image: url('/images/Home/anhtuvan.jpg');"></div>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Example</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- Register Link -->
+    <a href="#" class="register-link">Đăng Ký</a>
+  
+    <!-- Modals -->
+    <!-- Register Modal -->
+    <div id="registerModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="registerClose">&times;</span>
+        <form id="registerForm" onsubmit="return handleRegister(event)">
+          <h2>Đăng Ký Nhận Tư Vấn Du Lịch</h2>
+          <div class="form-section">
+            <label for="fullName">Họ và Tên</label>
+            <input type="text" id="fullName" name="fullName" required>
+          </div>
+          <div class="form-section">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Số Điện Thoại</label>
+            <input type="text" id="phone" name="phone" required>
+          </div>
+          <div class="form-section">
+            <label for="address">Địa Chỉ</label>
+            <input type="text" id="address" name="address" required>
+          </div>
+          <div class="form-section">
+            <label for="dob">Ngày Sinh</label>
+            <input type="date" id="dob" name="dob" required>
+          </div>
+          <div class="form-section">
+            <label for="gender">Giới Tính</label>
+            <label for="male">Nam</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="female">Nữ</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+          </div>
+          <div class="form-section">
+            <label for="hospital">Chọn Nơi Khởi Hành</label>
+            <input type="text" id="hospital" name="hospital" required>
+          </div>
+          <div class="form-section">
+            <label for="department">Chọn Điểm Đến</label>
+            <input type="text" id="department" name="department" required>
+          </div>
+          <div class="form-section">
+            <label for="additionalInfo">Thêm Thông Tin Khác</label>
+            <textarea id="additionalInfo" name="additionalInfo"></textarea>
+          </div>
+          <div class="form-section">
+            <label for="preferredDate">Ngày và Giờ Chuyến Đi</label>
+            <input type="datetime-local" id="preferredDate" name="preferredDate" required>
+          </div>
+          <button type="submit" class="register-btn">Đăng Ký</button>
+        </form>
+        <div class="image-section" style="background-image: url('/images/Home/anhtuvan.jpg');"></div>
+      </div>
     </div>
-  </div>
-  <!-- Success Modal -->
-  <div id="successModal" class="modal">
-    <div class="modal-content">
-      <span class="close" id="successClose">&times;</span>
-      <h2>Đăng Ký Thành Công!</h2>
-      <p>Cảm ơn bạn đã đăng ký. Chúng tôi sẽ liên hệ với bạn sớm nhất có thể.</p>
+  
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="successClose">&times;</span>
+        <h2>Đăng Ký Thành Công!</h2>
+        <p>Cảm ơn bạn đã đăng ký. Chúng tôi sẽ liên hệ với bạn sớm nhất có thể.</p>
+      </div>
     </div>
-  </div>
-
+    
   <script src="/js/header.js"></script>
   <script src="/js/main.js"></script>
   <script src="/js/animations.js"></script>
