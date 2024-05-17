@@ -1,38 +1,55 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-  // Get the modals
-  var registerModal = document.getElementById("registerModal");
+  // Lấy các modal
+  var registerModal = document.getElementById('registerModal');
+  var successModal = document.getElementById('successModal');
 
-  // Get the button that opens the modal
-  var registerBtn = document.querySelector(".register-section a");
+  // Lấy các phần tử <span> đóng modal
+  var registerClose = document.getElementById('registerClose');
+  var successClose = document.getElementById('successClose');
 
-  // Get the <span> element that closes the modal
-  var registerClose = document.getElementById("registerClose");
+  // Lấy các phần tử mở modal
+  var registerBtn = document.querySelector(".register-link");
 
-  // When the user clicks on the button, open the modal
+  // Khi người dùng nhấp vào nút, mở modal
   registerBtn.onclick = function() {
     registerModal.style.display = "block";
   }
 
-  // When the user clicks on <span> (x), close the modal
+  // Khi người dùng nhấp vào <span> (x), đóng modal
   registerClose.onclick = function() {
     registerModal.style.display = "none";
   }
 
-  // When the user clicks anywhere outside of the modal, close it
+  successClose.onclick = function() {
+    successModal.style.display = "none";
+  }
+
+
+  // Khi người dùng nhấp ra ngoài modal, đóng modal
   window.onclick = function(event) {
     if (event.target == registerModal) {
       registerModal.style.display = "none";
     }
+    if (event.target == successModal) {
+      successModal.style.display = "none";
+    }
   }
 });
 
-// Handle register form submission
+// Xử lý việc gửi form đăng ký
 function handleRegister(event) {
   event.preventDefault();
-  // Validate the form if necessary
-  // Perform the registration action (e.g., AJAX request)
-  
-  // Redirect to another page after registration
-  window.location.href = 'welcome.html'; // Change this to your desired page
-  return false; // Prevent the default form submission
+  // Xử lý validate và đăng ký form nếu cần thiết
+  // Giả lập quá trình đăng ký thành công
+  setTimeout(function() {
+    // Đóng modal đăng ký
+    document.getElementById('registerModal').style.display = "none";
+
+    // Hiển thị modal thành công
+    document.getElementById('successModal').style.display = "block";
+  }, 500); // Giả lập thời gian xử lý 500ms
+
+  // Chuyển hướng đến trang khác sau khi đăng ký thành công
+  //window.location.href = 'thanks.html'; // Thay đổi URL theo ý muốn của bạn
+  return false; // Ngăn chặn hành động gửi form mặc định
 }

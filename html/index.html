@@ -165,10 +165,12 @@
         </div>
         <div class="form-section">
           <label for="gender">Giới Tính</label>
-          <input type="radio" id="male" name="gender" value="male" required>
+
           <label for="male">Nam</label>
-          <input type="radio" id="female" name="gender" value="female" required>
+          <input type="radio" id="male" name="gender" value="male" required>
+
           <label for="female">Nữ</label>
+          <input type="radio" id="female" name="gender" value="female" required>
         </div>
         <div class="form-section">
           <label for="hospital">Chọn Nơi Khởi Hành</label>
@@ -183,7 +185,7 @@
           <textarea id="additionalInfo" name="additionalInfo"></textarea>
         </div>
         <div class="form-section">
-          <label for="preferredDate">Ngày và Giờ Thích Hợp</label>
+          <label for="preferredDate">Ngày và Giờ Chuyến Đi</label>
           <input type="datetime-local" id="preferredDate" name="preferredDate" required>
         </div>
         <button type="submit" class="register-btn">Đăng Ký</button>
@@ -191,7 +193,14 @@
       <div class="image-section" style="background-image: url('/images/Home/anhtuvan.jpg');"></div>
     </div>
   </div>
-
+  <!-- Success Modal -->
+  <div id="successModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="successClose">&times;</span>
+      <h2>Đăng Ký Thành Công!</h2>
+      <p>Cảm ơn bạn đã đăng ký. Chúng tôi sẽ liên hệ với bạn sớm nhất có thể.</p>
+    </div>
+  </div>
 
   <script src="/js/header.js"></script>
   <script src="/js/main.js"></script>
