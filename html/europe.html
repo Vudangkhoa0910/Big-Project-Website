@@ -30,20 +30,22 @@
 
 <body>
   <!-- Header  -->
-  <section class="europe-header">
+  <section class="asia-header">
+
     <nav class="phenikaatravel-header">
       <div class="nav-container">
         <img src="../images/Home/logomain.png" alt="Logo" class="logo">
-        <h1 class="navbar-brand"><a href="index.html">PHENIKAA TRAVEL</a></h1>
-        <div class="login-section">
-          <a href="login.html" class="login-link">Login</a> <!-- Update this link to your actual login page -->
+        <h1 class="navbar-brand" id="animated-text"><a href="index.html">PHENIKAA TRAVEL</a></h1>
+        <div class="auth-section">
+          <div class="register-section">
+            <a href="#" class="register-link"
+              onclick="document.getElementById('registerModal').style.display='block'">Register</a>
+          </div>
         </div>
-        <!-- <div class="register-section">
-          <a href="register.html" class="login-link">register</a> <!-- Update this link to your actual login page -->
-      </div> -->
       </div>
     </nav>
     <nav>
+
       <div class="navigation-links" id="navLinks">
         <ul>
           <li><a href="index.html">HOME</a></li>
@@ -56,6 +58,12 @@
         </ul>
       </div>
     </nav>
+    <!-- Thanh Tìm Kiếm -->
+    <div class="search-container">
+      <input type="text" id="searchInput" class="search-bar" placeholder="Nhập từ khóa tìm kiếm">
+    </div>
+
+
     <h2>Châu Âu - Europe</h2>
   </section>
   <!-- Header  -->
@@ -482,9 +490,6 @@
           </div>
         </div>
         <hr/>
- 
-
-
   </section>
 
   <!-- Footer  -->
