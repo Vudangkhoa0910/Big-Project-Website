@@ -1,18 +1,24 @@
 document.addEventListener('DOMContentLoaded', (event) => {
   // Lấy các modal
   var registerModal = document.getElementById('registerModal');
-  var successModal = document.getElementById('successModal');
+  var successModal = document.getElementById('successModal');  
+  var infoModal = document.getElementById('infoModal');
 
   // Lấy các phần tử <span> đóng modal
   var registerClose = document.getElementById('registerClose');
   var successClose = document.getElementById('successClose');
+  var infoClose = document.getElementById('infoClose');
 
   // Lấy các phần tử mở modal
   var registerBtn = document.querySelector(".register-link");
+  var infoBtn = document.querySelector(".info-link");
 
   // Khi người dùng nhấp vào nút, mở modal
   registerBtn.onclick = function() {
     registerModal.style.display = "block";
+  }
+  infoBtn.onclick = function() {
+    infoModal.style.display = "block";
   }
 
   // Khi người dùng nhấp vào <span> (x), đóng modal
@@ -23,7 +29,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
   successClose.onclick = function() {
     successModal.style.display = "none";
   }
-
+  infoClose.onclick = function() {
+    infoModal.style.display = "none";
+  }
 
   // Khi người dùng nhấp ra ngoài modal, đóng modal
   window.onclick = function(event) {
@@ -32,6 +40,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
     if (event.target == successModal) {
       successModal.style.display = "none";
+    }
+    if (event.target == infoModal) {
+      infoModal.style.display = "none";
     }
   }
 });

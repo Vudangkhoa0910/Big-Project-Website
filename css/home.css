@@ -142,18 +142,17 @@ html {
 }
 
 .modal-content {
-  background-color: #f9f9f9;
+  background-color: #fff;
   margin: 5% auto;
-  border-radius: 10px;
-  border: 1px solid #888;
-  width: 80%;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  width: 60%;
   max-width: 900px;
   display: flex;
   flex-direction: row;
-  align-items: stretch;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   position: relative;
-  /* Thêm thuộc tính này để đảm bảo nút "X" có vị trí tương đối so với modal */
+  padding: 20px;
   animation-name: animatetop;
   animation-duration: 0.4s;
 }
@@ -172,14 +171,12 @@ html {
 
 .close {
   position: absolute;
-  top: 20px;
+  top: 10px;
   right: 20px;
-  color: #ffffff;
+  color: #aaa;
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
-  z-index: 10;
-  /* Đảm bảo nút "X" luôn nằm trên các thành phần khác */
 }
 
 .close:hover,
@@ -191,13 +188,13 @@ html {
 .modal-content form {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  padding: 40px;
+  width: 60%;
+  padding: 20px;
   box-sizing: border-box;
 }
 
 .modal-content .form-section {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .modal-content .form-section label {
@@ -215,6 +212,7 @@ html {
   width: 100%;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  margin-top: 5px;
 }
 
 .modal-content .form-section input[type="radio"] {
@@ -240,12 +238,64 @@ html {
 }
 
 .modal-content .image-section {
-  width: 50%;
+  width: 40%;
   background-size: cover;
   background-position: center;
-  border-radius: 0 10px 10px 0;
+  border-radius: 0 12px 12px 0;
   height: auto;
 }
+
+
+/* Styles for register modal */
+#registerModal .modal-content {
+  max-width: 800px;
+}
+
+/* Styles for success modal */
+#successModal .modal-content {
+  text-align: center;
+  background-color: #e6ffe6;
+  border: 2px solid #4CAF50;
+}
+
+/* Styles for info modal */
+#infoModal .modal-content {
+  background-color: #e6f2ff;
+  border: 2px solid #007BFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.member-info {
+  margin: 20px 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.member-info img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.member-info h3 {
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+
+.member-info p {
+  margin: 5px 0;
+  font-size: 1em;
+}
+
+.member-info strong {
+  font-weight: bold;
+}
+
+
 
 nav {
   background: #ffffff;
