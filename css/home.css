@@ -41,8 +41,6 @@ html {
   /* Tạo hiệu ứng mờ */
 }
 
-
-
 /* Update header */
 .phenikaatravel-header {
   background:
@@ -55,10 +53,9 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 97.9%;
+  width: 97.6%;
   height: 70px;
 }
-
 
 .nav-container {
   display: flex;
@@ -100,10 +97,6 @@ html {
 }
 
 /* animation */
-
-
-
-
 .register-section {
   margin-right: 50px;
 }
@@ -245,20 +238,16 @@ html {
   height: auto;
 }
 
-
-/* Styles for register modal */
 #registerModal .modal-content {
   max-width: 800px;
 }
 
-/* Styles for success modal */
 #successModal .modal-content {
   text-align: center;
   background-color: #e6ffe6;
   border: 2px solid #4CAF50;
 }
 
-/* Styles for info modal */
 #infoModal .modal-content {
   background-color: #e6f2ff;
   border: 2px solid #007BFF;
@@ -266,7 +255,6 @@ html {
   flex-direction: column;
   align-items: center;
 }
-
 
 .team-container {
   display: flex;
@@ -298,7 +286,6 @@ html {
   color: #555;
 }
 
-
 nav {
   background: #ffffff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -313,7 +300,6 @@ nav ul {
   align-items: center;
   justify-content: space-between;
 }
-
 
 nav a {
   text-decoration: none;
@@ -340,13 +326,12 @@ nav a:hover {
 
 
 /*---- Navigation Bar ----*/
-
-
-
 .homepage-text h1 {
-  font-family: "Dancing Script", cursive;
-  font-size: 100px;
+  font-family: "Playfair Display SC", serif;
+  font-size: 70px;
+  text-shadow: -1.2px -1.2px 0 #fff, 1.2px -1.2px 0 #fff, -1.2px 1.2px 0 #fff, 1.2px 1.2px 0 #fff;
 }
+
 
 .homepage-text {
   width: 90%;
@@ -359,11 +344,6 @@ nav a:hover {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: bold;
-}
-
-.homepage-text h1 {
-  font-family: "Dancing Script", cursive;
-  font-size: 100px;
 }
 
 .homepage-btn {
