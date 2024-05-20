@@ -391,18 +391,16 @@ h1 {
 
 .links-row {
   margin-top: 5%;
-  display: flex;
-  justify-content: space-between;
 }
 
 .links-col {
-  flex-basis: 31%;
   background: rgba(99, 239, 255, 0.2);
   border-radius: 10px;
-  margin-bottom: 5%;
   padding: 20px 12px;
   box-sizing: border-box;
   transition: 0.5s;
+  margin: 0 10px; /* Add margin for spacing */
+  flex: 1 1 30%;
 }
 
 .links-col a:link {
@@ -425,11 +423,22 @@ h1 {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 
+.slick-prev:before, .slick-next:before {
+  color: black;
+}
+
 @media only screen and (max-width: 700px) {
   .links-row {
     flex-direction: column;
   }
+
+  .links-col {
+    margin: 10px 0;
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
 }
+
 
 /*---- Homepage - Useful Links ----*/
 
