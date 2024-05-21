@@ -110,6 +110,19 @@ html {
   border-radius: 5px;
 }
 
+.register-link {
+  display: flex;
+  align-items: center;
+}
+
+.icon-tuvan {
+  width: 24px;
+  /* Adjust the size as needed */
+  height: 24px;
+  /* Adjust the size as needed */
+  margin-right: 8px;
+}
+
 .register-link:hover {
   background-color: white;
   color: #00A3E0;
@@ -140,6 +153,7 @@ html {
   border-radius: 12px;
   border: 1px solid #ccc;
   width: 60%;
+
   max-width: 900px;
   display: flex;
   flex-direction: row;
@@ -231,7 +245,7 @@ html {
 }
 
 .modal-content .image-section {
-  width: 40%;
+  width: 90%;
   background-size: cover;
   background-position: center;
   border-radius: 0 12px 12px 0;
@@ -282,7 +296,7 @@ html {
 }
 
 .member-info p {
-  font-size: 14px;
+  font-size: 10px;
   color: #555;
 }
 
@@ -399,7 +413,8 @@ h1 {
   padding: 20px 12px;
   box-sizing: border-box;
   transition: 0.5s;
-  margin: 0 10px; /* Add margin for spacing */
+  margin: 0 10px;
+  /* Add margin for spacing */
   flex: 1 1 30%;
 }
 
@@ -423,7 +438,8 @@ h1 {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 
-.slick-prev:before, .slick-next:before {
+.slick-prev:before,
+.slick-next:before {
   color: black;
 }
 
