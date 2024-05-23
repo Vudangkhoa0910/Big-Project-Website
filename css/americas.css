@@ -427,6 +427,33 @@
     flex-direction: column;
     align-items: center;
   }
+
+  .mapandvideo-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    width: 100%;
+  }
+  
+  .map,.video {
+    width: 50%;
+    padding-right: 20px; /* Thêm khoảng cách bên phải */
+  }
+
+  .map p,.video p {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    margin-bottom: 70px;
+  }
+  .map iframe,.video iframe {
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+  }
   
   .image-row {
     display: flex;
