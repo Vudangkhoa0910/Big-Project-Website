@@ -43,9 +43,8 @@ html {
 
 /* Update header */
 .phenikaatravel-header {
+  /* Xóa hình nền */
   background:
-    /* Hình ảnh nền */
-    url('/images/Home/HBG.png') center center/cover no-repeat,
     /* Gradient mờ */
     linear-gradient(to bottom, rgba(0, 163, 224, 0.8) 0%, rgba(0, 163, 224, 0) 100%);
   color: white;
@@ -56,6 +55,7 @@ html {
   width: 97.6%;
   height: 70px;
 }
+
 
 .nav-container {
   display: flex;
