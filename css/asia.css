@@ -360,10 +360,6 @@ nav a:hover {
 
 
 
-
-
-
-
 nav {
   background: #ffffff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -438,6 +434,40 @@ nav a:hover {
   flex-direction: column;
   align-items: center;
 }
+.asia-col {
+  text-align: justify;
+  padding: 20px;
+}
+.asia-col h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.asia-col p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+.asia-col b {
+  color:#0056b3;
+}
+.asia-col i {
+  color:crimson;
+}
+.asia-btn {
+  display: block;
+  text-align: center;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+.asia-btn:hover {
+  background-color: #0056b3;
+}
+
+
 
 .image-row {
   display: flex;
