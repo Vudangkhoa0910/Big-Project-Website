@@ -109,9 +109,6 @@ html {
 .asia-header {
   height: 100vh;
   width: 100%;
-  background: linear-gradient(rgba(255, 255, 255, 0.8),
-      rgba(255, 255, 255, 0.5)),
-    url(../images/ChauA/VinhHaLong-VietNam/vinhhalong1.png );
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -127,9 +124,6 @@ html {
 /* Update header */
 .phenikaatravel-header {
   background:
-    /* Hình ảnh nền */
-    url('/images/Home/HBG.png') center center/cover no-repeat,
-    /* Gradient mờ */
     linear-gradient(to bottom, rgba(0, 163, 224, 0.8) 0%, rgba(0, 163, 224, 0) 100%);
   color: white;
   padding: 10px 20px;
@@ -413,9 +407,6 @@ nav a:hover {
 .asia-header {
   height: 100vh;
   width: 100%;
-  background: linear-gradient(rgba(255, 255, 255, 0.8),
-      rgba(255, 255, 255, 0.5)),
-    url(../images/ChauA/VinhHaLong-VietNam/vinhhalong1.png);
   background-position: center;
   background-size: cover;
   text-align: center;
