@@ -1,0 +1,145 @@
+/* booking.css */
+.header {
+    position: relative;
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.booking-section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 900px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.booking-header {
+    margin-bottom: 20px;
+}
+
+.booking-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.search-content-items {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(221, 221, 221, 0.5);
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.search-content-item {
+    background-color: #FFF;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    position: relative;
+    padding: 10px;
+    margin: 5px;
+    flex-direction: column;
+}
+
+.search-content-item i {
+    color: #A773E8;
+    margin-right: 12px;
+    position: absolute;
+    left: 12px;
+    top: 36px;
+    z-index: 2;
+}
+
+.search-content-item label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.search-content-item input,
+.search-content-item button {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.search-content-item button {
+    background-color: #8133e0;
+    color: #FFF;
+    cursor: pointer;
+    padding: 12px;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+.search-content-item button:hover {
+    background-color: #A773E8;
+}
+
+.autobox {
+    position: absolute;
+    top: 100%;
+    background-color: #FFF;
+    width: 100%;
+    background-color: rgba(221, 221, 221, 0.5);
+    overflow-y: auto;
+    border-radius: 5px;
+}
+
+.autobox li {
+    list-style: none;
+    padding: 6px 0 6px 36px;
+    display: none;
+    cursor: pointer;
+}
+
+.autobox li:hover {
+    color: #8133e0;
+}
+
+.autobox.active li {
+    display: block;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+#return-check {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
+
+#return-check~i {
+    top: 36px;
+    left: 36px;
+}
