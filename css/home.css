@@ -336,9 +336,62 @@ nav a:hover {
   text-align: right;
 }
 
+.navigation-links ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navigation-links ul li {
+  margin: 0 5px;
+}
+
+.navigation-links ul li a:hover {
+  color: #ff7f50;
+  transition: color 0.3s ease;
+}
+
+/* Make the navigation bar responsive */
+@media only screen and (max-width: 768px) {
+  .navigation-links ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navigation-links ul li {
+    margin: 10px 0;
+  }
+}
+
+/* Adjustments for even smaller screens */
+@media only screen and (max-width: 480px) {
+  .navigation-links ul {
+    flex-direction: column;
+  }
+
+  .navigation-links ul li {
+    margin: 5px 0;
+  }
+
+  .navigation-links ul li a {
+    padding: 5px 10px;
+  }
+
+  .homepage-text h1 {
+    font-size: 35px;
+  }
+
+  .homepage-text p {
+    font-size: 16px;
+  }
+
+  .homepage-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+
 /*Update header*/
-
-
 /*---- Navigation Bar ----*/
 .homepage-text h1 {
   font-family: "Playfair Display SC", serif;
