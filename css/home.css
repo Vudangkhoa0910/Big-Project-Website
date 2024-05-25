@@ -43,11 +43,9 @@ html {
 
 /* Update header */
 .phenikaatravel-header {
-  /* Xóa hình nền */
   background:
-    /* Gradient mờ */
     linear-gradient(to bottom, rgba(0, 163, 224, 0.8) 0%, rgba(0, 163, 224, 0) 100%);
-  color: white;
+  color: rgb(243, 109, 6);
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -301,9 +299,9 @@ html {
 }
 
 nav {
-  background: #ffffff;
+  background: linear-gradient(45deg, rgba(145, 227, 255, 0.7), rgba(79, 163, 242, 0.7)); /* Dark grey background */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 10px 20px;
+  padding: 3px 15px;
 }
 
 nav ul {
@@ -331,34 +329,73 @@ nav a:hover {
   height: 50px;
 }
 
+/* Navigation bar styles */
 .navigation-links {
   flex-grow: 1;
-  text-align: right;
+  text-align: center;
+  background: linear-gradient(45deg, rgba(172, 234, 255, 0.7), rgba(136, 191, 241, 0.7)); 
+  padding: 10px 0; 
 }
 
 .navigation-links ul {
-  display: flex;
+  display: inline-flex; 
   flex-wrap: wrap;
+  list-style: none; 
+  padding: 0;
+  margin: 0; 
 }
 
 .navigation-links ul li {
-  margin: 0 5px;
+  margin: 0 15px; 
+}
+
+.navigation-links ul li a {
+  text-decoration: none; 
+  color: #000000; 
+  padding: 5px 10px;
+  transition: color 0.3s ease; 
 }
 
 .navigation-links ul li a:hover {
-  color: #ff7f50;
-  transition: color 0.3s ease;
+  color: #ff7f50; 
 }
 
-/* Make the navigation bar responsive */
 @media only screen and (max-width: 768px) {
   .navigation-links ul {
-    flex-direction: column;
+    flex-direction: column; 
     align-items: center;
   }
 
   .navigation-links ul li {
-    margin: 10px 0;
+    margin: 10px 0; 
+  }
+}
+
+/* Adjustments for even smaller screens */
+@media only screen and (max-width: 480px) {
+  .navigation-links ul {
+    flex-direction: column; 
+  }
+
+  .navigation-links ul li {
+    margin: 5px 0; 
+  }
+
+  .navigation-links ul li a {
+    padding: 5px 10px; 
+  }
+
+  .homepage-text h1 {
+    font-size: 35px;
+  }
+
+  .homepage-text p {
+    font-size: 16px; 
+  }
+
+  .homepage-btn {
+    padding: 10px 20px;
+    font-size: 14px; 
   }
 }
 
@@ -395,7 +432,7 @@ nav a:hover {
 /*---- Navigation Bar ----*/
 .homepage-text h1 {
   font-family: "Playfair Display SC", serif;
-  font-size: 70px;
+  font-size: 5vw;
   text-shadow: -1.2px -1.2px 0 #fff, 1.2px -1.2px 0 #fff, -1.2px 1.2px 0 #fff, 1.2px 1.2px 0 #fff;
 }
 
