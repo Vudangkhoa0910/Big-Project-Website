@@ -25,6 +25,102 @@
     background: rgba(0, 0, 0, 0.5);
 }
 
+.phenikaatravel-header {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 97.63%;
+    height: 70px;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .text-logo-container {
+    position: relative;
+    text-align: center; 
+  }
+  
+  .navbar-brand {
+    text-align: center;
+    flex-grow: 1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 36px;
+  }
+  
+  .navbar-brand span {
+    display: inline-block;
+    animation: fadeIn 0.5s ease forwards;
+    font-size: 40px;
+  }
+  
+  .logo-image {
+    width: 50px;
+    height: auto;
+    vertical-align: middle; 
+  }
+  
+  .phenikaa {
+    color: rgb(14, 14, 138);
+  }
+  
+  .travel {
+    color: rgb(255, 149, 0);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .register-section {
+    margin-right: 50px;
+  }
+  
+  .register-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+  }
+  
+  .register-link {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon-tuvan {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+  
+  .register-link:hover {
+    background-color: white;
+    color: #00A3E0;
+    transition: all 0.3s ease;
+  }
+  
+  .logo {
+    height: 80px;
+  }
+
 .booking-section {
     position: absolute;
     top: 50%;
