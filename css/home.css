@@ -306,8 +306,7 @@ html {
 }
 
 nav {
-  background: linear-gradient(45deg, rgba(145, 227, 255, 0.7), rgba(79, 163, 242, 0.7));
-  /* Dark grey background */
+  background: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 3px 15px;
 }
@@ -341,7 +340,7 @@ nav a:hover {
 .navigation-links {
   flex-grow: 1;
   text-align: center;
-  background: linear-gradient(45deg, rgba(172, 234, 255, 0.7), rgba(136, 191, 241, 0.7));
+  background: white;
   padding: 10px 0;
 }
 
