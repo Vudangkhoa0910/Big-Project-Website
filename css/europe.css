@@ -119,14 +119,11 @@ html {
 
 /* Update header */
 .phenikaatravel-header {
-  background:
-    linear-gradient(to bottom, rgba(0, 163, 224, 0.8) 0%, rgba(0, 163, 224, 0) 100%);
-  color: white;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 97.6%;
+  width: 97.63%;
   height: 70px;
 }
 
@@ -137,19 +134,40 @@ html {
   width: 100%;
 }
 
+.text-logo-container {
+  position: relative;
+  text-align: center; 
+}
+
 .navbar-brand {
   text-align: center;
   flex-grow: 1;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 36px;
 }
 
-.navbar-brand a {
-  color: white;
-  text-decoration: none;
-  display: block;
+.navbar-brand span {
+  display: inline-block;
+  animation: fadeIn 0.5s ease forwards;
+  font-size: 40px;
 }
 
+.logo-image {
+  width: 50px;
+  height: auto;
+  vertical-align: middle; 
+}
 
-/* animation */
+.phenikaa {
+  color: rgb(14, 14, 138);
+}
+
+.travel {
+  color: rgb(255, 149, 0);
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -161,18 +179,6 @@ html {
     transform: translateY(0);
   }
 }
-
-.navbar-brand span {
-  display: inline-block;
-  animation: fadeIn 0.5s ease forwards;
-  background-image: white;
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-
-/* animation */
-
-
 
 .register-section {
   margin-right: 50px;
@@ -187,18 +193,14 @@ html {
   border-radius: 5px;
 }
 
-.register-link:hover {
-  background-color: white;
-  color: #00A3E0;
-  transition: all 0.3s ease;
+.register-link {
+  display: flex;
+  align-items: center;
 }
-
 
 .icon-tuvan {
   width: 24px;
-  /* Adjust the size as needed */
   height: 24px;
-  /* Adjust the size as needed */
   margin-right: 8px;
 }
 
