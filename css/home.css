@@ -38,22 +38,17 @@ html {
   bottom: 0;
   left: 0;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 100%);
-  /* Tạo hiệu ứng mờ */
 }
 
 /* Update header */
 .phenikaatravel-header {
-  background:
-    linear-gradient(to bottom, rgba(0, 163, 224, 0.8) 0%, rgba(0, 163, 224, 0) 100%);
-  color: orange;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 97.6%;
+  width: 97.63%;
   height: 70px;
 }
-
 
 .nav-container {
   display: flex;
@@ -62,7 +57,11 @@ html {
   width: 100%;
 }
 
-/* Centering the navbar-brand text */
+.text-logo-container {
+  position: relative;
+  text-align: center; 
+}
+
 .navbar-brand {
   text-align: center;
   flex-grow: 1;
@@ -70,28 +69,26 @@ html {
   left: 50%;
   transform: translateX(-50%);
   font-size: 36px;
-  /* Adjust as needed */
 }
 
-/* Update the color and outline of the text */
-.navbar-brand a {
-  color: blue;
-  /* Blue text color */
-  text-decoration: none;
+.navbar-brand span {
   display: inline-block;
-  position: relative;
+  animation: fadeIn 0.5s ease forwards;
+  font-size: 40px;
 }
 
-.navbar-brand a::before {
-  content: 'PHENIKAA TRAVEL';
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  color: orange;
-  /* Orange outline color */
-  -webkit-text-stroke: 1px orange;
-  /* Width of the outline */
+.logo-image {
+  width: 50px;
+  height: auto;
+  vertical-align: middle; 
+}
+
+.phenikaa {
+  color: rgb(14, 14, 138);
+}
+
+.travel {
+  color: rgb(255, 149, 0);
 }
 
 @keyframes fadeIn {
@@ -106,15 +103,6 @@ html {
   }
 }
 
-.navbar-brand span {
-  display: inline-block;
-  animation: fadeIn 0.5s ease forwards;
-  background-image: white;
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-
-/* animation */
 .register-section {
   margin-right: 50px;
 }
@@ -135,9 +123,7 @@ html {
 
 .icon-tuvan {
   width: 24px;
-  /* Adjust the size as needed */
   height: 24px;
-  /* Adjust the size as needed */
   margin-right: 8px;
 }
 
@@ -150,6 +136,7 @@ html {
 .logo {
   height: 80px;
 }
+
 
 /* Modal Styles */
 .modal {
