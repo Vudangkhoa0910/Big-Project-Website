@@ -339,12 +339,10 @@ html {
   height: auto;
 }
 
-
-
 nav {
-  background: #ffffff;
+  background: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 10px 20px;
+  padding: 3px 15px;
 }
 
 nav ul {
@@ -355,41 +353,6 @@ nav ul {
   align-items: center;
   justify-content: space-between;
 }
-
-nav a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  padding: 10px 20px;
-  transition: color 0.3s;
-}
-
-nav a:hover {
-  color: #0056b3;
-}
-
-.navigation-links {
-  flex-grow: 1;
-  text-align: right;
-}
-
-
-
-nav {
-  background: #ffffff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 10px 20px;
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 
 nav a {
   text-decoration: none;
@@ -407,12 +370,75 @@ nav a:hover {
   height: 50px;
 }
 
+/* Navigation bar styles */
 .navigation-links {
   flex-grow: 1;
-  text-align: right;
+  text-align: center;
+  background: white;
+  padding: 10px 0;
 }
 
+.navigation-links ul {
+  display: inline-flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
+.navigation-links ul li {
+  margin: 0 15px;
+}
+
+.navigation-links ul li a {
+  text-decoration: none;
+  color: #000000;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.navigation-links ul li a:hover {
+  color: #ff7f50;
+}
+
+@media only screen and (max-width: 768px) {
+  .navigation-links ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navigation-links ul li {
+    margin: 10px 0;
+  }
+}
+
+/* Adjustments for even smaller screens */
+@media only screen and (max-width: 480px) {
+  .navigation-links ul {
+    flex-direction: column;
+  }
+
+  .navigation-links ul li {
+    margin: 5px 0;
+  }
+
+  .navigation-links ul li a {
+    padding: 5px 10px;
+  }
+
+  .homepage-text h1 {
+    font-size: 35px;
+  }
+
+  .homepage-text p {
+    font-size: 16px;
+  }
+
+  .homepage-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
 /*Update header*/
 
 .asia-header {
