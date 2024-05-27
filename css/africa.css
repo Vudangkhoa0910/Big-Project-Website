@@ -104,7 +104,7 @@ html {
 
 
 /*-------------- Homepage --------------*/
-.europe-header {
+.africa-header {
   height: 100vh;
   width: 100%;
   border-radius: 0% 0% 2.5% 2.5%;
@@ -403,7 +403,7 @@ nav a:hover {
 
 /*Update header*/
 
-.europe-header {
+.africa-header {
   height: 100vh;
   width: 100%;
   background-position: center;
@@ -413,26 +413,26 @@ nav a:hover {
   border-radius: 0% 0% 2.5% 2.5%;
 }
 
-.europe-header h1 {
+.africa-header h1 {
   font-size: 36px;
   font-weight: 600;
   font-family: "Playfair Display SC", serif;
 }
 
-.europe-header h2 {
+.africa-header h2 {
   font-family: "Dancing Script", cursive;
   font-size: 120px;
   margin-top: 150px;
 }
 
-.europe {
+.africa {
   width: 80%;
   margin: auto;
   padding-top: 80px;
   padding-bottom: 50px;
 }
 
-.europe-row {
+.africa-row {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -483,7 +483,7 @@ nav a:hover {
 }
 
 
-.europe-btn {
+.africa-btn {
   display: inline-block;
   text-decoration: none;
   color: rgb(0, 0, 0);
@@ -497,13 +497,13 @@ nav a:hover {
   cursor: pointer;
 }
 
-.europe-btn:hover {
+.africa-btn:hover {
   border: 1px solid #42f548;
   background: #42f548;
   transition: 0.6s;
 }
 
-.europe hr {
+.africa hr {
   width: 80%;
   margin: auto;
   border: 2px solid #000000;
@@ -512,7 +512,7 @@ nav a:hover {
   margin-bottom: 50px;
 }
 
-.europe iframe {
+.africa iframe {
   border: 2px solid #000000;
   margin: 0 auto;
   display: block;
