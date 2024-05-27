@@ -1,241 +1,299 @@
 /* booking.css */
 .header {
-    position: relative;
+  position: relative;
 }
 
 .background {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .background img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .phenikaatravel-header {
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 97.63%;
-    height: 70px;
-  }
-  
-  .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .text-logo-container {
-    position: relative;
-    text-align: center; 
-  }
-  
-  .navbar-brand {
-    text-align: center;
-    flex-grow: 1;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 36px;
-  }
-  
-  .navbar-brand span {
-    display: inline-block;
-    animation: fadeIn 0.5s ease forwards;
-    font-size: 40px;
-  }
-  
-  .logo-image {
-    width: 50px;
-    height: auto;
-    vertical-align: middle; 
-  }
-  
-  .phenikaa {
-    color: rgb(14, 14, 138);
-  }
-  
-  .travel {
-    color: rgb(255, 149, 0);
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-10px);
-    }
-  
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .register-section {
-    margin-right: 50px;
-  }
-  
-  .register-link {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 5px 10px;
-    border: 2px solid white;
-    border-radius: 5px;
-  }
-  
-  .register-link {
-    display: flex;
-    align-items: center;
-  }
-  
-  .icon-tuvan {
-    width: 24px;
-    height: 24px;
-    margin-right: 8px;
-  }
-  
-  .register-link:hover {
-    background-color: white;
-    color: #00A3E0;
-    transition: all 0.3s ease;
-  }
-  
-  .logo {
-    height: 80px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 97.63%;
+  height: 70px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.text-logo-container {
+  position: relative;
+  text-align: center;
+}
+
+.navbar-brand {
+  text-align: center;
+  flex-grow: 1;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 36px;
+}
+
+.navbar-brand span {
+  display: inline-block;
+  animation: fadeIn 0.5s ease forwards;
+  font-size: 40px;
+}
+
+.logo-image {
+  width: 50px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.phenikaa {
+  color: rgb(14, 14, 138);
+}
+
+.travel {
+  color: rgb(255, 149, 0);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
   }
 
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.register-section {
+  margin-right: 50px;
+}
+
+.register-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.register-link {
+  display: flex;
+  align-items: center;
+}
+
+.icon-tuvan {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.register-link:hover {
+  background-color: white;
+  color: #00A3E0;
+  transition: all 0.3s ease;
+}
+
+.logo {
+  height: 80px;
+}
+
 .booking-section {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.95);
-    padding: 30px;
-    border-radius: 12px;
-    width: 90%;
-    max-width: 900px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 900px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .booking-header {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .booking-title {
-    font-size: 2em;
-    margin-bottom: 20px;
+  font-size: 2em;
+  margin-bottom: 20px;
 }
 
 .search-content-items {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgba(221, 221, 221, 0.5);
-    padding: 12px;
-    border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(221, 221, 221, 0.5);
+  padding: 12px;
+  border-radius: 5px;
 }
 
 .search-content-item {
-    background-color: #FFF;
-    width: 30%;
-    display: flex;
-    align-items: center;
-    border-radius: 5px;
-    position: relative;
-    padding: 10px;
-    margin: 5px;
-    flex-direction: column;
+  background-color: #FFF;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  position: relative;
+  padding: 10px;
+  margin: 5px;
+  flex-direction: column;
 }
 
 .search-content-item i {
-    color: #A773E8;
-    margin-right: 12px;
-    position: absolute;
-    left: 12px;
-    top: 36px;
-    z-index: 2;
+  color: #A773E8;
+  margin-right: 12px;
+  position: absolute;
+  left: 12px;
+  top: 36px;
+  z-index: 2;
 }
 
 .search-content-item label {
-    margin-bottom: 5px;
-    font-weight: bold;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
 .search-content-item input,
 .search-content-item button {
-    width: 100%;
-    border: none;
-    outline: none;
-    padding: 8px 12px;
-    border-radius: 5px;
-    margin-top: 5px;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  margin-top: 5px;
 }
 
 .search-content-item button {
-    background-color: #8133e0;
-    color: #FFF;
-    cursor: pointer;
-    padding: 12px;
-    font-size: 1em;
-    margin-top: 20px;
+  background-color: #8133e0;
+  color: #FFF;
+  cursor: pointer;
+  padding: 12px;
+  font-size: 1em;
+  margin-top: 20px;
 }
 
 .search-content-item button:hover {
-    background-color: #A773E8;
+  background-color: #A773E8;
 }
 
 .autobox {
-    position: absolute;
-    top: 100%;
-    background-color: #FFF;
-    width: 100%;
-    background-color: rgba(221, 221, 221, 0.5);
-    overflow-y: auto;
-    border-radius: 5px;
+  position: absolute;
+  top: 100%;
+  background-color: #FFF;
+  width: 100%;
+  background-color: rgba(221, 221, 221, 0.5);
+  overflow-y: auto;
+  border-radius: 5px;
 }
 
 .autobox li {
-    list-style: none;
-    padding: 6px 0 6px 36px;
-    display: none;
-    cursor: pointer;
+  list-style: none;
+  padding: 6px 0 6px 36px;
+  display: none;
+  cursor: pointer;
 }
 
 .autobox li:hover {
-    color: #8133e0;
+  color: #8133e0;
 }
 
 .autobox.active li {
-    display: block;
-    background-color: white;
-    border-bottom: 1px solid #ddd;
+  display: block;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
 }
 
 #return-check {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    z-index: 2;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
 }
 
 #return-check~i {
-    top: 36px;
-    left: 36px;
+  top: 36px;
+  left: 36px;
+}
+
+.flight-deals {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.deals-container {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.deal-item {
+  min-width: 150px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  text-align: center;
+}
+
+.deal-item img {
+  width: 100%;
+  height: auto;
+}
+
+.deal-item p {
+  margin: 5px 0;
+  font-size: 0.9em;
+  color: #333;
+}
+
+.deal-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.deal-item a:hover {
+  color: #007bff;
+}
+
+.flight-deals button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.flight-deals button:hover {
+  background-color: #0056b3;
 }
