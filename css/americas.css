@@ -481,27 +481,72 @@
     align-items: center;
   }
 
+  .asia-col {
+    text-align: justify;
+    padding: 20px;
+  }
+  .asia-col h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .asia-col p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  .asia-col b {
+    color:#0056b3;
+  }
+  .asia-col i {
+    color:crimson;
+  }
+  .asia-btn {
+    display: block;
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+  }
+
   .mapandvideo-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 50px;
     width: 100%;
   }
   
-  .map,.video {
-    width: 50%;
-    padding-right: 20px; /* Thêm khoảng cách bên phải */
+  .map {
+    flex: 1;
+    margin-right: 40px; /* Thêm khoảng cách giữa map và video */
   }
-
-  .map p,.video p {
+  
+  .video {
+    flex: 2;
+  }
+  
+  .map p, .video p {
     margin: 0;
     padding: 0;
     position: relative;
     width: 100%;
-    height: 400px; /* Adjust height as needed */
-    margin-bottom: 70px;
+    height: 0;
   }
-  .map iframe,.video iframe {
+  
+  .map p {
+    padding-bottom: 100%; /* Đảm bảo hình vuông cho bản đồ */
+  }
+  
+  .video p {
+    padding-bottom: 56.25%; /* 16:9 ratio cho video */
+  }
+  
+  .map iframe, .video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     border: 2px solid black;
