@@ -216,41 +216,6 @@
     height: 80px;
   }
   
-  
-  
-  
-  nav {
-    background: #ffffff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 10px 20px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    padding: 10px 20px;
-    transition: color 0.3s;
-  }
-  
-  nav a:hover {
-    color: #0056b3;
-  }
-  
-  .navigation-links {
-    flex-grow: 1;
-    text-align: right;
-  }
-  
   /* Modal Styles */
   .modal {
     display: none;
@@ -340,9 +305,7 @@
   }
   
   nav {
-    background: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 3px 15px;
   }
   
   nav ul {
