@@ -1,486 +1,626 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Welcome to Phenikaa Travel - Explore the World" />
-    <meta name="author" content="Mr. Khoa & Mr. Dong & Mr. Luong" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <title>PHENIKAA TRAVEL</title>
-    <link rel="stylesheet" href="./css/africa.css" type="text/css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,600;1,100&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+
+<link>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Welcome to Phenikaa Travel - Explore the World" />
+<meta name="author" content="Mr. Khoa & Mr. Dong & Mr. Luong" />
+<meta name="msapplication-TileColor" content="#da532c" />
+<meta name="theme-color" content="#ffffff" />
+<title>PHENIKAA TRAVEL</title>
+<link rel="stylesheet" href="./css/africa.css" type="text/css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+  rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+  rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,600;1,100&display=swap"
+  rel="stylesheet" />
+</link>
+
+<body>
   <!-- Header  -->
-    <section class="africa-header" style="  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 100%), url(./images/ChauPhi/ThienDuongXanh-Mauritius/Mauritius1.webp) center/cover no-repeat;">
-      <nav class="phenikaatravel-header">
-        <div class="nav-container">
-          <img src="./images/Home/logomain.png" alt="Logo" class="logo">
-          <h1 class="navbar-brand" id="animated-text"><a href="./index.html">PHENIKAA TRAVEL</a></h1>
-          <div class="auth-section">
-            <div class="register-section">
-              <a href="#" class="register-link"
-                onclick="document.getElementById('registerModal').style.display='block'">Register</a>
-            </div>
+  <section class="africa-header"
+    style="  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 100%), url(./images/ChauPhi/ThienDuongXanh-Mauritius/Mauritius1.webp) center/cover no-repeat;">
+    <nav class="phenikaatravel-header">
+      <div class="nav-container">
+        <img src="./images/Home/logomain.png" alt="Logo" class="logo">
+        <h1 class="navbar-brand" id="animated-text"><a href="./index.html">PHENIKAA TRAVEL</a></h1>
+        <div class="auth-section">
+          <div class="register-section">
+            <a href="#" class="register-link" onclick="document.getElementById('registerModal').style.display='block'">
+              <img src="./images/Home/icontuvan2.png" alt="Icon Tư Vấn" class="icon-tuvan"> Đăng Ký Tư Vấn
+            </a>
           </div>
         </div>
-      </nav>
-      <nav>
-
-        <div class="navigation-links" id="navLinks">
-          <ul>
-            <li><a href="./index.html">HOME</a></li>
-            <li><a href="./asia.html">ASIA</a></li>
-            <li><a href="./europe.html">EUROPE</a></li>
-            <li><a href="./africa.html">AFRICA</a></li>
-            <li><a href="./americas.html">AMERICAS</a></li>
-            <li><a href="./contactus.html">CONTACT</a></li>
-            <li><a href="./booking.html">BOOKING</a></li>
-          </ul>
-        </div>
-      </nav>
-      <!-- Thanh Tìm Kiếm -->
-      <div class="search-container">
-        <input type="text" id="searchInput" class="search-bar" placeholder="Nhập từ khóa tìm kiếm">
       </div>
-      <h2>Châu Phi - Africa</h2>
-    </section>
-    <!-- Header  -->
-  
-    <!-- Châu Phi  -->
-    <section class="africa">
-      <div class="africa-row">
-        <div class="africa-col">
-          <h1>Hồ Victoria-Tanzania/Uganda</h1>
-          <p>
-            Hồ Victoria, nằm ở phía Đông châu Phi, là một trong những điểm đến đầy hấp dẫn và kỳ diệu cho du khách muốn khám phá vẻ đẹp tự nhiên và sự phong phú văn hóa của khu vực này. Với diện tích lớn nhất giữa các hồ nước ngọt trên toàn thế giới, Hồ Victoria gắn liền với lịch sử và văn hóa của Tanzania và Uganda. 
-            Vẻ đẹp hùng vĩ của Hồ Victoria không chỉ là điểm đến lý tưởng cho những ai muốn tận hưởng cảnh quan tự nhiên tuyệt vời mà còn là cơ hội để tìm hiểu về cuộc sống và văn hóa của những dân tộc sống bên bờ hồ. Các làng chài nhỏ ven bờ, những bãi cát trắng dài và những ngôi làng bản địa thân thiện là những điểm đến thú vị cho du khách. 
-            Hồ Victoria cũng là nơi lý tưởng cho các hoạt động ngoại khoá như đi săn cá, cắm trại hoặc thậm chí là đi thuyền trên bề mặt hồ. Đối với những ai muốn khám phá thêm, việc thăm các hòn đảo nhỏ trên hồ cũng là một trải nghiệm đáng nhớ. 
-            Không chỉ là một biểu tượng của vẻ đẹp thiên nhiên, Hồ Victoria còn mang đến cho du khách một cái nhìn sâu sắc về lịch sử, văn hóa và cuộc sống của người dân châu Phi. 
-          </p>
-          <a href="https://vi.wikipedia.org/wiki/Hồ_Victoria" class="africa-btn" target="_blank">Read More</a>
-          <p>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12666.666666666666!2d32.284148199999995!3d-1.2634218999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19d7b6f1a9b1a1e1%3A0xb6c1e62c74e3a6e!2sLake%20Victoria!5e0!3m2!1sen!2s!4v1714989455717!5m2!1sen!2s"
-              width="600" height="450" style="border: 2px solid black;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </p>
-        </div>
-        <div class="image-row">
-          <figure class="image-container">
-            <img src="./images/ChauPhi/HoVictoria-TanzaniaUganda/Victoria1.webp" alt="Victoria 1" />
-            <figcaption>Victoria 1</figcaption>
-          </figure>
-          <figure class="image-container staggered">
-            <img src="./images/ChauPhi/HoVictoria-TanzaniaUganda/Victoria2.webp" alt="Victoria 2" />
-            <figcaption>Victoria 2</figcaption>
-          </figure>
-          <figure class="image-container">
-            <img src="./images/ChauPhi/HoVictoria-TanzaniaUganda/Victoria3.webp" alt="Victoria 3" />
-            <figcaption>Victoria 3</figcaption>
-          </figure>
-          <figure class="image-container staggered">
-            <img src="./images/ChauPhi/HoVictoria-TanzaniaUganda/Victoria4.webp" alt="Victoria 4" />
-            <figcaption>Victoria 4</figcaption>
-          </figure>
-        </div>
+    </nav>
+    <nav>
+
+      <div class="navigation-links" id="navLinks">
+        <ul>
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./asia.html">ASIA</a></li>
+          <li><a href="./europe.html">EUROPE</a></li>
+          <li><a href="./africa.html">AFRICA</a></li>
+          <li><a href="./americas.html">AMERICAS</a></li>
+          <li><a href="./contactus.html">CONTACT</a></li>
+          <li><a href="./booking.html">BOOKING</a></li>
+        </ul>
       </div>
-      <hr>
-
-      <div class="africa-row">
-        <div class="africa-col">
-          <h1>Thung lũng Rift-Kenya</h1>
-          <p>
-            Thung lũng Rift ở Kenya là một trong những kỳ quan tự nhiên đặc biệt nhất trên trái đất, thu hút những người muốn khám phá vẻ đẹp hoang sơ và đa dạng sinh học của châu Phi Đông. Được hình thành qua hàng triệu năm của sự đứt rời lớn giữa hai mảng kiến tạo, Thung lũng Rift không chỉ là nơi tuyệt vời để tận hưởng cảnh quan ngoạn mục mà còn là bảo tàng tự nhiên đầy kỳ diệu. 
-            Với địa hình đa dạng từ những ngọn núi cao đến những thung lũng sâu, Thung lũng Rift là một môi trường lý tưởng cho việc đi bộ đường dài, leo núi hoặc thậm chí là đi săn mục tiêu cho những nhà thám hiểm tìm kiếm trải nghiệm mới mẻ và thách thức. Ngoài ra, với các khu bảo tồn quốc gia như Hồ Nakuru và Hồ Naivasha, du khách có thể tận hưởng cảnh quan đẹp đẽ và gặp gỡ đa dạng động vật hoang dã, bao gồm cả đàn hà mã và linh dương. 
-            Thung lũng Rift cũng là nơi có nhiều cộng đồng bản địa đa dạng văn hóa, làm giàu thêm cho trải nghiệm du lịch. Việc thăm các làng bản địa, tương tác với người dân địa phương và thưởng thức ẩm thực truyền thống là những trải nghiệm không thể bỏ qua. 
-            Với sự hòa quyện giữa thiên nhiên hoang dã và văn hóa đa dạng, Thung lũng Rift ở Kenya là một điểm đến tuyệt vời cho những ai muốn khám phá những khoảnh khắc đặc biệt và đầy kỳ vị của châu Phi Đông. 
-          </p>
-          <a href="https://vi.wikipedia.org/wiki/Great_Rift_Valley" class="africa-btn" target="_blank">Read More</a>
-          <p>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171973.7518919227!2d35.24302387680711!3d-1.373333035836792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1788437a948e7b27%3A0x75fdd9ab3c50b85e!2sRift%20Valley%2C%20Kenya!5e0!3m2!1sen!2s!4v1714989455717!5m2!1sen!2s"
-              width="600" height="450" style="border: 2px solid black;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </p>
-        </div>
-        <div class="image-row">
-          <figure class="image-container">
-            <img src="./images/ChauPhi/ThungLungRift-Kenya/Rift1.webp" alt="Thung Lũng Rift 1" />
-            <figcaption>Thung Lũng Rift 1</figcaption>
-          </figure>
-          <figure class="image-container staggered">
-            <img src="./images/ChauPhi/ThungLungRift-Kenya/Rift2.webp" alt="Thung Lũng Rift 2" />
-            <figcaption>Thung Lũng Rift 2</figcaption>
-          </figure>
-          <figure class="image-container">
-            <img src="./images/ChauPhi/ThungLungRift-Kenya/Rift3.webp" alt="Thung Lũng Rift 3" />
-            <figcaption>Thung Lũng Rift 3</figcaption>
-          </figure>
-          <figure class="image-container staggered">
-            <img src="./images/ChauPhi/ThungLungRift-Kenya/Rift4.webp" alt="Thung Lũng Rift 4" />
-            <figcaption>Thung Lũng Rift 4</figcaption>
-          </figure>
-        </div>
-      </div> 
-      <hr>
-
-      <div class="africa-row">
-        <div class="africa-col">
-          <h1>Thiên đường xanh-Mauritius</h1>
-          <p>
-            Thiên đường xanh của Mauritius là một thiên địa tuyệt vời giữa Ấn Độ Dương, nổi tiếng với bãi biển trắng mịn, nước biển trong xanh và bãi san hô đầy màu sắc. Với khí hậu ôn hòa quanh năm và cảnh quan ngoạn mục, đây là một điểm đến lý tưởng cho những ai muốn thư giãn và tận hưởng vẻ đẹp tự nhiên tuyệt vời. 
-            Bãi biển tại Thiên đường xanh là nơi lý tưởng để thả lỏng, tắm nắng và tham gia vào các hoạt động nghỉ dưỡng như lướt sóng, lặn biển hoặc thậm chí là thực hiện các hoạt động giải trí trên bãi cát. Bên cạnh đó, việc tham gia vào các tour du lịch bằng thuyền thú vị để khám phá những hòn đảo nhỏ xung quanh cũng là trải nghiệm đáng nhớ. 
-            Ngoài ra, Thiên đường xanh cũng là điểm đến lý tưởng cho những ai yêu thích hoạt động ngoài trời và khám phá thiên nhiên. Các khu bảo tồn tự nhiên như Công viên quốc gia Black River Gorges cung cấp cơ hội cho du khách để tham quan và khám phá những loài động vật và thực vật đa dạng của đảo quốc này. 
-            Với sự kết hợp tuyệt vời giữa vẻ đẹp tự nhiên và tiện nghi hiện đại, Thiên đường xanh của Mauritius là một điểm đến mơ ước cho những kỳ nghỉ nghỉ dưỡng và khám phá. 
-          </p>
-          <a href="https://vi.wikipedia.org/wiki/Mauritius" class="africa-btn" target="_blank">Read More</a>
-          <p>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6790395.347486874!2d57.5521523!3d-20.3484044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x217c5fcbb472fedd%3A0x2e256bda5f1cf96e!2sMauritius!5e0!3m2!1sen!2s!4v1714989455717!5m2!1sen!2s"
-              width="600" height="450" style="border: 2px solid black;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </p>
-        </div>
-        <div class="image-row">
-          <figure class="image-container">
-            <img src="./images/ChauPhi/ThienDuongXanh-Mauritius/Mauritius1.webp" alt="Thiên Đường Xanh Mauritius 1" />
-            <figcaption>Thiên Đường Xanh Mauritius 1</figcaption>
-          </figure>
-          <figure class="image-container staggered">
-            <img src="./images/ChauPhi/ThienDuongXanh-Mauritius/Mauritius2.webp" alt="Thiên Đường Xanh Mauritius 2" />
-            <figcaption>Thiên Đường Xanh Mauritius 2</figcaption>
-          </figure>
-          <figure class="image-container">
-            <img src="./images/ChauPhi/ThienDuongXanh-Mauritius/Mauritius3.webp" alt="Thiên Đường Xanh Mauritius 3" />
-            <figcaption>Thiên Đường Xanh Mauritius 3</figcaption>
-          </figure>
-          <figure class="image-container staggered">
-            <img src="./images/ChauPhi/ThienDuongXanh-Mauritius/Mauritius4.webp" alt="Thiên Đường Xanh Mauritius 4" />
-            <figcaption>Thiên Đường Xanh Mauritius 4</figcaption>
-          </figure>
-        </div>
-      </div>
-      <hr>
-
-      <div class="africa-row">
-        <div class="africa-col">
-          <h1>Hố Địa ngục-Namibia</h1>
-          <p>
-            Hố Địa ngục ở Namibia là một trong những địa điểm thiên nhiên độc đáo và hấp dẫn nhất trên thế giới, thu hút những người muốn khám phá vẻ đẹp hoang sơ và huyền bí của sa mạc. Được hình thành qua hàng triệu năm của sự phong phú địa chất, Hố Địa ngục không chỉ là nơi để tận hưởng cảnh quan đặc biệt mà còn là cơ hội để khám phá những di sản tự nhiên độc đáo. 
-            Với địa hình độc đáo bao gồm các hẻm núi, hẻm đá và đáy hố sâu, Hố Địa ngục là một môi trường lý tưởng cho việc tham gia vào các hoạt động như trekking, leo núi hoặc thậm chí là dạo chơi bằng xe địa hình. Việc khám phá những hẻm núi và hang động của hố mang lại trải nghiệm thú vị và hấp dẫn. 
-            Ngoài ra, với cảnh quan sa mạc hoang sơ xung quanh, Hố Địa ngục cũng là nơi lý tưởng cho việc thư giãn và tận hưởng bầu không khí yên bình của thiên nhiên. Du khách có thể tận hưởng cảnh hoàng hôn đẹp mắt hoặc thậm chí là ngắm sao dưới bầu trời đêm trong không gian không gian yên bình và tĩnh lặng. 
-            Với sự hòa quyện giữa vẻ đẹp tự nhiên và bí ẩn của sa mạc, Hố Địa ngục ở Namibia là một điểm đến tuyệt vời cho những ai muốn khám phá những khoảnh khắc đặc biệt và đầy kỳ vị của châu Phi. 
-          </p>
-          <a href="https://vi.wikipedia.org/wiki/Fish_River_Canyon" class="africa-btn" target="_blank">Read More</a>
-          <p>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27680.21843731383!2d17.476217!3d-27.5752148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1c4f0bffeb7c7433%3A0x477ad6b4c5ba4ba8!2sFish%20River%20Canyon%2C%20Namibia!5e0!3m2!1sen!2s!4v1714989455717!5m2!1sen!2s"
-              width="600" height="450" style="border: 2px solid black;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </p>
-        </div>
-        <div class="image-row">
-          <figure class="image-container">
-            <img src="./images/ChauPhi/HoDiaNguc-Namibia/FishRiverCanyon1.webp" alt="Fish River Canyon 1" />
-            <figcaption>Fish River Canyon 1</figcaption>
-          </figure>
-          <figure class="image-container staggered">
-            <img src="./images/ChauPhi/HoDiaNguc-Namibia/FishRiverCanyon2.webp" alt="Fish River Canyon 2" />
-            <figcaption>Fish River Canyon 2</figcaption>
-          </figure>
-          <figure class="image-container">
-            <img src="./images/ChauPhi/HoDiaNguc-Namibia/FishRiverCanyon3.webp" alt="Fish River Canyon 3" />
-            <figcaption>Fish River Canyon 3</figcaption>
-          </figure>
-          <figure class="image-container staggered">
-            <img src="./images/ChauPhi/HoDiaNguc-Namibia/FishRiverCanyon4.webp" alt="Fish River Canyon 4" />
-            <figcaption>Fish River Canyon 4</figcaption>
-          </figure>
-        </div>
-      </div>
-      <hr>
-
-      <div class="africa-row">
-        <div class="africa-col">
-          <h1>Thảo nguyên Serengeti-Tanzania</h1>
-          <p>
-            Thảo nguyên Serengeti ở Tanzania là một trong những điểm đến hoang dã lớn nhất và đáng kinh ngạc nhất trên thế giới, nổi tiếng với cảnh quan vô cùng đa dạng và cuộc di cư của các loài động vật hoang dã. Với đất đai rộng lớn, cỏ xanh mướt và đàn linh dương vô tận, Thảo nguyên Serengeti là một hành trình phiêu lưu không thể bỏ qua cho những ai yêu thích thiên nhiên và động vật hoang dã. 
-            Thảo nguyên Serengeti nổi tiếng với cuộc di cư hàng năm của hàng triệu con linh dương, voi, và hươu qua đất đai rộng lớn trong mùa mưa. Đây là một biểu diễn tuyệt vời của sức mạnh và sự kỳ diệu của tự nhiên mà du khách không nên bỏ lỡ. Việc tham gia vào các safari jeep để theo dõi di cư hoặc thấy các loài động vật hoang dã khác nhau trong tự nhiên hoang dã là một trải nghiệm đáng nhớ. 
-            Ngoài ra, Thảo nguyên Serengeti cũng là nơi có cơ hội tuyệt vời để khám phá văn hóa Maasai. Du khách có thể thăm các làng Maasai và tương tác với cộng đồng để hiểu rõ hơn về lối sống truyền thống và văn hóa của họ. 
-            Với sự hòa quyện giữa vẻ đẹp tự nhiên hoang dã và sự huyền bí của cuộc sống hoang dã, Thảo nguyên Serengeti là một điểm đến không thể bỏ qua đối với những ai muốn trải nghiệm sự kỳ diệu và đa dạng của thiên nhiên.          
-          </p>
-          <a href="https://vi.wikipedia.org/wiki/Serengeti" class="africa-btn" target="_blank">Read More</a>
-          <p>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d787916.4865438793!2d34.80859378059086!3d-2.1540103033363644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18e67e4340e6e011%3A0xdb18b8ee9bb07e7c!2sSerengeti%2C%20Tanzania!5e0!3m2!1sen!2s!4v1714989455717!5m2!1sen!2s"
-              width="600" height="450" style="border: 2px solid black;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </p>
-        </div>
-        <div class="image-row">
-          <figure class="image-container">
-            <img src="./images/ChauPhi/ThaoNguyenSerengeti-Tanzania/Serengeti1.webp" alt="Thảo Nguyên Serengeti 1" />
-            <figcaption>Thảo Nguyên Serengeti 1</figcaption>
-          </figure>
-          <figure class="image-container staggered">
-            <img src="./images/ChauPhi/ThaoNguyenSerengeti-Tanzania/Serengeti2.webp" alt="Thảo Nguyên Serengeti 2" />
-            <figcaption>Thảo Nguyên Serengeti 2</figcaption>
-          </figure>
-          <figure class="image-container">
-            <img src="./images/ChauPhi/ThaoNguyenSerengeti-Tanzania/Serengeti3.webp" alt="Thảo Nguyên Serengeti 3" />
-            <figcaption>Thảo Nguyên Serengeti 3</figcaption>
-          </figure>
-          <figure class="image-container staggered">
-            <img src="./images/ChauPhi/ThaoNguyenSerengeti-Tanzania/Serengeti4.webp" alt="Thảo Nguyên Serengeti 4" />
-            <figcaption>Thảo Nguyên Serengeti 4</figcaption>
-          </figure>
-        </div>
-      </div>
-      <hr>
-
-      <div class="africa-row">
-        <div class="africa-col">
-          <h1>Đảo Seychelles</h1>
-          <p>
-            Đảo Seychelles, nằm giữa Ấn Độ Dương, là một thiên đường nghỉ dưỡng đích thực với bãi biển đẹp như tranh vẽ, nước biển trong xanh và bãi san hô tuyệt vời. Với cảnh quan ngoạn mục và không khí yên bình, Đảo Seychelles là điểm đến lý tưởng cho những ai muốn tận hưởng kỳ nghỉ lãng mạn và thư giãn. 
-            Bãi biển của Đảo Seychelles là điểm đặc biệt thu hút du khách, nơi họ có thể thả lỏng, tắm nắng và tham gia vào các hoạt động như lướt sóng, lặn biển hoặc snorkeling để khám phá vẻ đẹp dưới nước. Cảnh quan nổi bật với đá granit độc đáo tạo nên bức tranh tự nhiên tuyệt vời, một điểm đến lý tưởng cho những ai muốn chụp ảnh và ghi lại những khoảnh khắc đẹp nhất. 
-            Ngoài ra, việc thăm các khu bảo tồn tự nhiên như Công viên quốc gia Vallée de Mai cung cấp cơ hội cho du khách để khám phá đa dạng sinh học của đảo quốc này, bao gồm cả loài chim và thực vật quý hiếm. 
-            Với sự kết hợp tuyệt vời giữa vẻ đẹp tự nhiên và tiện nghi nghỉ dưỡng, Đảo Seychelles là một điểm đến mơ ước cho những kỳ nghỉ nghỉ dưỡng và thư giãn. 
-          </p>
-          <a href="https://vi.wikipedia.org/wiki/Seychelles" class="africa-btn" target="_blank">Read More</a>
-          <p>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d797692.6204066614!2d54.37218618899782!3d-4.657498077117587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x22e03470b8d02111%3A0x934c644b366b4ab6!2sSeychelles!5e0!3m2!1sen!2s!4v1714989455717!5m2!1sen!2s"
-              width="600" height="450" style="border: 2px solid black;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </p>
-        </div>
-        <div class="image-row">
-          <figure class="image-container">
-            <img src="./images/ChauPhi/DaoSeychelles/Seychelles1.webp" alt="Đảo Seychelles 1" />
-            <figcaption>Đảo Seychelles 1</figcaption>
-          </figure>
-          <figure class="image-container staggered">
-            <img src="./images/ChauPhi/DaoSeychelles/Seychelles2.webp" alt="Đảo Seychelles 2" />
-            <figcaption>Đảo Seychelles 2</figcaption>
-          </figure>
-          <figure class="image-container">
-            <img src="./images/ChauPhi/DaoSeychelles/Seychelles3.webp" alt="Đảo Seychelles 3" />
-            <figcaption>Đảo Seychelles 3</figcaption>
-          </figure>
-          <figure class="image-container staggered">
-            <img src="./images/ChauPhi/DaoSeychelles/Seychelles4.webp" alt="Đảo Seychelles 4" />
-            <figcaption>Đảo Seychelles 4</figcaption>
-          </figure>
-        </div>
-      </div>
-      <hr>
-
-      <div class="africa-row">
-        <div class="africa-col">
-          <h1>Kilimanjaro-Tanzania</h1>
-          <p>
-            Kilimanjaro ở Tanzania là một trong những ngọn núi cao nhất trên châu Phi và là một trong những điểm đến thách thức và kỳ diệu nhất trên thế giới. Với đỉnh núi lớn nhất châu Phi, Kilimanjaro thu hút những người muốn thách thức bản thân và khám phá vẻ đẹp hùng vĩ của thiên nhiên. 
-            Leo núi Kilimanjaro là một trải nghiệm đáng nhớ và thú vị cho những ai yêu thích thể thao mạo hiểm và muốn thử sức mình. Tuy nhiên, việc leo núi không chỉ là về vật lý mà còn là về tinh thần, đòi hỏi sự kiên nhẫn, sức bền và quyết tâm. Từ những cánh rừng nhiệt đới đến cảnh quan đá và băng tuyết ở đỉnh núi, mỗi phần của hành trình leo núi Kilimanjaro đều mang đến những trải nghiệm khác nhau và đặc biệt. 
-            Ngoài ra, việc khám phá khu vực xung quanh Kilimanjaro cũng là một trải nghiệm thú vị. Du khách có thể thăm các khu bảo tồn quốc gia như Công viên quốc gia Kilimanjaro hoặc Công viên quốc gia Arusha để khám phá vẻ đẹp tự nhiên đa dạng và đa màu sắc của Tanzania. 
-            Với sự hòa quyện giữa vẻ đẹp tự nhiên hùng vĩ và thách thức cá nhân, Kilimanjaro là một điểm đến lý tưởng cho những ai muốn tìm kiếm những trải nghiệm phiêu lưu và khám phá sức mạnh của thiên nhiên. 
-          </p>
-          <a href="https://vi.wikipedia.org/wiki/Mount_Kilimanjaro" class="africa-btn" target="_blank">Read More</a>
-          <p>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31825.35676241719!2d37.33090387969611!3d-3.0674247342177794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x183749ae7e926631%3A0x566d5ad0dfe5d9a8!2sMount%20Kilimanjaro!5e0!3m2!1sen!2s!4v1714989455717!5m2!1sen!2s"
-              width="600" height="450" style="border: 2px solid black;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </p>
-        </div>
-        <div class="image-row">
-          <figure class="image-container">
-            <img src="./images/ChauPhi/Kilimanjaro-Tanzania/Kilimanjaro1.webp" alt="Kilimanjaro 1" />
-            <figcaption>Kilimanjaro 1</figcaption>
-          </figure>
-          <figure class="image-container staggered">
-            <img src="./images/ChauPhi/Kilimanjaro-Tanzania/Kilimanjaro2.webp" alt="Kilimanjaro 2" />
-            <figcaption>Kilimanjaro 2</figcaption>
-          </figure>
-          <figure class="image-container">
-            <img src="./images/ChauPhi/Kilimanjaro-Tanzania/Kilimanjaro3.webp" alt="Kilimanjaro 3" />
-            <figcaption>Kilimanjaro 3</figcaption>
-          </figure>
-          <figure class="image-container staggered">
-            <img src="./images/ChauPhi/Kilimanjaro-Tanzania/Kilimanjaro4.webp" alt="Kilimanjaro 4" />
-            <figcaption>Kilimanjaro 4</figcaption>
-          </figure>
-        </div>
-      </div>
-      <hr>
-
-      <div class="africa-row">
-        <div class="africa-col">
-          <h1>Kruger National Park-Nam Phi</h1>
-          <p>
-            Với danh tiếng là một trong những công viên quốc gia lớn nhất và đa dạng nhất trên thế giới, Kruger National Park ở Nam Phi là một thiên đường hoang dã đích thực cho những người muốn trải nghiệm vẻ đẹp tự nhiên và đa dạng sinh học của châu Phi. Với diện tích rộng lớn và đa dạng môi trường, Kruger là nơi cư trú của nhiều loài động vật hoang dã, từ các loài cừu, sư tử, voi, tới cả hổ và tê giác. 
-            Du khách có thể tận hưởng các hoạt động safari độc đáo trong công viên, điều này mang lại cơ hội tuyệt vời để ngắm nhìn động vật hoang dã trong tự nhiên hoang dã của chúng. Các chuyến safari bằng xe hoặc bằng chân là cách tuyệt vời để khám phá cảnh quan đa dạng của Kruger và tiếp cận gần gũi với động vật. 
-            Ngoài ra, Kruger cũng là nơi lý tưởng để tận hưởng các hoạt động ngoại khoá khác như đi bộ đường dài, câu cá hoặc thậm chí là chụp ảnh động vật hoang dã. Việc thăm các khu vực bảo tồn và trung tâm thông tin cũng cung cấp cơ hội để hiểu rõ hơn về bảo tồn và bảo vệ các loài động vật quý hiếm. 
-            Với sự kết hợp của cảnh quan hoang dã đa dạng và trải nghiệm safari độc đáo, Kruger National Park ở Nam Phi là một điểm đến hoàn hảo cho những người muốn tận hưởng vẻ đẹp tự nhiên và khám phá cuộc sống hoang dã của châu Phi. 
-
-          </p>
-          <a href="https://vi.wikipedia.org/wiki/Kruger_National_Park" class="africa-btn" target="_blank">Read More</a>
-          <p>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d473237.31212483897!2d30.83414429909674!3d-24.690696568999412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec3dbd0a3132921%3A0xb4293db86a422d03!2sKruger%20National%20Park%2C%20South%20Africa!5e0!3m2!1sen!2s!4v1714989455717!5m2!1sen!2s"
-              width="600" height="450" style="border: 2px solid black;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </p>
-        </div>
-        <div class="image-row">
-          <figure class="image-container">
-            <img src="./images/ChauPhi/KrugerNationalPark-NamPhi/KrugerNationalPark1.webp" alt="Kruger National Park 1" />
-            <figcaption>Kruger National Park 1</figcaption>
-          </figure>
-          <figure class="image-container staggered">
-            <img src="./images/ChauPhi/KrugerNationalPark-NamPhi/KrugerNationalPark2.webp" alt="Kruger National Park 2" />
-            <figcaption>Kruger National Park 2</figcaption>
-          </figure>
-          <figure class="image-container">
-            <img src="./images/ChauPhi/KrugerNationalPark-NamPhi/KrugerNationalPark3.webp" alt="Kruger National Park 3" />
-            <figcaption>Kruger National Park 3</figcaption>
-          </figure>
-          <figure class="image-container staggered">
-            <img src="./images/ChauPhi/KrugerNationalPark-NamPhi/KrugerNationalPark4.webp" alt="Kruger National Park 4" />
-            <figcaption>Kruger National Park 4</figcaption>
-          </figure>
-        </div>
-      </div>
-      <hr>
-
-      <div class="africa-row">
-        <div class="africa-col">
-          <h1>Victoria Falls-Zambia/Zimbabwe</h1>
-          <p>
-            Victoria Falls, được biết đến là "Cửa sông Thiên nhiên", là một trong những thác nước lớn nhất và đẹp nhất trên thế giới, nằm trên biên giới giữa Zambia và Zimbabwe. Với dòng nước mạnh mẽ đổ từ độ cao gần 108 mét và chiều rộng hơn 1,7 km, Victoria Falls là một kỳ quan tự nhiên đầy ấn tượng và lôi cuốn. 
-            Du khách có thể tận hưởng cảnh quan kỳ vĩ của Victoria Falls từ các điểm quan sát trên cả hai bờ sông Zambezi. Cảm giác mạnh mẽ của dòng nước đổ xuống từ độ cao khiến cho không khí trở nên hứng khởi và kỳ diệu. Các hoạt động như tham gia các tour thuyền buồm hoặc thậm chí là tham gia vào các hoạt động mạo hiểm như bungee jumping từ cầu bắc cầu bảo vệ Zimbabwe hoặc thăm "Devil's Pool" (Hồ của Quỷ) trên cạnh Zambia đều mang lại trải nghiệm độc đáo và hấp dẫn.
-            Ngoài ra, khu vực xung quanh Victoria Falls cũng là nơi tuyệt vời để tham gia vào các hoạt động như safari để khám phá các khu vực bảo tồn quốc gia gần đó như Công viên quốc gia Zambezi. Du khách cũng có thể khám phá các làng bản địa và tham gia vào các trải nghiệm văn hóa để hiểu rõ hơn về cộng đồng địa phương. 
-            Với sự kết hợp của vẻ đẹp tự nhiên kỳ diệu và các hoạt động mạo hiểm, Victoria Falls là một điểm đến tuyệt vời cho những ai muốn trải nghiệm sức mạnh và vẻ đẹp của thiên nhiên. 
-          </p>
-          <a href="https://vi.wikipedia.org/wiki/Victoria_Falls" class="africa-btn" target="_blank">Read More</a>
-          <p>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41204.07001906644!2d25.82555735168897!3d-17.924302265902827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x194fba6948db6e35%3A0x5774e131b666fbee!2sVictoria%20Falls%2C%20Zambia-Zimbabwe!5e0!3m2!1sen!2s!4v1714989455717!5m2!1sen!2s"
-              width="600" height="450" style="border: 2px solid black;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </p>
-        </div>
-        <div class="image-row">
-          <figure class="image-container">
-            <img src="./images/ChauPhi/VictoriaFalls-ZambiaZimbabwe/VictoriaFalls1.webp" alt="Victoria Falls 1" />
-            <figcaption>Victoria Falls 1</figcaption>
-          </figure>
-          <figure class="image-container staggered">
-            <img src="./images/ChauPhi/VictoriaFalls-ZambiaZimbabwe/VictoriaFalls2.webp" alt="Victoria Falls 2" />
-            <figcaption>Victoria Falls 2</figcaption>
-          </figure>
-          <figure class="image-container">
-            <img src="./images/ChauPhi/VictoriaFalls-ZambiaZimbabwe/VictoriaFalls3.webp" alt="Victoria Falls 3" />
-            <figcaption>Victoria Falls 3</figcaption>
-          </figure>
-          <figure class="image-container staggered">
-            <img src="./images/ChauPhi/VictoriaFalls-ZambiaZimbabwe/VictoriaFalls4.webp" alt="Victoria Falls 4" />
-            <figcaption>Victoria Falls 4</figcaption>
-          </figure>
-        </div>
-      </div>
-      <hr>
-
-      <div class="africa-row">
-        <div class="africa-col">
-          <h1>Pyramids of Giza, Ai Cập</h1>
-          <p>
-            Pyramids of Giza ở Ai Cập là một trong những di sản văn hóa phong phú và kỳ diệu nhất trên thế giới, thu hút hàng triệu du khách từ khắp nơi trên thế giới mỗi năm. Với những khối lập phương khổng lồ được xây dựng hàng nghìn năm trước đây, Pyramids of Giza là biểu tượng của sức mạnh và sự hiếu kỳ của loài người. 
-            Du khách có thể khám phá những bí mật của Pyramids of Giza thông qua các tour hướng dẫn hoặc tự mình khám phá. Những kiến trúc độc đáo và kích thước ấn tượng của các kim tự tháp khiến cho bất kỳ ai cũng phải kinh ngạc trước sức mạnh và sự tinh tế của những dân tộc cổ đại. 
-            Bên cạnh việc khám phá các kim tự tháp, du khách cũng có thể thăm các bảo tàng và khu vực bảo tồn lịch sử xung quanh để tìm hiểu thêm về lịch sử và văn hóa của Ai Cập cổ đại. Việc tham gia vào các tour thăm khu vực xung quanh như Saqqara và Dahshur cũng mang lại trải nghiệm phong phú và sâu sắc. 
-            Với sự kết hợp của sức mạnh lịch sử và vẻ đẹp kiến trúc độc đáo, Pyramids of Giza là một điểm đến tuyệt vời cho những ai muốn tìm hiểu và khám phá sức mạnh của văn hóa cổ đại Ai Cập. 
-          </p>
-          <a href="https://vi.wikipedia.org/wiki/Giza_pyramid_complex" class="africa-btn" target="_blank">Read More</a>
-          <p>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6901.05425684704!2d31.13130206552048!3d29.977296249325865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14584587de5d9e35%3A0x64782d5cfc8c7db6!2sPyramids%20of%20Giza!5e0!3m2!1sen!2s!4v1714989455717!5m2!1sen!2s"
-              width="600" height="450" style="border: 2px solid black;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </p>
-        </div>
-        <div class="image-row">
-          <figure class="image-container">
-            <img src="./images/ChauPhi/PyramidsOfGiza-AiCap/PyramidsofGiza1.webp" alt="Pyramids of Giza 1" />
-            <figcaption>Pyramids of Giza 1</figcaption>
-          </figure>
-          <figure class="image-container staggered">
-            <img src="./images/ChauPhi/PyramidsOfGiza-AiCap/PyramidsofGiza2.webp" alt="Pyramids of Giza 2" />
-            <figcaption>Pyramids of Giza 2</figcaption>
-          </figure>
-          <figure class="image-container">
-            <img src="./images/ChauPhi/PyramidsOfGiza-AiCap/PyramidsofGiza3.webp" alt="Pyramids of Giza 3" />
-            <figcaption>Pyramids of Giza 3</figcaption>
-          </figure>
-          <figure class="image-container staggered">
-            <img src="./images/ChauPhi/PyramidsOfGiza-AiCap/PyramidsofGiza4.webp" alt="Pyramids of Giza 4" />
-            <figcaption>Pyramids of Giza 4</figcaption>
-          </figure>
-        </div>
-      </div>
-      <hr>
-    </section>
-  
-    <!-- Footer  -->
-    <section class="footer">
-      <hr />
-      <br />
-      <h4>PHENIKAA TRAVEL&reg;</h4>
-      <br />
-  
-      <p class="copyright">&copy; 2024 PHENIKAA TRAVEL. All Rights Reserved.</p>
-    </section>
-    <!-- Footer  -->
-  
-    <!-- Scroll-->
-    <div class="scroll-to-top">
-      <a href="#" class="scroll-up">
-        <img src="./images/Icons/double-arrow.png" alt="back to top" />
-      </a>
+    </nav>
+    <!-- Thanh Tìm Kiếm -->
+    <div class="search-container">
+      <input type="text" id="searchInput" class="search-bar" placeholder="Nhập từ khóa tìm kiếm">
     </div>
-    <script src="./js/main.js"></script>
-    <script src="./js/animations.js"></script>
-    <script src="./js/search.js"></script>
-    <script src="./js/modal.js"></script>
-  </body>
-  
+    <h2>Châu Phi - Africa</h2>
+  </section>
+  <!-- Header  -->
+
+  <!-- Châu Phi  -->
+  <section class="africa">
+    <div class="africa-row">
+      <div class="africa-col">
+        <h1>Hồ Victoria-Tanzania/Uganda</h1>
+        <p>
+          Hồ Victoria, nằm ở phía Đông châu Phi, là một trong những điểm đến đầy hấp dẫn và kỳ diệu cho du khách muốn
+          khám phá vẻ đẹp tự nhiên và sự phong phú văn hóa của khu vực này. Với diện tích lớn nhất giữa các hồ nước ngọt
+          trên toàn thế giới, Hồ Victoria gắn liền với lịch sử và văn hóa của Tanzania và Uganda.
+          Vẻ đẹp hùng vĩ của Hồ Victoria không chỉ là điểm đến lý tưởng cho những ai muốn tận hưởng cảnh quan tự nhiên
+          tuyệt vời mà còn là cơ hội để tìm hiểu về cuộc sống và văn hóa của những dân tộc sống bên bờ hồ. Các làng chài
+          nhỏ ven bờ, những bãi cát trắng dài và những ngôi làng bản địa thân thiện là những điểm đến thú vị cho du
+          khách.
+          Hồ Victoria cũng là nơi lý tưởng cho các hoạt động ngoại khoá như đi săn cá, cắm trại hoặc thậm chí là đi
+          thuyền trên bề mặt hồ. Đối với những ai muốn khám phá thêm, việc thăm các hòn đảo nhỏ trên hồ cũng là một trải
+          nghiệm đáng nhớ.
+          Không chỉ là một biểu tượng của vẻ đẹp thiên nhiên, Hồ Victoria còn mang đến cho du khách một cái nhìn sâu sắc
+          về lịch sử, văn hóa và cuộc sống của người dân châu Phi.
+        </p>
+        <a href="https://vi.wikipedia.org/wiki/Hồ_Victoria" class="africa-btn" target="_blank">Read More</a>
+        <p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12666.666666666666!2d32.284148199999995!3d-1.2634218999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19d7b6f1a9b1a1e1%3A0xb6c1e62c74e3a6e!2sLake%20Victoria!5e0!3m2!1sen!2s!4v1714989455717!5m2!1sen!2s"
+            width="600" height="450" style="border: 2px solid black;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </p>
+      </div>
+      <div class="image-row">
+        <figure class="image-container">
+          <img src="./images/ChauPhi/HoVictoria-TanzaniaUganda/Victoria1.webp" alt="Victoria 1" />
+          <figcaption>Victoria 1</figcaption>
+        </figure>
+        <figure class="image-container staggered">
+          <img src="./images/ChauPhi/HoVictoria-TanzaniaUganda/Victoria2.webp" alt="Victoria 2" />
+          <figcaption>Victoria 2</figcaption>
+        </figure>
+        <figure class="image-container">
+          <img src="./images/ChauPhi/HoVictoria-TanzaniaUganda/Victoria3.webp" alt="Victoria 3" />
+          <figcaption>Victoria 3</figcaption>
+        </figure>
+        <figure class="image-container staggered">
+          <img src="./images/ChauPhi/HoVictoria-TanzaniaUganda/Victoria4.webp" alt="Victoria 4" />
+          <figcaption>Victoria 4</figcaption>
+        </figure>
+      </div>
+    </div>
+    <hr>
+
+    <div class="africa-row">
+      <div class="africa-col">
+        <h1>Thung lũng Rift-Kenya</h1>
+        <p>
+          Thung lũng Rift ở Kenya là một trong những kỳ quan tự nhiên đặc biệt nhất trên trái đất, thu hút những người
+          muốn khám phá vẻ đẹp hoang sơ và đa dạng sinh học của châu Phi Đông. Được hình thành qua hàng triệu năm của sự
+          đứt rời lớn giữa hai mảng kiến tạo, Thung lũng Rift không chỉ là nơi tuyệt vời để tận hưởng cảnh quan ngoạn
+          mục mà còn là bảo tàng tự nhiên đầy kỳ diệu.
+          Với địa hình đa dạng từ những ngọn núi cao đến những thung lũng sâu, Thung lũng Rift là một môi trường lý
+          tưởng cho việc đi bộ đường dài, leo núi hoặc thậm chí là đi săn mục tiêu cho những nhà thám hiểm tìm kiếm trải
+          nghiệm mới mẻ và thách thức. Ngoài ra, với các khu bảo tồn quốc gia như Hồ Nakuru và Hồ Naivasha, du khách có
+          thể tận hưởng cảnh quan đẹp đẽ và gặp gỡ đa dạng động vật hoang dã, bao gồm cả đàn hà mã và linh dương.
+          Thung lũng Rift cũng là nơi có nhiều cộng đồng bản địa đa dạng văn hóa, làm giàu thêm cho trải nghiệm du lịch.
+          Việc thăm các làng bản địa, tương tác với người dân địa phương và thưởng thức ẩm thực truyền thống là những
+          trải nghiệm không thể bỏ qua.
+          Với sự hòa quyện giữa thiên nhiên hoang dã và văn hóa đa dạng, Thung lũng Rift ở Kenya là một điểm đến tuyệt
+          vời cho những ai muốn khám phá những khoảnh khắc đặc biệt và đầy kỳ vị của châu Phi Đông.
+        </p>
+        <a href="https://vi.wikipedia.org/wiki/Great_Rift_Valley" class="africa-btn" target="_blank">Read More</a>
+        <p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171973.7518919227!2d35.24302387680711!3d-1.373333035836792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1788437a948e7b27%3A0x75fdd9ab3c50b85e!2sRift%20Valley%2C%20Kenya!5e0!3m2!1sen!2s!4v1714989455717!5m2!1sen!2s"
+            width="600" height="450" style="border: 2px solid black;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </p>
+      </div>
+      <div class="image-row">
+        <figure class="image-container">
+          <img src="./images/ChauPhi/ThungLungRift-Kenya/Rift1.webp" alt="Thung Lũng Rift 1" />
+          <figcaption>Thung Lũng Rift 1</figcaption>
+        </figure>
+        <figure class="image-container staggered">
+          <img src="./images/ChauPhi/ThungLungRift-Kenya/Rift2.webp" alt="Thung Lũng Rift 2" />
+          <figcaption>Thung Lũng Rift 2</figcaption>
+        </figure>
+        <figure class="image-container">
+          <img src="./images/ChauPhi/ThungLungRift-Kenya/Rift3.webp" alt="Thung Lũng Rift 3" />
+          <figcaption>Thung Lũng Rift 3</figcaption>
+        </figure>
+        <figure class="image-container staggered">
+          <img src="./images/ChauPhi/ThungLungRift-Kenya/Rift4.webp" alt="Thung Lũng Rift 4" />
+          <figcaption>Thung Lũng Rift 4</figcaption>
+        </figure>
+      </div>
+    </div>
+    <hr>
+
+    <div class="africa-row">
+      <div class="africa-col">
+        <h1>Thiên đường xanh-Mauritius</h1>
+        <p>
+          Thiên đường xanh của Mauritius là một thiên địa tuyệt vời giữa Ấn Độ Dương, nổi tiếng với bãi biển trắng mịn,
+          nước biển trong xanh và bãi san hô đầy màu sắc. Với khí hậu ôn hòa quanh năm và cảnh quan ngoạn mục, đây là
+          một điểm đến lý tưởng cho những ai muốn thư giãn và tận hưởng vẻ đẹp tự nhiên tuyệt vời.
+          Bãi biển tại Thiên đường xanh là nơi lý tưởng để thả lỏng, tắm nắng và tham gia vào các hoạt động nghỉ dưỡng
+          như lướt sóng, lặn biển hoặc thậm chí là thực hiện các hoạt động giải trí trên bãi cát. Bên cạnh đó, việc tham
+          gia vào các tour du lịch bằng thuyền thú vị để khám phá những hòn đảo nhỏ xung quanh cũng là trải nghiệm đáng
+          nhớ.
+          Ngoài ra, Thiên đường xanh cũng là điểm đến lý tưởng cho những ai yêu thích hoạt động ngoài trời và khám phá
+          thiên nhiên. Các khu bảo tồn tự nhiên như Công viên quốc gia Black River Gorges cung cấp cơ hội cho du khách
+          để tham quan và khám phá những loài động vật và thực vật đa dạng của đảo quốc này.
+          Với sự kết hợp tuyệt vời giữa vẻ đẹp tự nhiên và tiện nghi hiện đại, Thiên đường xanh của Mauritius là một
+          điểm đến mơ ước cho những kỳ nghỉ nghỉ dưỡng và khám phá.
+        </p>
+        <a href="https://vi.wikipedia.org/wiki/Mauritius" class="africa-btn" target="_blank">Read More</a>
+        <p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6790395.347486874!2d57.5521523!3d-20.3484044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x217c5fcbb472fedd%3A0x2e256bda5f1cf96e!2sMauritius!5e0!3m2!1sen!2s!4v1714989455717!5m2!1sen!2s"
+            width="600" height="450" style="border: 2px solid black;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </p>
+      </div>
+      <div class="image-row">
+        <figure class="image-container">
+          <img src="./images/ChauPhi/ThienDuongXanh-Mauritius/Mauritius1.webp" alt="Thiên Đường Xanh Mauritius 1" />
+          <figcaption>Thiên Đường Xanh Mauritius 1</figcaption>
+        </figure>
+        <figure class="image-container staggered">
+          <img src="./images/ChauPhi/ThienDuongXanh-Mauritius/Mauritius2.webp" alt="Thiên Đường Xanh Mauritius 2" />
+          <figcaption>Thiên Đường Xanh Mauritius 2</figcaption>
+        </figure>
+        <img class="image-container">
+        <img src="./images/ChauPhi/ThienDuongXanh-Mauritius/Mauritius3.webp" alt="Thiên Đường Xanh Mauritius 3" />
+        <figcaption>Thiên Đường Xanh Mauritius 3</figcaption>
+        </img>
+        <figure class="image-container staggered">
+          <img src="./images/ChauPhi/ThienDuongXanh-Mauritius/Mauritius4.webp" alt="Thiên Đường Xanh Mauritius 4" />
+          <figcaption>Thiên Đường Xanh Mauritius 4</figcaption>
+        </figure>
+      </div>
+    </div>
+    <hr>
+
+    <div class="africa-row">
+      <div class="africa-col">
+        <h1>Hố Địa ngục-Namibia</h1>
+        <p>
+          Hố Địa ngục ở Namibia là một trong những địa điểm thiên nhiên độc đáo và hấp dẫn nhất trên thế giới, thu hút
+          những người muốn khám phá vẻ đẹp hoang sơ và huyền bí của sa mạc. Được hình thành qua hàng triệu năm của sự
+          phong phú địa chất, Hố Địa ngục không chỉ là nơi để tận hưởng cảnh quan đặc biệt mà còn là cơ hội để khám phá
+          những di sản tự nhiên độc đáo.
+          Với địa hình độc đáo bao gồm các hẻm núi, hẻm đá và đáy hố sâu, Hố Địa ngục là một môi trường lý tưởng cho
+          việc tham gia vào các hoạt động như trekking, leo núi hoặc thậm chí là dạo chơi bằng xe địa hình. Việc khám
+          phá những hẻm núi và hang động của hố mang lại trải nghiệm thú vị và hấp dẫn.
+          Ngoài ra, với cảnh quan sa mạc hoang sơ xung quanh, Hố Địa ngục cũng là nơi lý tưởng cho việc thư giãn và tận
+          hưởng bầu không khí yên bình của thiên nhiên. Du khách có thể tận hưởng cảnh hoàng hôn đẹp mắt hoặc thậm chí
+          là ngắm sao dưới bầu trời đêm trong không gian không gian yên bình và tĩnh lặng.
+          Với sự hòa quyện giữa vẻ đẹp tự nhiên và bí ẩn của sa mạc, Hố Địa ngục ở Namibia là một điểm đến tuyệt vời cho
+          những ai muốn khám phá những khoảnh khắc đặc biệt và đầy kỳ vị của châu Phi.
+        </p>
+        <a href="https://vi.wikipedia.org/wiki/Fish_River_Canyon" class="africa-btn" target="_blank">Read More</a>
+        <p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27680.21843731383!2d17.476217!3d-27.5752148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1c4f0bffeb7c7433%3A0x477ad6b4c5ba4ba8!2sFish%20River%20Canyon%2C%20Namibia!5e0!3m2!1sen!2s!4v1714989455717!5m2!1sen!2s"
+            width="600" height="450" style="border: 2px solid black;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </p>
+      </div>
+      <div class="image-row">
+        <figure class="image-container">
+          <img src="./images/ChauPhi/HoDiaNguc-Namibia/FishRiverCanyon1.webp" alt="Fish River Canyon 1" />
+          <figcaption>Fish River Canyon 1</figcaption>
+        </figure>
+        <figure class="image-container staggered">
+          <img src="./images/ChauPhi/HoDiaNguc-Namibia/FishRiverCanyon2.webp" alt="Fish River Canyon 2" />
+          <figcaption>Fish River Canyon 2</figcaption>
+        </figure>
+        <figure class="image-container">
+          <img src="./images/ChauPhi/HoDiaNguc-Namibia/FishRiverCanyon3.webp" alt="Fish River Canyon 3" />
+          <figcaption>Fish River Canyon 3</figcaption>
+        </figure>
+        <figure class="image-container staggered">
+          <img src="./images/ChauPhi/HoDiaNguc-Namibia/FishRiverCanyon4.webp" alt="Fish River Canyon 4" />
+          <figcaption>Fish River Canyon 4</figcaption>
+        </figure>
+      </div>
+    </div>
+    <hr>
+
+    <div class="africa-row">
+      <div class="africa-col">
+        <h1>Thảo nguyên Serengeti-Tanzania</h1>
+        <p>
+          Thảo nguyên Serengeti ở Tanzania là một trong những điểm đến hoang dã lớn nhất và đáng kinh ngạc nhất trên thế
+          giới, nổi tiếng với cảnh quan vô cùng đa dạng và cuộc di cư của các loài động vật hoang dã. Với đất đai rộng
+          lớn, cỏ xanh mướt và đàn linh dương vô tận, Thảo nguyên Serengeti là một hành trình phiêu lưu không thể bỏ qua
+          cho những ai yêu thích thiên nhiên và động vật hoang dã.
+          Thảo nguyên Serengeti nổi tiếng với cuộc di cư hàng năm của hàng triệu con linh dương, voi, và hươu qua đất
+          đai rộng lớn trong mùa mưa. Đây là một biểu diễn tuyệt vời của sức mạnh và sự kỳ diệu của tự nhiên mà du khách
+          không nên bỏ lỡ. Việc tham gia vào các safari jeep để theo dõi di cư hoặc thấy các loài động vật hoang dã khác
+          nhau trong tự nhiên hoang dã là một trải nghiệm đáng nhớ.
+          Ngoài ra, Thảo nguyên Serengeti cũng là nơi có cơ hội tuyệt vời để khám phá văn hóa Maasai. Du khách có thể
+          thăm các làng Maasai và tương tác với cộng đồng để hiểu rõ hơn về lối sống truyền thống và văn hóa của họ.
+          Với sự hòa quyện giữa vẻ đẹp tự nhiên hoang dã và sự huyền bí của cuộc sống hoang dã, Thảo nguyên Serengeti là
+          một điểm đến không thể bỏ qua đối với những ai muốn trải nghiệm sự kỳ diệu và đa dạng của thiên nhiên.
+        </p>
+        <a href="https://vi.wikipedia.org/wiki/Serengeti" class="africa-btn" target="_blank">Read More</a>
+        <p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d787916.4865438793!2d34.80859378059086!3d-2.1540103033363644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18e67e4340e6e011%3A0xdb18b8ee9bb07e7c!2sSerengeti%2C%20Tanzania!5e0!3m2!1sen!2s!4v1714989455717!5m2!1sen!2s"
+            width="600" height="450" style="border: 2px solid black;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </p>
+      </div>
+      <div class="image-row">
+        <figure class="image-container">
+          <img src="./images/ChauPhi/ThaoNguyenSerengeti-Tanzania/Serengeti1.webp" alt="Thảo Nguyên Serengeti 1" />
+          <figcaption>Thảo Nguyên Serengeti 1</figcaption>
+        </figure>
+        <figure class="image-container staggered">
+          <img src="./images/ChauPhi/ThaoNguyenSerengeti-Tanzania/Serengeti2.webp" alt="Thảo Nguyên Serengeti 2" />
+          <figcaption>Thảo Nguyên Serengeti 2</figcaption>
+        </figure>
+        <figure class="image-container">
+          <img src="./images/ChauPhi/ThaoNguyenSerengeti-Tanzania/Serengeti3.webp" alt="Thảo Nguyên Serengeti 3" />
+          <figcaption>Thảo Nguyên Serengeti 3</figcaption>
+        </figure>
+        <figure class="image-container staggered">
+          <img src="./images/ChauPhi/ThaoNguyenSerengeti-Tanzania/Serengeti4.webp" alt="Thảo Nguyên Serengeti 4" />
+          <figcaption>Thảo Nguyên Serengeti 4</figcaption>
+        </figure>
+      </div>
+    </div>
+    <hr>
+
+    <div class="africa-row">
+      <div class="africa-col">
+        <h1>Đảo Seychelles</h1>
+        <p>
+          Đảo Seychelles, nằm giữa Ấn Độ Dương, là một thiên đường nghỉ dưỡng đích thực với bãi biển đẹp như tranh vẽ,
+          nước biển trong xanh và bãi san hô tuyệt vời. Với cảnh quan ngoạn mục và không khí yên bình, Đảo Seychelles là
+          điểm đến lý tưởng cho những ai muốn tận hưởng kỳ nghỉ lãng mạn và thư giãn.
+          Bãi biển của Đảo Seychelles là điểm đặc biệt thu hút du khách, nơi họ có thể thả lỏng, tắm nắng và tham gia
+          vào các hoạt động như lướt sóng, lặn biển hoặc snorkeling để khám phá vẻ đẹp dưới nước. Cảnh quan nổi bật với
+          đá granit độc đáo tạo nên bức tranh tự nhiên tuyệt vời, một điểm đến lý tưởng cho những ai muốn chụp ảnh và
+          ghi lại những khoảnh khắc đẹp nhất.
+          Ngoài ra, việc thăm các khu bảo tồn tự nhiên như Công viên quốc gia Vallée de Mai cung cấp cơ hội cho du khách
+          để khám phá đa dạng sinh học của đảo quốc này, bao gồm cả loài chim và thực vật quý hiếm.
+          Với sự kết hợp tuyệt vời giữa vẻ đẹp tự nhiên và tiện nghi nghỉ dưỡng, Đảo Seychelles là một điểm đến mơ ước
+          cho những kỳ nghỉ nghỉ dưỡng và thư giãn.
+        </p>
+        <a href="https://vi.wikipedia.org/wiki/Seychelles" class="africa-btn" target="_blank">Read More</a>
+        <p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d797692.6204066614!2d54.37218618899782!3d-4.657498077117587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x22e03470b8d02111%3A0x934c644b366b4ab6!2sSeychelles!5e0!3m2!1sen!2s!4v1714989455717!5m2!1sen!2s"
+            width="600" height="450" style="border: 2px solid black;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </p>
+      </div>
+      <div class="image-row">
+        <figure class="image-container">
+          <img src="./images/ChauPhi/DaoSeychelles/Seychelles1.webp" alt="Đảo Seychelles 1" />
+          <figcaption>Đảo Seychelles 1</figcaption>
+        </figure>
+        <figure class="image-container staggered">
+          <img src="./images/ChauPhi/DaoSeychelles/Seychelles2.webp" alt="Đảo Seychelles 2" />
+          <figcaption>Đảo Seychelles 2</figcaption>
+        </figure>
+        <figure class="image-container">
+          <img src="./images/ChauPhi/DaoSeychelles/Seychelles3.webp" alt="Đảo Seychelles 3" />
+          <figcaption>Đảo Seychelles 3</figcaption>
+        </figure>
+        <figure class="image-container staggered">
+          <img src="./images/ChauPhi/DaoSeychelles/Seychelles4.webp" alt="Đảo Seychelles 4" />
+          <figcaption>Đảo Seychelles 4</figcaption>
+        </figure>
+      </div>
+    </div>
+    <hr>
+
+    <div class="africa-row">
+      <div class="africa-col">
+        <h1>Kilimanjaro-Tanzania</h1>
+        <p>
+          Kilimanjaro ở Tanzania là một trong những ngọn núi cao nhất trên châu Phi và là một trong những điểm đến thách
+          thức và kỳ diệu nhất trên thế giới. Với đỉnh núi lớn nhất châu Phi, Kilimanjaro thu hút những người muốn thách
+          thức bản thân và khám phá vẻ đẹp hùng vĩ của thiên nhiên.
+          Leo núi Kilimanjaro là một trải nghiệm đáng nhớ và thú vị cho những ai yêu thích thể thao mạo hiểm và muốn thử
+          sức mình. Tuy nhiên, việc leo núi không chỉ là về vật lý mà còn là về tinh thần, đòi hỏi sự kiên nhẫn, sức bền
+          và quyết tâm. Từ những cánh rừng nhiệt đới đến cảnh quan đá và băng tuyết ở đỉnh núi, mỗi phần của hành trình
+          leo núi Kilimanjaro đều mang đến những trải nghiệm khác nhau và đặc biệt.
+          Ngoài ra, việc khám phá khu vực xung quanh Kilimanjaro cũng là một trải nghiệm thú vị. Du khách có thể thăm
+          các khu bảo tồn quốc gia như Công viên quốc gia Kilimanjaro hoặc Công viên quốc gia Arusha để khám phá vẻ đẹp
+          tự nhiên đa dạng và đa màu sắc của Tanzania.
+          Với sự hòa quyện giữa vẻ đẹp tự nhiên hùng vĩ và thách thức cá nhân, Kilimanjaro là một điểm đến lý tưởng cho
+          những ai muốn tìm kiếm những trải nghiệm phiêu lưu và khám phá sức mạnh của thiên nhiên.
+        </p>
+        <a href="https://vi.wikipedia.org/wiki/Mount_Kilimanjaro" class="africa-btn" target="_blank">Read More</a>
+        <p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31825.35676241719!2d37.33090387969611!3d-3.0674247342177794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x183749ae7e926631%3A0x566d5ad0dfe5d9a8!2sMount%20Kilimanjaro!5e0!3m2!1sen!2s!4v1714989455717!5m2!1sen!2s"
+            width="600" height="450" style="border: 2px solid black;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </p>
+      </div>
+      <div class="image-row">
+        <figure class="image-container">
+          <img src="./images/ChauPhi/Kilimanjaro-Tanzania/Kilimanjaro1.webp" alt="Kilimanjaro 1" />
+          <figcaption>Kilimanjaro 1</figcaption>
+        </figure>
+        <figure class="image-container staggered">
+          <img src="./images/ChauPhi/Kilimanjaro-Tanzania/Kilimanjaro2.webp" alt="Kilimanjaro 2" />
+          <figcaption>Kilimanjaro 2</figcaption>
+        </figure>
+        <figure class="image-container">
+          <img src="./images/ChauPhi/Kilimanjaro-Tanzania/Kilimanjaro3.webp" alt="Kilimanjaro 3" />
+          <figcaption>Kilimanjaro 3</figcaption>
+        </figure>
+        <figure class="image-container staggered">
+          <img src="./images/ChauPhi/Kilimanjaro-Tanzania/Kilimanjaro4.webp" alt="Kilimanjaro 4" />
+          <figcaption>Kilimanjaro 4</figcaption>
+        </figure>
+      </div>
+    </div>
+    <hr>
+
+    <div class="africa-row">
+      <div class="africa-col">
+        <h1>Kruger National Park-Nam Phi</h1>
+        <p>
+          Với danh tiếng là một trong những công viên quốc gia lớn nhất và đa dạng nhất trên thế giới, Kruger National
+          Park ở Nam Phi là một thiên đường hoang dã đích thực cho những người muốn trải nghiệm vẻ đẹp tự nhiên và đa
+          dạng sinh học của châu Phi. Với diện tích rộng lớn và đa dạng môi trường, Kruger là nơi cư trú của nhiều loài
+          động vật hoang dã, từ các loài cừu, sư tử, voi, tới cả hổ và tê giác.
+          Du khách có thể tận hưởng các hoạt động safari độc đáo trong công viên, điều này mang lại cơ hội tuyệt vời để
+          ngắm nhìn động vật hoang dã trong tự nhiên hoang dã của chúng. Các chuyến safari bằng xe hoặc bằng chân là
+          cách tuyệt vời để khám phá cảnh quan đa dạng của Kruger và tiếp cận gần gũi với động vật.
+          Ngoài ra, Kruger cũng là nơi lý tưởng để tận hưởng các hoạt động ngoại khoá khác như đi bộ đường dài, câu cá
+          hoặc thậm chí là chụp ảnh động vật hoang dã. Việc thăm các khu vực bảo tồn và trung tâm thông tin cũng cung
+          cấp cơ hội để hiểu rõ hơn về bảo tồn và bảo vệ các loài động vật quý hiếm.
+          Với sự kết hợp của cảnh quan hoang dã đa dạng và trải nghiệm safari độc đáo, Kruger National Park ở Nam Phi là
+          một điểm đến hoàn hảo cho những người muốn tận hưởng vẻ đẹp tự nhiên và khám phá cuộc sống hoang dã của châu
+          Phi.
+
+        </p>
+        <a href="https://vi.wikipedia.org/wiki/Kruger_National_Park" class="africa-btn" target="_blank">Read More</a>
+        <p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d473237.31212483897!2d30.83414429909674!3d-24.690696568999412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec3dbd0a3132921%3A0xb4293db86a422d03!2sKruger%20National%20Park%2C%20South%20Africa!5e0!3m2!1sen!2s!4v1714989455717!5m2!1sen!2s"
+            width="600" height="450" style="border: 2px solid black;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </p>
+      </div>
+      <div class="image-row">
+        <figure class="image-container">
+          <img src="./images/ChauPhi/KrugerNationalPark-NamPhi/KrugerNationalPark1.webp" alt="Kruger National Park 1" />
+          <figcaption>Kruger National Park 1</figcaption>
+        </figure>
+        <figure class="image-container staggered">
+          <img src="./images/ChauPhi/KrugerNationalPark-NamPhi/KrugerNationalPark2.webp" alt="Kruger National Park 2" />
+          <figcaption>Kruger National Park 2</figcaption>
+        </figure>
+        <figure class="image-container">
+          <img src="./images/ChauPhi/KrugerNationalPark-NamPhi/KrugerNationalPark3.webp" alt="Kruger National Park 3" />
+          <figcaption>Kruger National Park 3</figcaption>
+        </figure>
+        <figure class="image-container staggered">
+          <img src="./images/ChauPhi/KrugerNationalPark-NamPhi/KrugerNationalPark4.webp" alt="Kruger National Park 4" />
+          <figcaption>Kruger National Park 4</figcaption>
+        </figure>
+      </div>
+    </div>
+    <hr>
+
+    <div class="africa-row">
+      <div class="africa-col">
+        <h1>Victoria Falls-Zambia/Zimbabwe</h1>
+        <p>
+          Victoria Falls, được biết đến là "Cửa sông Thiên nhiên", là một trong những thác nước lớn nhất và đẹp nhất
+          trên thế giới, nằm trên biên giới giữa Zambia và Zimbabwe. Với dòng nước mạnh mẽ đổ từ độ cao gần 108 mét và
+          chiều rộng hơn 1,7 km, Victoria Falls là một kỳ quan tự nhiên đầy ấn tượng và lôi cuốn.
+          Du khách có thể tận hưởng cảnh quan kỳ vĩ của Victoria Falls từ các điểm quan sát trên cả hai bờ sông Zambezi.
+          Cảm giác mạnh mẽ của dòng nước đổ xuống từ độ cao khiến cho không khí trở nên hứng khởi và kỳ diệu. Các hoạt
+          động như tham gia các tour thuyền buồm hoặc thậm chí là tham gia vào các hoạt động mạo hiểm như bungee jumping
+          từ cầu bắc cầu bảo vệ Zimbabwe hoặc thăm "Devil's Pool" (Hồ của Quỷ) trên cạnh Zambia đều mang lại trải nghiệm
+          độc đáo và hấp dẫn.
+          Ngoài ra, khu vực xung quanh Victoria Falls cũng là nơi tuyệt vời để tham gia vào các hoạt động như safari để
+          khám phá các khu vực bảo tồn quốc gia gần đó như Công viên quốc gia Zambezi. Du khách cũng có thể khám phá các
+          làng bản địa và tham gia vào các trải nghiệm văn hóa để hiểu rõ hơn về cộng đồng địa phương.
+          Với sự kết hợp của vẻ đẹp tự nhiên kỳ diệu và các hoạt động mạo hiểm, Victoria Falls là một điểm đến tuyệt vời
+          cho những ai muốn trải nghiệm sức mạnh và vẻ đẹp của thiên nhiên.
+        </p>
+        <a href="https://vi.wikipedia.org/wiki/Victoria_Falls" class="africa-btn" target="_blank">Read More</a>
+        <p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41204.07001906644!2d25.82555735168897!3d-17.924302265902827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x194fba6948db6e35%3A0x5774e131b666fbee!2sVictoria%20Falls%2C%20Zambia-Zimbabwe!5e0!3m2!1sen!2s!4v1714989455717!5m2!1sen!2s"
+            width="600" height="450" style="border: 2px solid black;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </p>
+      </div>
+      <div class="image-row">
+        <figure class="image-container">
+          <img src="./images/ChauPhi/VictoriaFalls-ZambiaZimbabwe/VictoriaFalls1.webp" alt="Victoria Falls 1" />
+          <figcaption>Victoria Falls 1</figcaption>
+        </figure>
+        <figure class="image-container staggered">
+          <img src="./images/ChauPhi/VictoriaFalls-ZambiaZimbabwe/VictoriaFalls2.webp" alt="Victoria Falls 2" />
+          <figcaption>Victoria Falls 2</figcaption>
+        </figure>
+        <figure class="image-container">
+          <img src="./images/ChauPhi/VictoriaFalls-ZambiaZimbabwe/VictoriaFalls3.webp" alt="Victoria Falls 3" />
+          <figcaption>Victoria Falls 3</figcaption>
+        </figure>
+        <figure class="image-container staggered">
+          <img src="./images/ChauPhi/VictoriaFalls-ZambiaZimbabwe/VictoriaFalls4.webp" alt="Victoria Falls 4" />
+          <figcaption>Victoria Falls 4</figcaption>
+        </figure>
+      </div>
+    </div>
+    <hr>
+
+    <div class="africa-row">
+      <div class="africa-col">
+        <h1>Pyramids of Giza, Ai Cập</h1>
+        <p>
+          Pyramids of Giza ở Ai Cập là một trong những di sản văn hóa phong phú và kỳ diệu nhất trên thế giới, thu hút
+          hàng triệu du khách từ khắp nơi trên thế giới mỗi năm. Với những khối lập phương khổng lồ được xây dựng hàng
+          nghìn năm trước đây, Pyramids of Giza là biểu tượng của sức mạnh và sự hiếu kỳ của loài người.
+          Du khách có thể khám phá những bí mật của Pyramids of Giza thông qua các tour hướng dẫn hoặc tự mình khám phá.
+          Những kiến trúc độc đáo và kích thước ấn tượng của các kim tự tháp khiến cho bất kỳ ai cũng phải kinh ngạc
+          trước sức mạnh và sự tinh tế của những dân tộc cổ đại.
+          Bên cạnh việc khám phá các kim tự tháp, du khách cũng có thể thăm các bảo tàng và khu vực bảo tồn lịch sử xung
+          quanh để tìm hiểu thêm về lịch sử và văn hóa của Ai Cập cổ đại. Việc tham gia vào các tour thăm khu vực xung
+          quanh như Saqqara và Dahshur cũng mang lại trải nghiệm phong phú và sâu sắc.
+          Với sự kết hợp của sức mạnh lịch sử và vẻ đẹp kiến trúc độc đáo, Pyramids of Giza là một điểm đến tuyệt vời
+          cho những ai muốn tìm hiểu và khám phá sức mạnh của văn hóa cổ đại Ai Cập.
+        </p>
+        <a href="https://vi.wikipedia.org/wiki/Giza_pyramid_complex" class="africa-btn" target="_blank">Read More</a>
+        <p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6901.05425684704!2d31.13130206552048!3d29.977296249325865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14584587de5d9e35%3A0x64782d5cfc8c7db6!2sPyramids%20of%20Giza!5e0!3m2!1sen!2s!4v1714989455717!5m2!1sen!2s"
+            width="600" height="450" style="border: 2px solid black;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </p>
+      </div>
+      <div class="image-row">
+        <figure class="image-container">
+          <img src="./images/ChauPhi/PyramidsOfGiza-AiCap/PyramidsofGiza1.webp" alt="Pyramids of Giza 1" />
+          <figcaption>Pyramids of Giza 1</figcaption>
+        </figure>
+        <figure class="image-container staggered">
+          <img src="./images/ChauPhi/PyramidsOfGiza-AiCap/PyramidsofGiza2.webp" alt="Pyramids of Giza 2" />
+          <figcaption>Pyramids of Giza 2</figcaption>
+        </figure>
+        <figure class="image-container">
+          <img src="./images/ChauPhi/PyramidsOfGiza-AiCap/PyramidsofGiza3.webp" alt="Pyramids of Giza 3" />
+          <figcaption>Pyramids of Giza 3</figcaption>
+        </figure>
+        <figure class="image-container staggered">
+          <img src="./images/ChauPhi/PyramidsOfGiza-AiCap/PyramidsofGiza4.webp" alt="Pyramids of Giza 4" />
+          <figcaption>Pyramids of Giza 4</figcaption>
+        </figure>
+      </div>
+    </div>
+    <hr>
+  </section>
+
+  <!-- Footer  -->
+  <section class="footer">
+    <hr />
+    <br />
+    <h4>PHENIKAA TRAVEL&reg;</h4>
+    <br />
+
+    <p class="copyright">&copy; 2024 PHENIKAA TRAVEL. All Rights Reserved.</p>
+  </section>
+  <!-- Footer  -->
+
+  <!-- Scroll-->
+  <div class="scroll-to-top">
+    <a href="#" class="scroll-up">
+      <img src="./images/Icons/double-arrow.png" alt="back to top" />
+    </a>
+  </div>
+
+  <!-- Modals -->
+  <!-- Register Modal -->
+  <div id="registerModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="registerClose">&times;</span>
+      <form id="registerForm" onsubmit="return handleRegister(event)">
+        <h2>Đăng Ký Nhận Tư Vấn Du Lịch</h2>
+        <div class="form-section">
+          <label for="fullName">Họ và Tên</label>
+          <input type="text" id="fullName" name="fullName" required>
+        </div>
+        <div class="form-section">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+          <label for="phone">Số Điện Thoại</label>
+          <input type="text" id="phone" name="phone" required>
+        </div>
+        <div class="form-section">
+          <label for="address">Địa Chỉ</label>
+          <input type="text" id="address" name="address" required>
+        </div>
+        <div class="form-section">
+          <label for="dob">Ngày Sinh</label>
+          <input type="date" id="dob" name="dob" required>
+        </div>
+        <div class="form-section">
+          <label for="gender">Giới Tính</label>
+          <label for="male">Nam</label>
+          <input type="radio" id="male" name="gender" value="male" required>
+          <label for="female">Nữ</label>
+          <input type="radio" id="female" name="gender" value="female" required>
+        </div>
+        <div class="form-section">
+          <label for="hospital">Chọn Nơi Khởi Hành</label>
+          <input type="text" id="hospital" name="hospital" required>
+        </div>
+        <div class="form-section">
+          <label for="department">Chọn Điểm Đến</label>
+          <input type="text" id="department" name="department" required>
+        </div>
+        <div class="form-section">
+          <label for="additionalInfo">Thêm Thông Tin Khác</label>
+          <textarea id="additionalInfo" name="additionalInfo"></textarea>
+        </div>
+        <div class="form-section">
+          <label for="preferredDate">Ngày và Giờ Chuyến Đi</label>
+          <input type="datetime-local" id="preferredDate" name="preferredDate" required>
+        </div>
+        <button type="submit" class="register-btn">Đăng Ký</button>
+      </form>
+      <div class="image-section" style="background-image: url('/images/Home/anhtuvan.jpg');"></div>
+    </div>
+  </div>
+
+  <script src="./js/main.jsx"></script>
+  <script src="./js/animations.js"></script>
+  <script src="./js/modal.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="./js/carousel.js"></script>
+
+</body>
+
 </html>
