@@ -136,7 +136,7 @@ html {
 
 .text-logo-container {
   position: relative;
-  text-align: center; 
+  text-align: center;
 }
 
 .navbar-brand {
@@ -157,7 +157,7 @@ html {
 .logo-image {
   width: 50px;
   height: auto;
-  vertical-align: middle; 
+  vertical-align: middle;
 }
 
 .phenikaa {
@@ -381,10 +381,6 @@ html {
   color: #555;
 }
 
-
-.logo {
-  height: 80px;
-}
 
 nav {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
