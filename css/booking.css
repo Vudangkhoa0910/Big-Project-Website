@@ -229,8 +229,8 @@
 
 #return-check {
   position: absolute;
+  right: 10px;
   top: 10px;
-  left: 10px;
   z-index: 2;
 }
 

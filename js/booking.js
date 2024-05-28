@@ -72,6 +72,21 @@ document.addEventListener("DOMContentLoaded", function() {
         departureDateInput.value = today;
     }
 
+    function toggleReturnDate() {
+        const returnCheck = document.getElementById("return-check");
+        const returnDateContainer = document.getElementById("return-date-container");
+        const returnDateInput = document.getElementById("return-date");
+        if (returnCheck.checked) {
+            returnDateContainer.style.display = "block";
+            returnDateInput.removeAttribute("disabled");
+        } else {
+            returnDateContainer.style.display = "none";
+            returnDateInput.setAttribute("disabled", "true");
+        }
+    }
+
     setupAutocomplete("from");
     setupAutocomplete("to");
+
+    document.getElementById("return-check").addEventListener("change", toggleReturnDate);
 });
