@@ -442,6 +442,45 @@ nav a:hover {
   border: 2px solid #4CAF50;
 }
 
+
+#infoModal .modal-content {
+  background-color: #e6f2ff;
+  border: 2px solid #007BFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.member-info {
+  text-align: center;
+  width: 30%;
+  margin: 10px;
+}
+
+.member-info img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.member-info h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.member-info p {
+  font-size: 10px;
+  color: #555;
+}
+
 /*Update header*/
 
 .africa-header {
