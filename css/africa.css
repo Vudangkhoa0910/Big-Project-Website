@@ -435,6 +435,13 @@ nav a:hover {
   max-width: 800px;
 }
 
+
+#successModal .modal-content {
+  text-align: center;
+  background-color: #e6ffe6;
+  border: 2px solid #4CAF50;
+}
+
 /*Update header*/
 
 .africa-header {
