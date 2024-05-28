@@ -127,78 +127,78 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(255, 255, 255, 0.95);
-  padding: 30px;
-  border-radius: 12px;
+  padding: 20px;
+  border-radius: 8px;
   width: 90%;
-  max-width: 900px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+  z-index: 10;
 }
 
 .booking-header {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .booking-title {
-  font-size: 2em;
-  margin-bottom: 20px;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
 }
 
 .search-content-items {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  background-color: rgba(221, 221, 221, 0.5);
-  padding: 12px;
-  border-radius: 5px;
+  gap: 10px;
 }
 
 .search-content-item {
   background-color: #FFF;
-  width: 30%;
+  flex: 1 1 calc(33.33% - 20px);
   display: flex;
+  flex-direction: column;
   align-items: center;
   border-radius: 5px;
-  position: relative;
   padding: 10px;
   margin: 5px;
-  flex-direction: column;
-}
-
-.search-content-item i {
-  color: #A773E8;
-  margin-right: 12px;
-  position: absolute;
-  left: 12px;
-  top: 36px;
-  z-index: 2;
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .search-content-item label {
-  margin-bottom: 5px;
   font-weight: bold;
+  margin-bottom: 8px;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
 }
 
 .search-content-item input,
+.search-content-item select,
 .search-content-item button {
   width: 100%;
-  border: none;
+  border: 1px solid #ddd;
   outline: none;
-  padding: 8px 12px;
+  padding: 8px 10px;
   border-radius: 5px;
   margin-top: 5px;
+  font-size: 0.9em;
+  font-family: 'Poppins', sans-serif;
 }
 
 .search-content-item button {
-  background-color: #8133e0;
+  background-color: #5A67D8;
   color: #FFF;
   cursor: pointer;
-  padding: 12px;
+  padding: 10px;
   font-size: 1em;
-  margin-top: 20px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
 }
 
 .search-content-item button:hover {
-  background-color: #A773E8;
+  background-color: #4C51BF;
 }
 
 .autobox {
@@ -206,26 +206,26 @@
   top: 100%;
   background-color: #FFF;
   width: 100%;
-  background-color: rgba(221, 221, 221, 0.5);
   overflow-y: auto;
   border-radius: 5px;
+  max-height: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 10;
 }
 
 .autobox li {
   list-style: none;
-  padding: 6px 0 6px 36px;
-  display: none;
+  padding: 10px;
   cursor: pointer;
+  border-bottom: 1px solid #ddd;
 }
 
 .autobox li:hover {
-  color: #8133e0;
+  background-color: #f1f1f1;
 }
 
 .autobox.active li {
   display: block;
-  background-color: white;
-  border-bottom: 1px solid #ddd;
 }
 
 #return-check {
