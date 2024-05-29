@@ -622,14 +622,112 @@
 
        <!-- Scroll-->
        <div class="scroll-to-top">
-         <a href="#" class="scroll-up">
-           <img src="./images/Icons/double-arrow.png" alt="back to top" />
-         </a>
-       </div>
-       <script src="./js/main.js"></script>
-       <script src="./js/animations.js"></script>
-       <script src="./js/search.js"></script>
-       <script src="./js/modal.js"></script>
+        <a href="#" class="scroll-up">
+          <img src="./images/Icons/double-arrow.png" alt="back to top" />
+        </a>
+      </div>
+    
+      <!-- Modals -->
+      <!-- Register Modal -->
+      <div id="registerModal" class="modal">
+        <div class="modal-content">
+          <span class="close" id="registerClose">&times;</span>
+          <form id="registerForm" onsubmit="return handleRegister(event)">
+            <h2>Đăng Ký Nhận Tư Vấn Du Lịch</h2>
+            <div class="form-section">
+              <label for="fullName">Họ và Tên</label>
+              <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="form-section">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+              <label for="phone">Số Điện Thoại</label>
+              <input type="text" id="phone" name="phone" required>
+            </div>
+            <div class="form-section">
+              <label for="address">Địa Chỉ</label>
+              <input type="text" id="address" name="address" required>
+            </div>
+            <div class="form-section">
+              <label for="dob">Ngày Sinh</label>
+              <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-section">
+              <label for="gender">Giới Tính</label>
+              <label for="male">Nam</label>
+              <input type="radio" id="male" name="gender" value="male" required>
+              <label for="female">Nữ</label>
+              <input type="radio" id="female" name="gender" value="female" required>
+            </div>
+            <div class="form-section">
+              <label for="hospital">Chọn Nơi Khởi Hành</label>
+              <input type="text" id="hospital" name="hospital" required>
+            </div>
+            <div class="form-section">
+              <label for="department">Chọn Điểm Đến</label>
+              <input type="text" id="department" name="department" required>
+            </div>
+            <div class="form-section">
+              <label for="additionalInfo">Thêm Thông Tin Khác</label>
+              <textarea id="additionalInfo" name="additionalInfo"></textarea>
+            </div>
+            <div class="form-section">
+              <label for="preferredDate">Ngày và Giờ Chuyến Đi</label>
+              <input type="datetime-local" id="preferredDate" name="preferredDate" required>
+            </div>
+            <button type="submit" class="register-btn">Đăng Ký</button>
+          </form>
+          <div class="image-section" style="background-image: url('/images/Home/anhtuvan.jpg');"></div>
+        </div>
+      </div>
+    
+      <div id="infoModal" class="modal">
+        <div class="modal-content">
+          <span class="close" id="infoClose">&times;</span>
+          <h2>Group Members</h2>
+          <div class="team-container">
+            <div class="member-info" id="olivia-info">
+              <img src="./images/Home/Khoa.jpg" alt="Olivia">
+              <h3>Vũ Đăng Khoa</h3>
+              <p><strong>Date of Birth:</strong> October 9, 2004</p>
+              <p><strong>Role:</strong> Developer</p>
+              <p><strong>Motto:</strong> "Strive for excellence."</p>
+            </div>
+            <div class="member-info" id="aaron-info">
+              <img src="./images/Home/Luong.jpg" alt="Aaron">
+              <h3>Trịnh Phúc Lương</h3>
+              <p><strong>Date of Birth:</strong> June 4, 2004</p>
+              <p><strong>Role:</strong> Developer</p>
+              <p><strong>Motto:</strong> "Keep it simple."</p>
+            </div>
+            <div class="member-info" id="casey-info">
+              <img src="./images/Home/Dong.jpg" alt="Casey">
+              <h3>Nguyễn Sỹ Đồng</h3>
+              <p><strong>Date of Birth:</strong> March 3, 2004</p>
+              <p><strong>Role:</strong> Designer</p>
+              <p><strong>Motto:</strong> "Design is thinking made visual."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div id="successModal" class="modal">
+        <div class="modal-content">
+          <span class="close" id="successClose">&times;</span>
+          <h2>Đăng Ký Thành Công!</h2>
+          <p>Cảm ơn bạn đã đăng ký. Chúng tôi sẽ liên hệ với bạn sớm nhất có thể.</p>
+        </div>
+      </div>
+    
+      <script src="./js/main.jsx"></script>
+      <script src="./js/animations.js"></script>
+      <script src="./js/modal.js"></script>
+      <script src="./js/search.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <script src="./js/carousel.js"></script>
 
-      
     </body>
+      
+   </html>
