@@ -65,7 +65,8 @@ html {
   box-shadow: 0 0 15px rgba(81, 203, 238, 1);
 }
 
-.search-bar::before, .search-bar::after {
+.search-bar::before,
+.search-bar::after {
   content: '';
   position: absolute;
   top: -2px;
@@ -86,6 +87,7 @@ html {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -138,7 +140,7 @@ html {
 
 .text-logo-container {
   position: relative;
-  text-align: center; 
+  text-align: center;
 }
 
 .navbar-brand {
@@ -159,7 +161,7 @@ html {
 .logo-image {
   width: 50px;
   height: auto;
-  vertical-align: middle; 
+  vertical-align: middle;
 }
 
 .phenikaa {
@@ -216,6 +218,7 @@ html {
   height: 80px;
 }
 
+
 /* Modal Styles */
 .modal {
   display: none;
@@ -226,19 +229,23 @@ html {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   padding-top: 60px;
 }
 
 .modal-content {
-  background-color: #fefefe;
+  background-color: #f9f9f9;
   margin: 5% auto;
-  padding: 20px;
+  border-radius: 10px;
   border: 1px solid #888;
   width: 80%;
-  max-width: 400px;
+  max-width: 900px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  /* Thêm thuộc tính này để đảm bảo nút "X" có vị trí tương đối so với modal */
   animation-name: animatetop;
   animation-duration: 0.4s;
 }
@@ -256,53 +263,120 @@ html {
 }
 
 .close {
-  color: #aaa;
-  float: right;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #000000;
   font-size: 28px;
   font-weight: bold;
+  cursor: pointer;
+  z-index: 10;
+  /* Đảm bảo nút "X" luôn nằm trên các thành phần khác */
 }
 
 .close:hover,
 .close:focus {
   color: black;
   text-decoration: none;
-  cursor: pointer;
 }
 
-.modal form {
+.modal-content form {
   display: flex;
   flex-direction: column;
+  width: 50%;
+  padding: 40px;
+  box-sizing: border-box;
 }
 
-.modal form h2 {
-  text-align: center;
+.modal-content .form-section {
   margin-bottom: 20px;
 }
 
-.modal form label {
-  margin-bottom: 5px;
+.modal-content .form-section label {
+  margin-bottom: 8px;
+  display: block;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
 }
 
-.modal form input {
-  margin-bottom: 15px;
+.modal-content .form-section input,
+.modal-content .form-section textarea {
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-.modal form button {
-  padding: 10px;
+.modal-content .form-section input[type="radio"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+.modal-content .register-btn {
+  padding: 12px;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   background-color: #4CAF50;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
   cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
 }
 
-.modal form button:hover {
+.modal-content .register-btn:hover {
   background-color: #45a049;
 }
+
+.modal-content .image-section {
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 10px 10px 0;
+  height: auto;
+}
+
+#infoModal .modal-content {
+  background-color: #e6f2ff;
+  border: 2px solid #007BFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.member-info {
+  text-align: center;
+  width: 30%;
+  margin: 10px;
+}
+
+.member-info img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.member-info h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.member-info p {
+  font-size: 10px;
+  color: #555;
+}
+
 
 nav {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -403,15 +477,11 @@ nav a:hover {
   }
 }
 
-
 /*Update header*/
 
 .asia-header {
   height: 100vh;
   width: 100%;
-  background: linear-gradient(rgba(255, 255, 255, 0.8),
-      rgba(255, 255, 255, 0.5)),
-    url(../images/ChauAu/Barcelona-Tay_Ban_Nha/Bairro-Gótico.jpg);
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -448,21 +518,26 @@ nav a:hover {
   text-align: justify;
   padding: 20px;
 }
+
 .asia-col h1 {
   text-align: center;
   font-size: 24px;
   margin-bottom: 20px;
 }
+
 .asia-col p {
   font-size: 18px;
   line-height: 1.6;
 }
+
 .asia-col b {
-  color:#0056b3;
+  color: #0056b3;
 }
+
 .asia-col i {
-  color:crimson;
+  color: crimson;
 }
+
 .asia-btn {
   display: block;
   text-align: center;
@@ -474,6 +549,10 @@ nav a:hover {
   margin-top: 20px;
 }
 
+.asia-btn:hover {
+  background-color: #0056b3;
+}
+
 .mapandvideo-container {
   display: flex;
   justify-content: space-between;
@@ -483,14 +562,16 @@ nav a:hover {
 
 .map {
   flex: 1;
-  margin-right: 40px; /* Thêm khoảng cách giữa map và video */
+  margin-right: 40px;
+  /* Thêm khoảng cách giữa map và video */
 }
 
 .video {
   flex: 2;
 }
 
-.map p, .video p {
+.map p,
+.video p {
   margin: 0;
   padding: 0;
   position: relative;
@@ -499,14 +580,17 @@ nav a:hover {
 }
 
 .map p {
-  padding-bottom: 100%; /* Đảm bảo hình vuông cho bản đồ */
+  padding-bottom: 100%;
+  /* Đảm bảo hình vuông cho bản đồ */
 }
 
 .video p {
-  padding-bottom: 56.25%; /* 16:9 ratio cho video */
+  padding-bottom: 56.25%;
+  /* 16:9 ratio cho video */
 }
 
-.map iframe, .video iframe {
+.map iframe,
+.video iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -515,6 +599,7 @@ nav a:hover {
   border: 2px solid black;
   border-radius: 10px;
 }
+
 
 .image-row {
   display: flex;
@@ -621,6 +706,9 @@ nav a:hover {
   width: 50px;
   height: 50px;
   bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
   line-height: 50px;
   font-size: 22px;
 }
