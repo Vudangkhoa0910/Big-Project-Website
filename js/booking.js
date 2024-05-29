@@ -90,3 +90,39 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.getElementById("return-check").addEventListener("change", toggleReturnDate);
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const dealsContainers = document.querySelectorAll('.deals-container');
+    const animationDuration = 2500; 
+
+    function scrollToNext(container) {
+        const dealItems = container.querySelectorAll('.deal-item');
+        let currentIndex = 0;
+        const scrollAmount = dealItems[0].offsetWidth + parseInt(window.getComputedStyle(dealItems[0]).marginRight);
+
+        function scroll() {
+            if (currentIndex >= dealItems.length) {
+                container.scrollTo({
+                    left: 0,
+                    behavior: 'auto' 
+                });
+                currentIndex = 1;
+            } else {
+                currentIndex++;
+            }
+            const newPosition = currentIndex * scrollAmount;
+            container.scrollTo({
+                left: newPosition,
+                behavior: 'smooth'
+            });
+        }
+
+        setInterval(scroll, animationDuration);
+    }
+
+    dealsContainers.forEach(container => {
+        scrollToNext(container);
+    });
+});
+
+
