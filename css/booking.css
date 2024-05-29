@@ -240,68 +240,92 @@
 }
 
 .flight-deals {
-  margin: 20px 0;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.deals-container {
-  display: flex;
-  gap: 10px;
-  overflow-x: auto;
-  padding: 10px 0;
-}
-
-.deal-item {
-  min-width: 150px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
-  background-color: #fff;
-  text-align: center;
-}
-
-.deal-item img {
-  width: 100%;
-  height: auto;
-}
-
-.deal-item p {
-  margin: 5px 0;
-  font-size: 0.9em;
-  color: #333;
-}
-
-.deal-item a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.deal-item a:hover {
-  color: #007bff;
-}
-
-.flight-deals button {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.flight-deals button:hover {
-  background-color: #0056b3;
-}
-
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .deals-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .deals-container {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px 0;
+    scroll-behavior: smooth;
+    max-width: 1200px; 
+  }
+  
+  .deal-item {
+    min-width: 100px; 
+    max-width: 185px; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    text-align: center;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .deal-item.large {
+    min-width: 150px; 
+    max-width:200px; 
+    height: 270px;
+  }
+  
+  .deal-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .deal-info {
+    padding: 10px;
+    flex-grow: 1;
+  }
+  
+  .deal-info p {
+    margin: 5px 0;
+    font-size: 0.8em; 
+    color: #333;
+  }
+  
+  .deal-item a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .deal-item a:hover {
+    color: #007bff;
+  }
+  
+  .flight-deals button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px; 
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9em; 
+  }
+  
+  .flight-deals button:hover {
+    background-color: #0056b3;
+  }
+  
 /* Modal Styles */
 .modal {
   position: fixed;
   z-index: 20;
-  /* Giá trị z-index cao hơn cho Modal Register */
   top: 0;
   left: 0;
   width: 100%;
