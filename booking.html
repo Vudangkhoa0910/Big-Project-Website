@@ -54,15 +54,17 @@
           <li><a href="./europe.html">EUROPE</a></li>
           <li><a href="./africa.html">AFRICA</a></li>
           <li><a href="./americas.html">AMERICAS</a></li>
-          <li><a href="#" class="info-link"
-              onclick="document.getElementById('infoModal').style.display='block'">CONTACT</a></li>
+          <li>
+            <a href="#" class="info-link"
+              onclick="document.getElementById('infoModal').style.display='block'">CONTACT</a>
+          </li>
           <li><a href="./booking.html">BOOKING</a></li>
         </ul>
       </div>
     </nav>
     <div class="background">
       <div class="overlay"></div>
-      <img src="./images/Home/mainBG.jpg" alt="background">
+      <img src="./images/Home/mainBG.jpg" alt="background" />
     </div>
 
     <section class="search">
@@ -74,34 +76,34 @@
           <div class="search-content-items row">
             <div class="search-content-item">
               <label for="from">Từ</label>
-              <input class="input-search" type="text" id="from" placeholder="Đi từ">
+              <input class="input-search" type="text" id="from" placeholder="Đi từ" />
               <div class="autobox">
                 <!-- danh sách các sân bay sẽ được thêm vào đây bởi JavaScript -->
               </div>
             </div>
             <div class="search-content-item">
               <label for="to">Đến</label>
-              <input class="input-search" type="text" id="to" placeholder="Đến">
+              <input class="input-search" type="text" id="to" placeholder="Đến" />
               <div class="autobox">
                 <!-- danh sách các sân bay sẽ được thêm vào đây bởi JavaScript -->
               </div>
             </div>
             <div class="search-content-item">
-              <label for="departure-date">Ngày đi</label>
-              <input id="departure-date" type="date">
-            </div>
-            <div class="search-content-item">
-              <label for="return-check">Khứ hồi</label>
-              <input type="checkbox" id="return-check">
+              <div class="to-label">
+                <label for="departure-date">Ngày đi</label>
+                <div class="two-way">
+                  <label for="return-check">Chuyến đi khứ hồi?</label>
+                  <input type="checkbox" id="return-check" />
+                </div>
+              </div>
+              <input id="departure-date" type="date" />
             </div>
             <div class="search-content-item" id="return-date-container" style="display: none;">
               <label for="return-date">Ngày về</label>
-              <input id="return-date" type="date" disabled>
+              <input id="return-date" type="date" disabled />
             </div>
           </div>
-          <div class="search-content-item">
-            <button>Tìm kiếm</button>
-          </div>
+          <button class="search-button">Tìm kiếm</button>
         </div>
       </div>
     </section>
@@ -113,12 +115,12 @@
     <div class="deals-wrapper">
       <div class="deals-container">
         <div class="deal-item large">
-          <img src="./images/Booking/deal1.jpeg" alt="Deal 1">
+          <img src="./images/Booking/deal1.jpeg" alt="Deal 1" />
         </div>
         <div class="deal-item">
           <a
             href="https://www.traveloka.com/vi-vn/flight/fullsearch?ap=SGN.HAN&dt=08-12-2024.NA&ps=1.0.0&sc=ECONOMY&internal_source=true">
-            <img src="./images/Booking/HoGuom.png" alt="Deal 1">
+            <img src="./images/Booking/HoGuom.png" alt="Deal 1" />
           </a>
           <div class="deal-info">
             <p>TP HCM - Hà Nội</p>
@@ -129,7 +131,7 @@
         <div class="deal-item">
           <a
             href="https://www.traveloka.com/vi-vn/flight/fullsearch?ap=HAN.SGN&dt=18-12-2024.NA&ps=1.0.0&sc=ECONOMY&internal_source=true">
-            <img src="./images/Booking/HCM.png" alt="Deal 2">
+            <img src="./images/Booking/HCM.png" alt="Deal 2" />
           </a>
           <div class="deal-info">
             <p>Hà Nội - TP HCM</p>
@@ -140,7 +142,7 @@
         <div class="deal-item">
           <a
             href="https://www.traveloka.com/vi-vn/flight/fullsearch?ap=HAN.DAD&dt=17-10-2024.NA&ps=1.0.0&sc=ECONOMY&internal_source=true">
-            <img src="./images/Booking/DaNang.png" alt="Deal 3">
+            <img src="./images/Booking/DaNang.png" alt="Deal 3" />
           </a>
           <div class="deal-info">
             <p>Hà Nội - Đà Nẵng</p>
@@ -151,7 +153,7 @@
         <div class="deal-item">
           <a
             href="https://www.traveloka.com/vi-vn/flight/fullsearch?ap=SGN.DLI&dt=25-12-2024.NA&ps=1.0.0&sc=ECONOMY&mch=true&funnel_source=Merchandising.mainAppHomePage.mainAppHomePage-V2-SSR-web-VN-LandingPage&funnel_id=S_5_6ab362586e9ae8d5c2ff4067c1bebbf62db36d72_3_7b6d4d4ac8c279e578351c89f209cc3345108b19&internal_source=true">
-            <img src="./images/Booking/DaLat.png" alt="Deal 4">
+            <img src="./images/Booking/DaLat.png" alt="Deal 4" />
           </a>
           <div class="deal-info">
             <p>TP HCM - Đà Lạt</p>
@@ -162,10 +164,10 @@
         <div class="deal-item">
           <a
             href="https://www.traveloka.com/vi-vn/flight/fullsearch?ap=SGN.DLI&dt=19-11-2024.NA&ps=1.0.0&sc=ECONOMY&internal_source=true">
-            <img src="./images/Booking/Hue.jpeg" alt="Deal 4">
+            <img src="./images/Booking/Hue.jpeg" alt="Deal 4" />
           </a>
           <div class="deal-info">
-            <p>TP HCM - Đà Lạt </p>
+            <p>TP HCM - Đà Lạt</p>
             <p>18/12/2024</p>
             <p>VND680.739</p>
           </div>
@@ -173,7 +175,7 @@
         <div class="deal-item">
           <a
             href="https://www.traveloka.com/vi-vn/flight/fullsearch?ap=SGN.HAN&dt=08-12-2024.NA&ps=1.0.0&sc=ECONOMY&internal_source=true">
-            <img src="./images/Booking/HoGuom.png" alt="Deal 1">
+            <img src="./images/Booking/HoGuom.png" alt="Deal 1" />
           </a>
           <div class="deal-info">
             <p>TP HCM - Hà Nội</p>
@@ -184,7 +186,7 @@
         <div class="deal-item">
           <a
             href="https://www.traveloka.com/vi-vn/flight/fullsearch?ap=HAN.SGN&dt=18-12-2024.NA&ps=1.0.0&sc=ECONOMY&internal_source=true">
-            <img src="./images/Booking/HCM.png" alt="Deal 2">
+            <img src="./images/Booking/HCM.png" alt="Deal 2" />
           </a>
           <div class="deal-info">
             <p>Hà Nội - TP HCM</p>
@@ -195,7 +197,7 @@
         <div class="deal-item">
           <a
             href="https://www.traveloka.com/vi-vn/flight/fullsearch?ap=HAN.DAD&dt=17-10-2024.NA&ps=1.0.0&sc=ECONOMY&internal_source=true">
-            <img src="./images/Booking/DaNang.png" alt="Deal 3">
+            <img src="./images/Booking/DaNang.png" alt="Deal 3" />
           </a>
           <div class="deal-info">
             <p>Hà Nội - Đà Nẵng</p>
@@ -206,74 +208,76 @@
       </div>
     </div>
     <button
-      onclick="window.location.href='https://www.traveloka.com/vi-vn/promotion/bay-megasale?funnel_source=Merchandising.mainAppHomePage.mainAppHomePage-V2-SSR-web-VN-LandingPage&funnel_id=86792&internal_source=true'">Xem
-      thêm ưu đãi vé máy bay</button>
+      onclick="window.location.href='https://www.traveloka.com/vi-vn/promotion/bay-megasale?funnel_source=Merchandising.mainAppHomePage.mainAppHomePage-V2-SSR-web-VN-LandingPage&funnel_id=86792&internal_source=true'">
+      Xem thêm ưu đãi vé máy bay
+    </button>
   </div>
-
 
   <div class="hotel-deals">
     <h2>Khách sạn ưu đãi nửa giá</h2>
     <div class="deals-wrapper">
       <div class="deals-container">
         <div class="deal-item">
-          <img src="./images/Booking/deal2.jpeg" alt="Deal 1">
+          <img src="./images/Booking/deal2.jpeg" alt="Deal 1" />
         </div>
         <div class="deal-item">
           <a href="page1.html">
-            <img src="./images/Booking/VungTau.webp" alt="Deal 1">
+            <img src="./images/Booking/VungTau.webp" alt="Deal 1" />
           </a>
         </div>
         <div class="deal-item">
           <a href="page2.html">
-            <img src="./images/Booking/DaNang.webp" alt="Deal 2">
+            <img src="./images/Booking/DaNang.webp" alt="Deal 2" />
           </a>
         </div>
         <div class="deal-item">
           <a href="page3.html">
-            <img src="./images/Booking/PhanThiet.webp" alt="Deal 3">
+            <img src="./images/Booking/PhanThiet.webp" alt="Deal 3" />
           </a>
         </div>
         <div class="deal-item">
           <a href="page4.html">
-            <img src="./images/Booking/NhaTrang.webp" alt="Deal 4">
+            <img src="./images/Booking/NhaTrang.webp" alt="Deal 4" />
           </a>
         </div>
         <div class="deal-item">
           <a href="page4.html">
-            <img src="./images/Booking/HCM.webp" alt="Deal 4">
+            <img src="./images/Booking/HCM.webp" alt="Deal 4" />
           </a>
         </div>
         <div class="deal-item">
-          <img src="./images/Booking/deal2.jpeg" alt="Deal 1">
+          <img src="./images/Booking/deal2.jpeg" alt="Deal 1" />
         </div>
         <div class="deal-item">
           <a href="page1.html">
-            <img src="./images/Booking/VungTau.webp" alt="Deal 1">
+            <img src="./images/Booking/VungTau.webp" alt="Deal 1" />
           </a>
         </div>
         <div class="deal-item">
           <a href="page2.html">
-            <img src="./images/Booking/DaNang.webp" alt="Deal 2">
+            <img src="./images/Booking/DaNang.webp" alt="Deal 2" />
           </a>
         </div>
         <div class="deal-item">
           <a href="page3.html">
-            <img src="./images/Booking/PhanThiet.webp" alt="Deal 3">
+            <img src="./images/Booking/PhanThiet.webp" alt="Deal 3" />
           </a>
         </div>
         <div class="deal-item">
           <a href="page4.html">
-            <img src="./images/Booking/NhaTrang.webp" alt="Deal 4">
+            <img src="./images/Booking/NhaTrang.webp" alt="Deal 4" />
           </a>
         </div>
         <div class="deal-item">
           <a href="page4.html">
-            <img src="./images/Booking/HCM.webp" alt="Deal 4">
+            <img src="./images/Booking/HCM.webp" alt="Deal 4" />
           </a>
         </div>
       </div>
     </div>
-    <button onclick="window.location.href='moreDeals.html'">Xem thêm ưu đãi đặt khách sạn</button>
+    <button onclick="window.location.href='moreDeals.html'">
+      Xem thêm ưu đãi đặt khách sạn
+    </button>
   </div>
 
   <!-- ---------------------------------------------------- -->
@@ -283,134 +287,132 @@
     <div class="deals-wrapper">
       <div class="deals-container">
         <div class="deal-item">
-          <img src="./images/Booking/deal4.jpeg" alt="Deal 1">
+          <img src="./images/Booking/deal4.jpeg" alt="Deal 1" />
         </div>
         <div class="deal-item">
           <a href="page1.html">
-            <img src="./images/Booking/1.webp" alt="Deal 1">
+            <img src="./images/Booking/1.webp" alt="Deal 1" />
           </a>
+          <div class="ticketdeal-info">
+            <h10>Vé ZooDoo Đà Lạt</h10>
+            <p>VND 130.000</p>
+          </div>
         </div>
         <div class="deal-item">
           <a href="page2.html">
-            <img src="./images/Booking/2.webp" alt="Deal 2">
+            <img src="./images/Booking/2.webp" alt="Deal 2" />
           </a>
         </div>
         <div class="deal-item">
           <a href="page3.html">
-            <img src="./images/Booking/3.webp" alt="Deal 3">
+            <img src="./images/Booking/3.webp" alt="Deal 3" />
           </a>
         </div>
         <div class="deal-item">
           <a href="page4.html">
-            <img src="./images/Booking/4.webp" alt="Deal 4">
+            <img src="./images/Booking/4.webp" alt="Deal 4" />
           </a>
         </div>
         <div class="deal-item">
           <a href="page4.html">
-            <img src="./images/Booking/5.webp" alt="Deal 4">
+            <img src="./images/Booking/5.webp" alt="Deal 4" />
           </a>
         </div>
         <div class="deal-item">
-          <img src="./images/Booking/6.webp" alt="Deal 1">
+          <img src="./images/Booking/6.webp" alt="Deal 1" />
         </div>
         <div class="deal-item">
           <a href="page1.html">
-            <img src="./images/Booking/7.webp" alt="Deal 1">
+            <img src="./images/Booking/7.webp" alt="Deal 1" />
           </a>
         </div>
         <div class="deal-item">
           <a href="page2.html">
-            <img src="./images/Booking/8.webp" alt="Deal 2">
+            <img src="./images/Booking/8.webp" alt="Deal 2" />
           </a>
         </div>
         <div class="deal-item">
           <a href="page3.html">
-            <img src="./images/Booking/9.webp" alt="Deal 3">
+            <img src="./images/Booking/9.webp" alt="Deal 3" />
           </a>
         </div>
-
       </div>
     </div>
-    <button onclick="window.location.href='moreDeals.html'">Xem thêm ưu đãi vé vui chơi</button>
+    <button onclick="window.location.href='moreDeals.html'">
+      Xem thêm ưu đãi vé vui chơi
+    </button>
   </div>
-
-
-
-
-
-
-
-
-
 
   <div class="car-deals">
     <h2>Vé xe khách giảm 50%</h2>
     <div class="deals-wrapper">
       <div class="deals-container">
         <div class="deal-item">
-          <img src="./images/Booking/deal3.jpeg" alt="Deal 1">
+          <img src="./images/Booking/deal3.jpeg" alt="Deal 1" />
         </div>
         <div class="deal-item">
           <a href="page1.html">
-            <img src="./images/Booking/LC-HN.jpeg" alt="Deal 1">
+            <img src="./images/Booking/LC-HN.jpeg" alt="Deal 1" />
           </a>
         </div>
         <div class="deal-item">
           <a href="page2.html">
-            <img src="./images/Booking/NA-HN.jpeg" alt="Deal 2">
+            <img src="./images/Booking/NA-HN.jpeg" alt="Deal 2" />
           </a>
         </div>
         <div class="deal-item">
           <a href="page3.html">
-            <img src="./images/Booking/NB-HN.jpeg" alt="Deal 3">
+            <img src="./images/Booking/NB-HN.jpeg" alt="Deal 3" />
           </a>
         </div>
         <div class="deal-item">
           <a href="page4.html">
-            <img src="./images/Booking/HG-HN.jpeg" alt="Deal 4">
+            <img src="./images/Booking/HG-HN.jpeg" alt="Deal 4" />
           </a>
         </div>
         <div class="deal-item">
-          <img src="./images/Booking/deal3.jpeg" alt="Deal 1">
+          <img src="./images/Booking/deal3.jpeg" alt="Deal 1" />
         </div>
         <div class="deal-item">
           <a href="page1.html">
-            <img src="./images/Booking/LC-HN.jpeg" alt="Deal 1">
+            <img src="./images/Booking/LC-HN.jpeg" alt="Deal 1" />
           </a>
         </div>
         <div class="deal-item">
           <a href="page2.html">
-            <img src="./images/Booking/NA-HN.jpeg" alt="Deal 2">
+            <img src="./images/Booking/NA-HN.jpeg" alt="Deal 2" />
           </a>
         </div>
         <div class="deal-item">
           <a href="page3.html">
-            <img src="./images/Booking/NB-HN.jpeg" alt="Deal 3">
+            <img src="./images/Booking/NB-HN.jpeg" alt="Deal 3" />
           </a>
         </div>
         <div class="deal-item">
           <a href="page4.html">
-            <img src="./images/Booking/HG-HN.jpeg" alt="Deal 4">
+            <img src="./images/Booking/HG-HN.jpeg" alt="Deal 4" />
           </a>
         </div>
       </div>
     </div>
-    <button onclick="window.location.href='moreDeals.html'">Xem thêm ưu đãi đặt xe khách</button>
+    <button onclick="window.location.href='moreDeals.html'">
+      Xem thêm ưu đãi đặt xe khách
+    </button>
   </div>
 
   <!-- Footer -->
   <section class="footer">
-    <hr>
-    <br>
+    <hr />
+    <br />
     <h4>PHENIKAA TRAVEL&reg;</h4>
-    <br>
+    <br />
     <p class="copyright">&copy; 2024 PHENIKAA TRAVEL. All Rights Reserved.</p>
   </section>
 
   <!-- Scroll-->
   <div class="scroll-to-top">
     <a href="#" class="scroll-up">
-      <img src="./images/Icons/double-arrow.png" alt="back to top">
+      <img src="./images/Icons/double-arrow.png" alt="back to top" />
     </a>
   </div>
 
@@ -423,36 +425,36 @@
         <h2>Đăng Ký Nhận Tư Vấn Du Lịch</h2>
         <div class="form-section">
           <label for="fullName">Họ và Tên</label>
-          <input type="text" id="fullName" name="fullName" required>
+          <input type="text" id="fullName" name="fullName" required />
         </div>
         <div class="form-section">
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
+          <input type="email" id="email" name="email" required />
           <label for="phone">Số Điện Thoại</label>
-          <input type="text" id="phone" name="phone" required>
+          <input type="text" id="phone" name="phone" required />
         </div>
         <div class="form-section">
           <label for="address">Địa Chỉ</label>
-          <input type="text" id="address" name="address" required>
+          <input type="text" id="address" name="address" required />
         </div>
         <div class="form-section">
           <label for="dob">Ngày Sinh</label>
-          <input type="date" id="dob" name="dob" required>
+          <input type="date" id="dob" name="dob" required />
         </div>
         <div class="form-section">
           <label for="gender">Giới Tính</label>
           <label for="male">Nam</label>
-          <input type="radio" id="male" name="gender" value="male" required>
+          <input type="radio" id="male" name="gender" value="male" required />
           <label for="female">Nữ</label>
-          <input type="radio" id="female" name="gender" value="female" required>
+          <input type="radio" id="female" name="gender" value="female" required />
         </div>
         <div class="form-section">
           <label for="hospital">Chọn Nơi Khởi Hành</label>
-          <input type="text" id="hospital" name="hospital" required>
+          <input type="text" id="hospital" name="hospital" required />
         </div>
         <div class="form-section">
           <label for="department">Chọn Điểm Đến</label>
-          <input type="text" id="department" name="department" required>
+          <input type="text" id="department" name="department" required />
         </div>
         <div class="form-section">
           <label for="additionalInfo">Thêm Thông Tin Khác</label>
@@ -460,11 +462,11 @@
         </div>
         <div class="form-section">
           <label for="preferredDate">Ngày và Giờ Chuyến Đi</label>
-          <input type="datetime-local" id="preferredDate" name="preferredDate" required>
+          <input type="datetime-local" id="preferredDate" name="preferredDate" required />
         </div>
         <button type="submit" class="register-btn">Đăng Ký</button>
       </form>
-      <div class="image-section" style="background-image: url('./images/Home/anhtuvan.jpg');"></div>
+      <div class="image-section" style="background-image: url('./images/Home/anhtuvan.jpg')"></div>
     </div>
   </div>
 
@@ -475,21 +477,21 @@
       <h2>Group Members</h2>
       <div class="team-container">
         <div class="member-info" id="olivia-info">
-          <img src="./images/Home/Khoa.jpg" alt="Olivia">
+          <img src="./images/Home/Khoa.jpg" alt="Olivia" />
           <h3>Vũ Đăng Khoa</h3>
           <p><strong>Date of Birth:</strong> October 9, 2004</p>
           <p><strong>Role:</strong> Developer</p>
           <p><strong>Motto:</strong> "Strive for excellence."</p>
         </div>
         <div class="member-info" id="aaron-info">
-          <img src="./images/Home/Luong.jpg" alt="Aaron">
+          <img src="./images/Home/Luong.jpg" alt="Aaron" />
           <h3>Trịnh Phúc Lương</h3>
           <p><strong>Date of Birth:</strong> June 4, 2004</p>
           <p><strong>Role:</strong> Developer</p>
           <p><strong>Motto:</strong> "Keep it simple."</p>
         </div>
         <div class="member-info" id="casey-info">
-          <img src="./images/Home/Dong.jpg" alt="Casey">
+          <img src="./images/Home/Dong.jpg" alt="Casey" />
           <h3>Nguyễn Sỹ Đồng</h3>
           <p><strong>Date of Birth:</strong> March 3, 2004</p>
           <p><strong>Role:</strong> Designer</p>
@@ -504,7 +506,9 @@
     <div class="modal-content">
       <span class="close" id="successClose">&times;</span>
       <h2>Đăng Ký Thành Công!</h2>
-      <p>Cảm ơn bạn đã đăng ký. Chúng tôi sẽ liên hệ với bạn sớm nhất có thể.</p>
+      <p>
+        Cảm ơn bạn đã đăng ký. Chúng tôi sẽ liên hệ với bạn sớm nhất có thể.
+      </p>
     </div>
   </div>
 

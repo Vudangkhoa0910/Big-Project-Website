@@ -112,7 +112,7 @@
 
 .register-link:hover {
   background-color: white;
-  color: #00A3E0;
+  color: #00a3e0;
   transition: all 0.3s ease;
 }
 
@@ -142,7 +142,6 @@
 .booking-title {
   font-size: 1.8em;
   margin-bottom: 15px;
-  font-family: 'Poppins', sans-serif;
   color: #333;
 }
 
@@ -154,13 +153,13 @@
 }
 
 .search-content-item {
-  background-color: #FFF;
+  background-color: #fff;
   flex: 1 1 calc(33.33% - 20px);
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 5px;
-  padding: 10px;
+  border-radius: 8px;
+  padding: 20px 40px;
   margin: 5px;
   position: relative;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -169,26 +168,37 @@
 .search-content-item label {
   font-weight: bold;
   margin-bottom: 8px;
-  font-family: 'Poppins', sans-serif;
   color: #333;
 }
 
-.search-content-item input,
 .search-content-item select,
-.search-content-item button {
+.search-button {
   width: 100%;
-  border: 1px solid #ddd;
-  outline: none;
-  padding: 8px 10px;
+  border: none;
+  padding: 12px 10px;
   border-radius: 5px;
-  margin-top: 5px;
-  font-size: 0.9em;
-  font-family: 'Poppins', sans-serif;
+  margin-top: 15px;
+  font-size: 1em;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.search-content-item input[type="text"],
+.search-content-item input[type="date"] {
+  width: 100%;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 10px;
+  font-size: 1em;
+  background: #f7f7f7;
+  margin-top: 12px;
 }
 
 .search-content-item button {
-  background-color: #5A67D8;
-  color: #FFF;
+  background-color: #5a67d8;
+  color: #fff;
   cursor: pointer;
   padding: 10px;
   font-size: 1em;
@@ -197,13 +207,27 @@
 }
 
 .search-content-item button:hover {
-  background-color: #4C51BF;
+  background-color: #4c51bf;
+}
+
+.two-way {
+  display: flex;
+  margin-left: 30px;
+}
+
+.two-way input[type="checkbox"] {
+  margin-bottom: 6px;
+  margin-left: 6px;
+}
+
+.to-label {
+  display: flex;
 }
 
 .autobox {
   position: absolute;
   top: 100%;
-  background-color: #FFF;
+  background-color: #fff;
   width: 100%;
   overflow-y: auto;
   border-radius: 5px;
@@ -227,17 +251,6 @@
   display: block;
 }
 
-#return-check {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  z-index: 2;
-}
-
-#return-check~i {
-  top: 36px;
-  left: 36px;
-}
 
 .flight-deals {
   margin: 20px 0;
@@ -247,7 +260,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
-
 
 .hotel-deals {
   margin: 20px 0;
@@ -266,7 +278,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
-
 
 .car-deals {
   margin: 20px 0;
@@ -328,6 +339,12 @@
   color: #333;
 }
 
+.ticketdeal-info p {
+  margin: 5px 0;
+  font-size: 0.8em;
+  color: #d45785;
+}
+
 .deal-item a {
   text-decoration: none;
   color: inherit;
@@ -367,7 +384,6 @@
   font-size: 0.9em;
 }
 
-
 .car-deals button {
   background-color: #238a38;
   color: white;
@@ -377,9 +393,6 @@
   cursor: pointer;
   font-size: 0.9em;
 }
-
-
-
 
 /* .flight-deals button:hover {
   background-color: #0056b3;
