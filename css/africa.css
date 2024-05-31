@@ -374,7 +374,7 @@ nav a:hover {
 .modal-content form {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 60%;
   padding: 20px;
   box-sizing: border-box;
 }
@@ -404,17 +404,6 @@ nav a:hover {
 .modal-content .form-section input[type="radio"] {
   width: auto;
   margin-right: 10px;
-}
-
-.gender-options {
-  display: flex;
-  gap: 20px; 
-}
-
-.gender-options label {
-  display: flex;
-  align-items: center;
-  gap: 5px;
 }
 
 .modal-content .register-btn {
@@ -490,10 +479,9 @@ nav a:hover {
   color: #555;
 }
 
+
 nav {
-  background: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 3px 15px;
 }
 
 nav ul {
