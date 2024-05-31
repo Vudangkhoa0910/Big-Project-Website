@@ -234,18 +234,18 @@ html {
 }
 
 .modal-content {
-  background-color: #f9f9f9;
+  background-color: #fff;
   margin: 5% auto;
-  border-radius: 10px;
-  border: 1px solid #888;
-  width: 80%;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  width: 60%;
+
   max-width: 900px;
   display: flex;
   flex-direction: row;
-  align-items: stretch;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   position: relative;
-  /* Thêm thuộc tính này để đảm bảo nút "X" có vị trí tương đối so với modal */
+  padding: 20px;
   animation-name: animatetop;
   animation-duration: 0.4s;
 }
@@ -264,14 +264,12 @@ html {
 
 .close {
   position: absolute;
-  top: 20px;
+  top: 10px;
   right: 20px;
-  color: #000000;
+  color: #aaa;
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
-  z-index: 10;
-  /* Đảm bảo nút "X" luôn nằm trên các thành phần khác */
 }
 
 .close:hover,
@@ -283,13 +281,13 @@ html {
 .modal-content form {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  padding: 40px;
+  width: 80%;
+  padding: 20px;
   box-sizing: border-box;
 }
 
 .modal-content .form-section {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .modal-content .form-section label {
@@ -307,11 +305,23 @@ html {
   width: 100%;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  margin-top: 5px;
 }
 
 .modal-content .form-section input[type="radio"] {
   width: auto;
   margin-right: 10px;
+}
+
+.gender-options {
+  display: flex;
+  gap: 20px; 
+}
+
+.gender-options label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .modal-content .register-btn {
@@ -332,11 +342,21 @@ html {
 }
 
 .modal-content .image-section {
-  width: 50%;
+  width: 90%;
   background-size: cover;
   background-position: center;
-  border-radius: 0 10px 10px 0;
+  border-radius: 0 12px 12px 0;
   height: auto;
+}
+
+#registerModal .modal-content {
+  max-width: 800px;
+}
+
+#successModal .modal-content {
+  text-align: center;
+  background-color: #e6ffe6;
+  border: 2px solid #4CAF50;
 }
 
 #infoModal .modal-content {
@@ -377,9 +397,10 @@ html {
   color: #555;
 }
 
-
 nav {
+  background: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 3px 15px;
 }
 
 nav ul {
