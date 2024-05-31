@@ -508,7 +508,24 @@ nav a:hover {
   font-family: "Dancing Script", cursive;
   font-size: 120px;
   margin-top: 150px;
+  color: #333; /* Thay đổi màu chữ */
 }
+
+.asia-description {
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Tăng độ dày viền */
+  margin: 30px auto 0 auto;
+  max-width: 65%;
+  text-align: left; /* Cân chỉnh nội dung sang trái */
+  line-height: 1.8;
+  font-family: 'Times New Roman',Times, serif;
+  font-size: 18px;
+  color: #333;
+  padding: 20px;
+  margin-top: 180px;
+}
+
+
 
 .asia {
   width: 80%;
