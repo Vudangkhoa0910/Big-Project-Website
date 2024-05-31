@@ -374,7 +374,7 @@ nav a:hover {
 .modal-content form {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 80%;
   padding: 20px;
   box-sizing: border-box;
 }
@@ -406,6 +406,17 @@ nav a:hover {
   margin-right: 10px;
 }
 
+.gender-options {
+  display: flex;
+  gap: 20px; 
+}
+
+.gender-options label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
 .modal-content .register-btn {
   padding: 12px;
   border: none;
@@ -435,13 +446,11 @@ nav a:hover {
   max-width: 800px;
 }
 
-
 #successModal .modal-content {
   text-align: center;
   background-color: #e6ffe6;
   border: 2px solid #4CAF50;
 }
-
 
 #infoModal .modal-content {
   background-color: #e6f2ff;
@@ -479,6 +488,37 @@ nav a:hover {
 .member-info p {
   font-size: 10px;
   color: #555;
+}
+
+nav {
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 3px 15px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #0056b3;
+}
+
+#logo img {
+  height: 50px;
 }
 
 /*Update header*/
