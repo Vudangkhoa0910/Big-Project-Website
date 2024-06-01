@@ -21,9 +21,7 @@ function searchAndHighlight() {
 
   if (currentIndex === -1 || input !== matchingElements.input) {
     // Xóa highlight cũ
-    contents.forEach(content => {
-      content.innerHTML = content.textContent;
-    });
+    clearHighlights();
 
     matchingElements = [];
     contents.forEach(content => {
@@ -38,17 +36,32 @@ function searchAndHighlight() {
   if (matchingElements.length > 0) {
     currentIndex = (currentIndex + 1) % matchingElements.length;
     const el = matchingElements[currentIndex];
-    const regex = new RegExp(`(${input})`, 'gi');
-    el.innerHTML = el.textContent.replace(regex, '<span class="highlight">$1</span>');
+    highlightText(el, input);
     el.scrollIntoView({ behavior: 'smooth', block: 'center' });
   } else {
     alert("Không tìm thấy kết quả.");
   }
 }
 
+function highlightText(element, text) {
+  const innerHTML = element.innerHTML;
+  const index = innerHTML.toLowerCase().indexOf(text.toLowerCase());
+  if (index >= 0) {
+    const highlightedHTML = innerHTML.substring(0, index) +
+                            '<span class="highlight">' +
+                            innerHTML.substring(index, index + text.length) +
+                            '</span>' +
+                            innerHTML.substring(index + text.length);
+    element.innerHTML = highlightedHTML;
+  }
+}
+
 function clearHighlights() {
   const contents = document.querySelectorAll('h1, p');
   contents.forEach(content => {
-    content.innerHTML = content.textContent;
+    const highlightedSpans = content.querySelectorAll('.highlight');
+    highlightedSpans.forEach(span => {
+      span.outerHTML = span.innerHTML; 
+    });
   });
 }
