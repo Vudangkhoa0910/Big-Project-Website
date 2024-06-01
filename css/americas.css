@@ -297,6 +297,19 @@ html {
   font-family: 'Poppins', sans-serif;
 }
 
+.form-section {
+  margin-bottom: 20px;
+}
+
+.gender-options {
+  display: flex;
+  align-items: center;
+}
+
+.gender-options label {
+  margin-right: 20px;
+}
+
 .modal-content .form-section input,
 .modal-content .form-section textarea {
   padding: 10px;
