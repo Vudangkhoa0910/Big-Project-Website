@@ -345,6 +345,14 @@
   color: #d45785;
 }
 
+
+.ticketdeal-info del {
+  margin: 5px 0;
+  font-size: 1em;
+  color: #000000;
+}
+
+
 .deal-item a {
   text-decoration: none;
   color: inherit;
