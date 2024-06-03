@@ -288,6 +288,40 @@
   text-align: center;
 }
 
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.flight-deals h2 {
+  text-align: left;
+  margin-left: 140px;
+  color: #2b92ff;
+}
+
+.hotel-deals h2 {
+  text-align: left;
+  margin-left: 140px;
+  color: #004ea1;
+}
+
+
+.ticket-deals h2 {
+  text-align: left;
+  margin-left: 140px;
+  color: #d45785;
+}
+
+.car-deals h2 {
+  text-align: left;
+  margin-left: 140px;
+  color: #238a38;
+}
+
+
+
 .deals-wrapper {
   display: flex;
   align-items: center;
