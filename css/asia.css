@@ -531,8 +531,8 @@ nav a:hover {
   gap: 20px;
   padding: 20px;
   max-width: 100%;
-  width: 80%;
-  margin: 0 auto;
+  width: 100%; /* Adjusted to full width */
+  margin: 0 auto; /* Center align */
 }
 
 .asia-col h1 {
@@ -570,13 +570,14 @@ nav a:hover {
 }
 
 .content {
-  flex: 1 1 45%; /* Adjusted to 45% to make it smaller */
+  flex: 1 1 calc(55% - 20px); /* Adjusted to 55% minus gap */
   min-width: 300px;
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   position: relative;
+  margin: 0 10px; /* Add margin on both sides */
 }
 
 /* Book-style effect */
