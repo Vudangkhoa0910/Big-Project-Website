@@ -28,6 +28,24 @@
 }
 
 
+.miniadvert {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 10vh;
+  margin: 0 auto;
+  margin-bottom: 10vh;
+  width: 50%;
+}
+
+.miniadvert img {
+  margin: 0 5px;
+
+}
+
+
+
 
 
 .overlay {
