@@ -15,6 +15,21 @@
   object-fit: cover;
 }
 
+
+.advert {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 10vh;
+  margin: 0 auto;
+  margin-bottom: 10vh;
+  width: 50%;
+}
+
+
+
+
 .overlay {
   position: absolute;
   width: 100%;
