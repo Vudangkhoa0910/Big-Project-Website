@@ -41,10 +41,14 @@
 
 .miniadvert img {
   margin: 0 5px;
+  width: 27%;
+  height: auto;
 
 }
 
-
+.advert img {
+  margin: 0 5px;
+}
 
 
 
@@ -487,6 +491,8 @@
   /* Làm tối nền khi Modal Register mở */
 }
 
+
+
 .modal-content {
   position: relative;
   margin: auto;
@@ -514,6 +520,10 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+
+
+
 
 .form-section {
   margin-bottom: 15px;
