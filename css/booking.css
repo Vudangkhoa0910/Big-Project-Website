@@ -39,12 +39,15 @@
   width: 50%;
 }
 
+
 .miniadvert img {
   margin: 0 5px;
-  width: 27%;
-  height: auto;
-
+  width: auto;
+  height: 205px;
 }
+
+
+
 
 .advert img {
   margin: 0 5px;
