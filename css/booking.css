@@ -559,3 +559,71 @@
 .register-btn:hover {
   background-color: #0056b3;
 }
+
+
+/* .footer img {
+  width: 100%;
+ 
+  height: auto;
+
+
+} */
+
+
+
+.footer {
+
+  text-align: center;
+  /* center the content of the footer */
+  position: relative;
+  /* make the footer a relative container */
+}
+
+.footer img {
+  width: 100%;
+  /* make the image take up the full width of the footer */
+  height: auto;
+  /* set a fixed height for the image */
+  object-fit: cover;
+  /* make the image cover the entire area */
+  border-radius: 10px;
+  /* add some border radius to the image */
+}
+
+.footer h1 {
+  position: absolute;
+  top: 20%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+  font-weight: bold;
+  /* make the text bold */
+  color: #fff;
+  text-align: left;
+  font-family: Arial, sans-serif;
+  /* use the Arial font family */
+}
+
+.footer p {
+  position: absolute;
+  top: 60%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  font-size: 19px;
+  font-weight: bold;
+  /* make the text bold */
+  color: #fff;
+  text-align: left;
+  font-family: Arial, sans-serif;
+  /* use the Arial font family */
+}
+
+.support {
+  background-color: #ccc;
+  /* gray color */
+  height: 2000px;
+  /* adjust the height to your liking */
+  width: 100%;
+  /* make it full width */
+
+}
