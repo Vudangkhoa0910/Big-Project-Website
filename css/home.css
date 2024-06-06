@@ -59,7 +59,7 @@ html {
 
 .text-logo-container {
   position: relative;
-  text-align: center; 
+  text-align: center;
 }
 
 .navbar-brand {
@@ -80,7 +80,7 @@ html {
 .logo-image {
   width: 50px;
   height: auto;
-  vertical-align: middle; 
+  vertical-align: middle;
 }
 
 .phenikaa {
@@ -104,15 +104,16 @@ html {
 }
 
 .register-section {
-  margin-right: 50px;
+  margin-right: 20px;
 }
 
 .register-link {
-  color: white;
+
+  color: rgb(0, 0, 0);
   text-decoration: none;
   font-weight: bold;
   padding: 5px 10px;
-  border: 2px solid white;
+  border: 3px solid rgb(255, 149, 0);
   border-radius: 5px;
 }
 
@@ -129,7 +130,7 @@ html {
 
 .register-link:hover {
   background-color: white;
-  color: #00A3E0;
+  color: rgb(255, 149, 0);
   transition: all 0.3s ease;
 }
 
@@ -234,7 +235,7 @@ html {
 
 .gender-options {
   display: flex;
-  gap: 20px; 
+  gap: 20px;
 }
 
 .gender-options label {
@@ -619,32 +620,38 @@ h1 {
   border-radius: 50%;
   margin: 20px;
 }
+
 .hand {
   position: absolute;
   bottom: 50%;
   left: 50%;
   transform-origin: bottom;
 }
+
 .hour {
   width: 4px;
   height: 40px;
   background: black;
 }
+
 .minute {
   width: 2px;
   height: 60px;
   background: black;
 }
+
 .second {
   width: 1px;
   height: 70px;
   background: red;
 }
+
 .number {
   position: absolute;
   width: 100%;
   height: 100%;
 }
+
 .number div {
   position: absolute;
   width: 20px;
@@ -660,6 +667,7 @@ h1 {
   align-items: center;
   flex-wrap: wrap;
 }
+
 .clock-label {
   text-align: center;
   margin-top: 10px;
