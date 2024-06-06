@@ -36,6 +36,7 @@ html {
   height: 40%;
   bottom: 0;
   left: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 100%);
   /* Tạo hiệu ứng mờ */
 }
 
@@ -108,6 +109,10 @@ html {
 .africa-header {
   height: 100vh;
   width: 100%;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #000000;
   border-radius: 0% 0% 2.5% 2.5%;
 }
 
@@ -213,104 +218,6 @@ html {
   height: 80px;
 }
 
-nav {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-nav a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  padding: 10px 20px;
-  transition: color 0.3s;
-}
-
-nav a:hover {
-  color: #0056b3;
-}
-
-#logo img {
-  height: 50px;
-}
-
-/* Navigation bar styles */
-.navigation-links {
-  flex-grow: 1;
-  text-align: center;
-  background: white;
-  padding: 10px 0;
-}
-
-.navigation-links ul {
-  display: inline-flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.navigation-links ul li {
-  margin: 0 15px;
-}
-
-.navigation-links ul li a {
-  text-decoration: none;
-  color: #000000;
-  padding: 5px 10px;
-  transition: color 0.3s ease;
-}
-
-.navigation-links ul li a:hover {
-  color: #ff7f50;
-}
-
-@media only screen and (max-width: 768px) {
-  .navigation-links ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .navigation-links ul li {
-    margin: 10px 0;
-  }
-}
-
-/* Adjustments for even smaller screens */
-@media only screen and (max-width: 480px) {
-  .navigation-links ul {
-    flex-direction: column;
-  }
-
-  .navigation-links ul li {
-    margin: 5px 0;
-  }
-
-  .navigation-links ul li a {
-    padding: 5px 10px;
-  }
-
-  .homepage-text h1 {
-    font-size: 35px;
-  }
-
-  .homepage-text p {
-    font-size: 16px;
-  }
-
-  .homepage-btn {
-    padding: 10px 20px;
-    font-size: 14px;
-  }
-}
 
 /* Modal Styles */
 .modal {
@@ -377,19 +284,6 @@ nav a:hover {
   width: 60%;
   padding: 20px;
   box-sizing: border-box;
-}
-
-.form-section {
-  margin-bottom: 20px;
-}
-
-.gender-options {
-  display: flex;
-  align-items: center;
-}
-
-.gender-options label {
-  margin-right: 20px;
 }
 
 .modal-content .form-section {
@@ -522,6 +416,76 @@ nav a:hover {
   height: 50px;
 }
 
+/* Navigation bar styles */
+.navigation-links {
+  flex-grow: 1;
+  text-align: center;
+  background: white;
+  padding: 10px 0;
+}
+
+.navigation-links ul {
+  display: inline-flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-links ul li {
+  margin: 0 15px;
+}
+
+.navigation-links ul li a {
+  text-decoration: none;
+  color: #000000;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.navigation-links ul li a:hover {
+  color: #ff7f50;
+}
+
+@media only screen and (max-width: 768px) {
+  .navigation-links ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navigation-links ul li {
+    margin: 10px 0;
+  }
+}
+
+/* Adjustments for even smaller screens */
+@media only screen and (max-width: 480px) {
+  .navigation-links ul {
+    flex-direction: column;
+  }
+
+  .navigation-links ul li {
+    margin: 5px 0;
+  }
+
+  .navigation-links ul li a {
+    padding: 5px 10px;
+  }
+
+  .homepage-text h1 {
+    font-size: 35px;
+  }
+
+  .homepage-text p {
+    font-size: 16px;
+  }
+
+  .homepage-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
 /*Update header*/
 
 .africa-header {
@@ -544,10 +508,12 @@ nav a:hover {
   font-family: "Dancing Script", cursive;
   font-size: 120px;
   margin-top: 150px;
+  color: #333;
+  /* Thay đổi màu chữ */
 }
 
 .africa {
-  width: 80%;
+  width: 85%;
   margin: auto;
   padding-top: 80px;
   padding-bottom: 50px;
@@ -561,7 +527,15 @@ nav a:hover {
 
 .africa-col {
   text-align: justify;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   padding: 20px;
+  max-width: 100%;
+  width: 100%;
+  /* Adjusted to full width */
+  margin: 0 auto;
+  /* Center align */
 }
 
 .africa-col h1 {
@@ -598,21 +572,68 @@ nav a:hover {
   background-color: #0056b3;
 }
 
-.mapandvideo-container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
-  width: 100%;
+.content {
+  flex: 1 1 calc(55% - 20px);
+  /* Adjusted to 55% minus gap */
+  min-width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin: 0 10px;
+  /* Add margin on both sides */
 }
 
+/* Book-style effect */
+.content::before,
+.content::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background-color: #f9f9f9;
+  /* Set color of book pages */
+  z-index: -1;
+}
+
+.content::before {
+  left: -10px;
+  /* Adjust to position left page */
+  transform: skewY(-4deg);
+  /* Skew left page */
+  border-radius: 5px 0 0 5px;
+  /* Apply border radius for left page */
+}
+
+.content::after {
+  right: -10px;
+  /* Adjust to position right page */
+  transform: skewY(4deg);
+  /* Skew right page */
+  border-radius: 0 5px 5px 0;
+  /* Apply border radius for right page */
+}
+
+
+.images {
+  flex: 1 1 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+
 .map {
-  flex: 1;
+  flex: 1 1 30%;
   margin-right: 40px;
   /* Thêm khoảng cách giữa map và video */
 }
 
 .video {
-  flex: 2;
+  flex: 1 1 55%;
 }
 
 .map p,
@@ -657,7 +678,7 @@ nav a:hover {
   position: relative;
   width: 370px;
   height: 350px;
-  border-radius: 30px;
+  border-radius: 35px;
   overflow: hidden;
   margin-bottom: 70px;
 }
@@ -667,9 +688,8 @@ nav a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 15px;
+  border-radius: 35px;
   margin: 5px;
-  ;
 }
 
 .image-container figcaption {
