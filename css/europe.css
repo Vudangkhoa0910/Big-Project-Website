@@ -181,15 +181,16 @@ html {
 }
 
 .register-section {
-  margin-right: 50px;
+  margin-right: 20px;
 }
 
 .register-link {
-  color: white;
+
+  color: rgb(0, 0, 0);
   text-decoration: none;
   font-weight: bold;
   padding: 5px 10px;
-  border: 2px solid white;
+  border: 3px solid rgb(255, 149, 0);
   border-radius: 5px;
 }
 
@@ -206,7 +207,7 @@ html {
 
 .register-link:hover {
   background-color: white;
-  color: #00A3E0;
+  color: rgb(255, 149, 0);
   transition: all 0.3s ease;
 }
 
@@ -604,7 +605,8 @@ nav a:hover {
   font-family: "Dancing Script", cursive;
   font-size: 120px;
   margin-top: 150px;
-  color: #333; /* Thay đổi màu chữ */
+  color: #333;
+  /* Thay đổi màu chữ */
 }
 
 .europe {
@@ -627,8 +629,10 @@ nav a:hover {
   gap: 20px;
   padding: 20px;
   max-width: 100%;
-  width: 100%; /* Adjusted to full width */
-  margin: 0 auto; /* Center align */
+  width: 100%;
+  /* Adjusted to full width */
+  margin: 0 auto;
+  /* Center align */
 }
 
 .europe-col h1 {
@@ -666,14 +670,16 @@ nav a:hover {
 }
 
 .content {
-  flex: 1 1 calc(55% - 20px); /* Adjusted to 55% minus gap */
+  flex: 1 1 calc(55% - 20px);
+  /* Adjusted to 55% minus gap */
   min-width: 300px;
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   position: relative;
-  margin: 0 10px; /* Add margin on both sides */
+  margin: 0 10px;
+  /* Add margin on both sides */
 }
 
 /* Book-style effect */
@@ -684,20 +690,27 @@ nav a:hover {
   top: 0;
   bottom: 0;
   width: 50%;
-  background-color: #f9f9f9; /* Set color of book pages */
+  background-color: #f9f9f9;
+  /* Set color of book pages */
   z-index: -1;
 }
 
 .content::before {
-  left: -10px; /* Adjust to position left page */
-  transform: skewY(-4deg); /* Skew left page */
-  border-radius: 5px 0 0 5px; /* Apply border radius for left page */
+  left: -10px;
+  /* Adjust to position left page */
+  transform: skewY(-4deg);
+  /* Skew left page */
+  border-radius: 5px 0 0 5px;
+  /* Apply border radius for left page */
 }
 
 .content::after {
-  right: -10px; /* Adjust to position right page */
-  transform: skewY(4deg); /* Skew right page */
-  border-radius: 0 5px 5px 0; /* Apply border radius for right page */
+  right: -10px;
+  /* Adjust to position right page */
+  transform: skewY(4deg);
+  /* Skew right page */
+  border-radius: 0 5px 5px 0;
+  /* Apply border radius for right page */
 }
 
 
