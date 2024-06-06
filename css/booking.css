@@ -127,15 +127,16 @@
 }
 
 .register-section {
-  margin-right: 50px;
+  margin-right: 20px;
 }
 
 .register-link {
-  color: white;
+
+  color: rgb(0, 0, 0);
   text-decoration: none;
   font-weight: bold;
   padding: 5px 10px;
-  border: 2px solid white;
+  border: 3px solid rgb(255, 149, 0);
   border-radius: 5px;
 }
 
@@ -152,7 +153,7 @@
 
 .register-link:hover {
   background-color: white;
-  color: #00a3e0;
+  color: rgb(255, 149, 0);
   transition: all 0.3s ease;
 }
 
