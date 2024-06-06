@@ -604,6 +604,17 @@
   /* use the Arial font family */
 }
 
+.email {
+  position: absolute;
+  top: 35%;
+  left: 35%;
+}
+
+#input {
+  width: 500px;
+  height: 25px;
+}
+
 .footer p {
   position: absolute;
   top: 60%;
