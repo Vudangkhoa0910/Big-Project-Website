@@ -359,35 +359,7 @@
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone-with-data.min.js"></script>
-  <script>
-      function updateClocks() {
-          var currentTime = moment();
-
-          updateClock('uk', currentTime.tz('Europe/London'));
-          updateClock('france', currentTime.tz('Europe/Paris'));
-          updateClock('vietnam', currentTime.tz('Asia/Ho_Chi_Minh'));
-          updateClock('usa', currentTime.tz('America/Los_Angeles'));
-          updateClock('germany', currentTime.tz('Europe/Berlin'));
-
-          setTimeout(updateClocks, 1000);
-      }
-
-      function updateClock(country, time) {
-          var hours = time.hours();
-          var minutes = time.minutes();
-          var seconds = time.seconds();
-
-          var hourAngle = (hours % 12) * 30 + (minutes / 2);
-          var minuteAngle = minutes * 6;
-          var secondAngle = seconds * 6;
-
-          document.getElementById(country + '-hour').style.transform = 'rotate(' + hourAngle + 'deg)';
-          document.getElementById(country + '-minute').style.transform = 'rotate(' + minuteAngle + 'deg)';
-          document.getElementById(country + '-second').style.transform = 'rotate(' + secondAngle + 'deg)';
-      }
-
-      updateClocks();
-  </script>
+  <script src="./js/clock.js"></script>
   <script src="./js/main.js"></script>
   <script src="./js/animations.js"></script>
   <script src="./js/modal.js"></script>
@@ -395,6 +367,5 @@
   <script type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <script src="./js/carousel.js"></script>
-  <script src="./js/clock.js"></script>
 </body>
 </html>
