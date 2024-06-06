@@ -562,47 +562,31 @@
 }
 
 
-/* .footer img {
-  width: 100%;
- 
-  height: auto;
 
-
-} */
-
-
-
-.footer {
+.Counseling {
 
   text-align: center;
-  /* center the content of the footer */
   position: relative;
-  /* make the footer a relative container */
 }
 
-.footer img {
+.Counseling img {
   width: 100%;
-  /* make the image take up the full width of the footer */
   height: auto;
-  /* set a fixed height for the image */
   object-fit: cover;
-  /* make the image cover the entire area */
-  border-radius: 10px;
-  /* add some border radius to the image */
+
 }
 
-.footer h1 {
+.Counseling h1 {
   position: absolute;
   top: 20%;
   left: 55%;
   transform: translate(-50%, -50%);
   font-size: 35px;
   font-weight: bold;
-  /* make the text bold */
   color: #fff;
   text-align: left;
   font-family: Arial, sans-serif;
-  /* use the Arial font family */
+
 }
 
 .email {
@@ -616,26 +600,66 @@
   height: 25px;
 }
 
-.footer p {
+.Counseling p {
   position: absolute;
   top: 60%;
   left: 55%;
   transform: translate(-50%, -50%);
   font-size: 19px;
   font-weight: bold;
-  /* make the text bold */
   color: #fff;
   text-align: left;
   font-family: Arial, sans-serif;
-  /* use the Arial font family */
 }
 
-.support {
-  background-color: #ccc;
-  /* gray color */
-  height: 2000px;
-  /* adjust the height to your liking */
-  width: 100%;
-  /* make it full width */
 
+
+
+
+
+
+/*---- Footer ----*/
+.footer {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  padding: 40px 0;
 }
+
+.footer .copyright {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #61656b;
+}
+
+.footer h4 {
+  text-align: center;
+}
+
+.scroll-up {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  font-size: 22px;
+}
+
+@media only screen and (max-width: 700px) {
+  .scroll-up {
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    font-size: 22px;
+  }
+}
+
+/*---- Footer ----*/
