@@ -287,6 +287,20 @@ html {
   box-sizing: border-box;
 }
 
+.form-section {
+  margin-bottom: 20px;
+}
+
+.gender-options {
+  display: flex;
+  align-items: center;
+}
+
+.gender-options label {
+  margin-right: 20px;
+}
+
+
 .modal-content .form-section {
   margin-bottom: 15px;
 }
@@ -422,7 +436,7 @@ nav a:hover {
   flex-grow: 1;
   text-align: center;
   background: white;
-  padding: 11px 0;
+  padding: 10px 0;
 }
 
 .navigation-links ul {
