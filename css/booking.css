@@ -525,12 +525,17 @@
   cursor: pointer;
 }
 
-
-
-
-
 .form-section {
   margin-bottom: 15px;
+}
+
+.gender-options {
+  display: flex;
+  align-items: center;
+}
+
+.gender-options label {
+  margin-right: 20px;
 }
 
 .form-section label {
