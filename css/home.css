@@ -46,7 +46,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 97.63%;
+  width: 97.9%;
   height: 70px;
 }
 
@@ -375,6 +375,22 @@ nav a:hover {
 
 .navigation-links ul li a:hover {
   color: #ff7f50;
+}
+
+#mute-button {
+  position: absolute;
+  top: 130px;
+  right: 10px;
+  padding: 5px 10px;
+  background-color: rgba(255, 0, 0, 0.5); /* Màu nền đỏ mờ */
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#mute-button:hover {
+  background-color: rgba(255, 0, 0, 0.7); /* Màu nền đỏ đậm hơn khi hover */
 }
 
 @media only screen and (max-width: 768px) {
