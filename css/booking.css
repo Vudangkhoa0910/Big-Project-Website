@@ -562,9 +562,7 @@
 }
 
 
-
 .Counseling {
-
   text-align: center;
   position: relative;
 }
@@ -573,7 +571,6 @@
   width: 100%;
   height: auto;
   object-fit: cover;
-
 }
 
 .Counseling h1 {
@@ -586,18 +583,39 @@
   color: #fff;
   text-align: left;
   font-family: Arial, sans-serif;
-
 }
 
 .email {
   position: absolute;
   top: 35%;
-  left: 35%;
+  left: 33%;
+  display: flex;
+  align-items: center;
+}
+
+.email label {
+  font-size: 20px;
+  color: #888;
+  margin-right: 10px;
 }
 
 #input {
-  width: 500px;
-  height: 25px;
+  width: 480px;
+  height: 40px;
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+#signup {
+  height: 40px;
+  margin-left: 10px;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(255, 166, 0);
+  border: none;
+  cursor: pointer;
 }
 
 .Counseling p {
@@ -611,8 +629,6 @@
   text-align: left;
   font-family: Arial, sans-serif;
 }
-
-
 
 
 
