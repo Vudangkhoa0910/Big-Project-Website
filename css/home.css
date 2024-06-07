@@ -318,9 +318,7 @@ html {
 }
 
 nav {
-  background: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 3px 15px;
 }
 
 nav ul {
@@ -387,34 +385,6 @@ nav a:hover {
 
   .navigation-links ul li {
     margin: 10px 0;
-  }
-}
-
-/* Adjustments for even smaller screens */
-@media only screen and (max-width: 480px) {
-  .navigation-links ul {
-    flex-direction: column;
-  }
-
-  .navigation-links ul li {
-    margin: 5px 0;
-  }
-
-  .navigation-links ul li a {
-    padding: 5px 10px;
-  }
-
-  .homepage-text h1 {
-    font-size: 35px;
-  }
-
-  .homepage-text p {
-    font-size: 16px;
-  }
-
-  .homepage-btn {
-    padding: 10px 20px;
-    font-size: 14px;
   }
 }
 
