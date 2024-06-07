@@ -287,20 +287,6 @@ html {
   box-sizing: border-box;
 }
 
-.form-section {
-  margin-bottom: 20px;
-}
-
-.gender-options {
-  display: flex;
-  align-items: center;
-}
-
-.gender-options label {
-  margin-right: 20px;
-}
-
-
 .modal-content .form-section {
   margin-bottom: 15px;
 }
@@ -436,7 +422,7 @@ nav a:hover {
   flex-grow: 1;
   text-align: center;
   background: white;
-  padding: 10px 0;
+  padding: 11px 0;
 }
 
 .navigation-links ul {
@@ -588,8 +574,8 @@ nav a:hover {
 }
 
 .content {
-  flex: 1 1 calc(55% - 20px);
-  /* Adjusted to 55% minus gap */
+  display: flex;
+  width:100%;
   min-width: 300px;
   background-color: #fff;
   padding: 20px;
@@ -597,10 +583,8 @@ nav a:hover {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   position: relative;
   margin: 0 10px;
-  /* Add margin on both sides */
 }
 
-/* Book-style effect */
 .content::before,
 .content::after {
   content: '';
@@ -609,37 +593,32 @@ nav a:hover {
   bottom: 0;
   width: 50%;
   background-color: #f9f9f9;
-  /* Set color of book pages */
   z-index: -1;
 }
 
 .content::before {
   left: -10px;
-  /* Adjust to position left page */
   transform: skewY(-4deg);
-  /* Skew left page */
   border-radius: 5px 0 0 5px;
-  /* Apply border radius for left page */
 }
 
 .content::after {
   right: -10px;
-  /* Adjust to position right page */
   transform: skewY(4deg);
-  /* Skew right page */
   border-radius: 0 5px 5px 0;
-  /* Apply border radius for right page */
 }
 
+
+.contents {
+  flex: 1 1 65%;
+  margin-right:25px;
+}
 
 .images {
   flex: 1 1 25%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  margin-top: 20px;
 }
-
 
 .map {
   flex: 1 1 30%;
