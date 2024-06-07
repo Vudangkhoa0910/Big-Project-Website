@@ -30,6 +30,9 @@
 
 <body>
   <!-- Header -->
+  <audio id="background-audio" autoplay loop>
+    <source src="./audio/audio.mp3" type="audio/mpeg">
+  </audio>
   <section class="header">
     <nav class="phenikaatravel-header" style="background: url('./images/Home/HBG.png') center center/cover no-repeat;">
       <div class="nav-container">
@@ -68,9 +71,10 @@
       <img src="./images/Home/mainBG.jpg" alt="background">
     </div>
   </section>
+  <button id="mute-button">Mute</button>
 
   <div class="homepage-text">
-    <h1>Muốn đi đâu, có PHENIKAA TRAVEL lo</h1>
+    <h1>Muốn đi đâu, <br>có PHENIKAA TRAVEL lo</h1>
     <p>Từ Việt Nam ra tới thế giới, tất cả trong tầm tay bạn.</p>
     <br />
     <br />
@@ -378,6 +382,7 @@
   <script type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <script src="./js/carousel.js"></script>
+  <script src="./js/sounds.js"></script>
 </body>
 
 </html>
