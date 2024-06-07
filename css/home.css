@@ -373,25 +373,33 @@ nav a:hover {
   transition: color 0.3s ease;
 }
 
-.navigation-links ul li a:hover {
+/* .navigation-links ul li a:hover {
   color: #ff7f50;
-}
+} */
 
 #mute-button {
   position: absolute;
   top: 130px;
   right: 10px;
-  padding: 5px 10px;
-  background-color: rgba(255, 0, 0, 0.5); /* Màu nền đỏ mờ */
-  color: #ffffff;
+  padding: 5px;
+  background: none;
+  /* Remove background color */
   border: none;
-  border-radius: 5px;
   cursor: pointer;
 }
 
-#mute-button:hover {
-  background-color: rgba(255, 0, 0, 0.7); /* Màu nền đỏ đậm hơn khi hover */
+#mute-button img {
+  width: 40px;
+  /* Adjust size as needed */
+  height: auto;
+  /* Adjust size as needed */
 }
+
+#mute-button:hover img {
+  opacity: 0.7;
+  /* Add hover effect if needed */
+}
+
 
 @media only screen and (max-width: 768px) {
   .navigation-links ul {
