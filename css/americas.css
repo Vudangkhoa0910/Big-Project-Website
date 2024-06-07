@@ -287,6 +287,20 @@ html {
   box-sizing: border-box;
 }
 
+.form-section {
+  margin-bottom: 20px;
+}
+
+.gender-options {
+  display: flex;
+  align-items: center;
+}
+
+.gender-options label {
+  margin-right: 20px;
+}
+
+
 .modal-content .form-section {
   margin-bottom: 15px;
 }
