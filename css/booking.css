@@ -186,6 +186,10 @@
   color: #333;
 }
 
+.search {
+  font-family: 'Times New Roman', Times, serif;
+}
+
 .search-content-items {
   display: flex;
   flex-wrap: wrap;
@@ -249,6 +253,13 @@
 
 .search-content-item button:hover {
   background-color: #4c51bf;
+}
+
+input[type="date"] {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px; 
+  padding: 5px;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .two-way {
