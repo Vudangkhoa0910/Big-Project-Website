@@ -181,6 +181,29 @@
 
 .search {
   font-family: 'Times New Roman', Times, serif;
+  padding: 20px 0;
+  background: linear-gradient(135deg, #6dd5ed, #2193b0);
+  color: bl;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.booking-section {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.booking-header .booking-title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #007bff;
 }
 
 .wrapper {
