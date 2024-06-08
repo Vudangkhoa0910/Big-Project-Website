@@ -203,29 +203,6 @@
   color: #007bff;
 }
 
-<<<<<<< HEAD
-=======
-.wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.booking-section {
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
-
-.booking-header .booking-title {
-  text-align: center;
-  font-size: 2em;
-  margin-bottom: 20px;
-  color: #007bff;
-}
-
->>>>>>> 32c682002c59c3d348296812abb5739dcec75370
 .search-content-items {
   display: flex;
   flex-wrap: wrap;
