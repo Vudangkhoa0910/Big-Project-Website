@@ -612,6 +612,7 @@ nav a:hover {
 .contents {
   flex: 1 1 65%;
   margin-right:25px;
+  margin-top:45px;
 }
 
 .images {
