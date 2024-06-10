@@ -253,7 +253,7 @@
   text-align: center;
   font-size: 2em;
   margin-bottom: 20px;
-  color: #007bff;
+  color: black;
 }
 
 .search-content-items {
@@ -264,7 +264,7 @@
 }
 
 .search-content-item {
-  background-color: #fff;
+  background-color: lightblue;
   flex: 1 1 calc(33.33% - 20px);
   display: flex;
   flex-direction: column;
@@ -283,7 +283,7 @@
 .search-content-item label {
   font-weight: bold;
   margin-bottom: 8px;
-  color: #007bff;
+  color: black);
 }
 
 .search-content-item select,
