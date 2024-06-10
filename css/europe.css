@@ -46,7 +46,7 @@ html {
 }
 
 .search-bar {
-  width: 100%;
+  width: 70%;
   max-width: 1300px;
   padding: 10px 40px 10px 20px;
   border: 4px solid rgba(0, 0, 0, 0.8);
@@ -127,7 +127,6 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 97.63%;
   height: 70px;
 }
 
@@ -575,7 +574,7 @@ nav a:hover {
 
 .content {
   display: flex;
-  width:100%;
+  width: 100%;
   min-width: 300px;
   background-color: #fff;
   padding: 20px;
@@ -611,8 +610,8 @@ nav a:hover {
 
 .contents {
   flex: 1 1 65%;
-  margin-right:25px;
-  margin-top:45px;
+  margin-right: 25px;
+  margin-top: 45px;
 }
 
 .images {
